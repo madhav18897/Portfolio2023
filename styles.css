@@ -283,7 +283,7 @@ p{
 .UTbox{
 
     display: flex;
-    padding: 16px 24px;
+    padding: 1.5rem 2rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
