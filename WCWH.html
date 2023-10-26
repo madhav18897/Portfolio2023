@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WCWH Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="WCWH.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.jpg"/>
+    <link rel="icon" href="MVLOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
+    
+    <script>        
+        window.addEventListener("load", ()=>{
+            const loader=document.querySelector(".loader");
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", ()=>{
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
+</head>
+
+<section class="top-nav" id="navbar">
+        
+    <div>
+        <a class="case-nav-links" href="index.html"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>   
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        <li><a class="case-nav-links" href="index.html">Home</a></li>
+        <li><a class="case-nav-links" href="about.html">About</a></li>
+        <li><a class="case-nav-links" href="assets/Madhav Varma UXD.pdf" download></i>Resume</a></li>
+        <li><a class="case-nav-links" href="index.html#projects">Design Work</a></li>
+        <!-- <li><a class="case-nav-links" href="#workexperience">Work Experience</a></li> -->
+        <li><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
+    </ul>
+
+
+</section> 
+
+<div class="banner" id="home">
+    <img class="hero" src="wcwhpiece/heroposter.svg" alt="" loading="lazy">
+
+</div>
+
+<div class="body">
+
+    
+    <div class="loader">
+        <h2 style="padding: 2%; color: #fff;" class="load-message">Loading, Please Wait...</h2>
+        
+    </div>
+
+         
+    <div class="container-fluid">
+
+        <h1>Whole Communities Whole Health(A UT Initiative) Project</h1>
+        <h2>Information Architecture and Design Project</h2>
+        <h1>Team</h1>
+        <ul class="group">
+
+            <Li style="font-size: 1.5rem; color: #bf5700 ;font-weight: bold;">Madhav Varma (Me!)</Li>
+            <Li>Shatayu Mondhe</Li>
+            <Li>Aayushi Saha</Li>
+            <Li>Ananya GM</Li>
+
+        </ul>
+
+        <h2>My Role</h2>
+        <p>Lead Interviewer, UX/UI Designer and Visual Designer</p>
+
+        <h2>Project Context</h2>
+        <p>Technology and science don't benefit everyone equally. Health inequities are unacceptable in areas with fewer resources. Whole Communities Whole Health is designing a 5-year cohort study to better understand how physical and mental hardships, biology, and the environment impact the health of families dealing with systematic injustice.</p>
+
+        <h2>Project Space</h2>
+        <p>Families engaged in the research use the app Hornsense to understand the data that is summarized from their Fitbit bands and environmental sensors. They are given the information so they may decide on their health and living conditions with awareness. However, the app's structure is difficult to understand, and the data currently given on it lacks sufficient context.</p>
+
+        <h2 style="margin-top: 5%;">Our work got featured in a UT Bridging Barriers article as well. Check it out!</h2>
+        <a href="https://bridgingbarriers.utexas.edu/news/whole-communities-whole-health-takes-giving-back-new-level"><button class="btn">Go to Article</button></a>
+        
+        <h1>Goals</h1>
+
+        <section id="goals">
+        
+        <div class="group row">
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>1. Accessible Data Representation</h2>
+                    <p>by revamping the existing Hornsense app which is being used for returning the data back to the users.</p>
+        
+                </div>
+
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>2. To perform a competitor analysis</h2>
+                    <p> with the potential competitors of the WCWH Project and use the insights from those to improve the existing Hornsense App. We will also carry out a content inventory analysis.</p>
+        
+                </div>
+
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>3. To re-design the application</h2>
+                    <p> in a way that the data is understandable, accessible, and valuable for the users using the Hornsense application and help them live a better life.</p>
+        
+                </div>
+        </div>
+
+        </section>
+
+        <h1 id="research">Competitive Analysis</h1>
+        <p>When we started to perform Competitor Analysis, we chose 6 competitors - 3 direct and 3 indirect. Direct competitors were those businesses that offered similar products or services to another company within the same market while indirect competitors were those that served the same customer needs as another company but offered different products or services. </p>
+        <a href="https://docs.google.com/spreadsheets/d/1h5HZt4Arw3xMD60pbO4QlBsJa7v2iSYoy9Yvm40KEF8/edit#gid=0" target="_blank"><button class="btn">Link to Competitive analysis</button></a>
+
+        <h2>Insights from Competitive Analysis</h2>
+        
+        <div class="group row">
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>1. Has to be free</h2>
+                    <p>Since our app is a research-based initiative, it cannot be a paid service so even after scaling it up, marginalized communities can continue to have access to it.</p>
+        
+                </div>
+
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>2. Easily understandable graphs</h2>
+                    <p>Complex graphs can overwhelm the user and cause them to lose interest in using the application.</p>
+        
+                </div>
+
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>3. Less text, more visuals</h2>
+                    <p>Text-heavy content increases the cognitive load on the users and thus may distract them while using the application. Thus, to increase app engagement we have incorporated visually appealing and easily comprehensible content.</p>
+        
+                </div>
+
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>4. Easy discoverability of features</h2>
+                    <p>As observed from the analysis, the Information Architecture should support easy discoverability of features. Thus, we have designed our dashboard such that it is easy to navigate through the app home screen.</p>
+        
+                </div>
+
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>5. Avoiding panic</h2>
+                    <p>The health-related in-app notifications should not create panic, but should convey the information effectively.</p>
+        
+                </div>
+        </div>
+
+        <h1>Literature Review</h1>
+        <p>We performed secondary research which was mostly us going through some research papers and compiling together the insights we could draw from the papers.</p>
+        <img class="secondaryR" src="wcwhpiece/secondaryR.svg" loading="lazy">
+
+        <h1>User Research</h1>
+        <p>We were able to gather user research insights by taking help from our user representatives, Ben, Shirene and Sarah, who spoke to the end users on our behalf, based on a questionnaire we designed.</p>
+        <h2>Needs</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Wants a smooth and easy-to-see and interact with data on an app</li>
+            <li class="inner-list-item">Wants to show individualized or grouped data</li>
+            <li class="inner-list-item">Needs help with translating the data for people with limited academic access</li>
+            <li class="inner-list-item">Wants help to find optimal solutions for the UX of the app</li>
+        </ul>
+        <h2>Data Provided</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">MASQ (Mood and Anxiety Symptoms Questionnaire) findings for Mood Data Analysis</li>
+            <li class="inner-list-item">Fitbit data for Heart rate, Physical Activity, and Sleep data analysis</li>
+            <li class="inner-list-item">Bevo Beacon data for Air and Temperature quality analysis</li>
+            <li class="inner-list-item">Wants help to find optimal solutions for the UX of the app</li>
+        </ul>
+        <h2>Study Objectives</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Build trust within the communities that have a history of being exploited in addition to collecting data</li>
+            <li class="inner-list-item">Diverse and Inclusive approach in the study</li>
+        </ul>
+        <h2>Expectations from our Team</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Design templates for graphs and other informatics tools</li>
+            <li class="inner-list-item">Use our expertise in the design of the layout</li>
+            <li class="inner-list-item">Help with developer handoff</li>
+            <li class="inner-list-item">Make the app enjoyable and easy to use</li>
+            <li class="inner-list-item">Suggest insights from data but avoid implications</li>
+        </ul>
+
+        <h1>Challenges</h1>
+        <h2>Restrictions</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item"> IRB (Institutional Review Board) restrictions prevented us from speaking to the end users of our application directly. We could only do so through Ben and Shirene, the mediators</li>
+            <li class="inner-list-item"> Language Barrier: None of us speak Spanish, which acted as another barrier</li>
+        </ul>
+
+        <h2>Opportunities</h2>
+        <p>We saw this as a great opportunity to work with marginalized communities, albeit indirectly, while sharpening our own skills as students of Information Architecture. It was also a redesign project, with strict constraints and limitations, which would further challenge us as designers.</p>
+
+        <h2>Questionnaire</h2>
+        <p>We compiled a list of the most important questions we asked our user representatives and based on their answers, we came up with a task list that we used during the user interviews we performed with our users.</p>
+        <ul class="inner-list">
+            <li class="inner-list-item">What pain points of the respondents did you address to motivate them to join the study?</li>
+            <li class="inner-list-item">What are the problems with the current dashboard?</li>
+            <li class="inner-list-item">Are there any issues with the user surveys that you have been taking through the app?</li>
+            <li class="inner-list-item">Are there any users who have specific feedback about specific portions of the application?</li>
+            <li class="inner-list-item">Can users stop recording their data as and when they want?</li>
+        </ul>
+
+        <h1>Demographics</h1>
+
+        <img class="demographics" src="wcwhpiece/demographics.svg">
+        <h2>Learnings</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Most of our users are Latinx, while 11% are black and 8% are white hence fulfilling the purpose of the study to ensure proper representation of marginalized communities</li>
+            <li class="inner-list-item">Only 40% of our user groups were college graduates as for the rest of our users, they had limited access to academic assistance. So, we focused on designing a system that was easy to understand.</li>
+        </ul>
+
+
+        <h1>Approach</h1>
+        <h2>Research Design</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">We conducted six moderated in-person and virtual user interviews with two moderators and two notetakers</li>
+            <li class="inner-list-item">We designed five task scenarios to test how the users approached the various tasks</li>
+            <li class="inner-list-item"> We applied a think-aloud protocol to identify user’s thought processes and gather their feelings toward the application</li>
+        </ul>
+        <h2>Data Analysis</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">We first compiled our moderator and notetaker notes into an excel sheet for each of the tests we conducted</li>
+            <li class="inner-list-item">Created affinity maps based on the notes we took to visualize trends
+                Data Collection</li>
+  
+        </ul>
+        <h2>Data Collection</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Audio recording of the participant</li>
+            <li class="inner-list-item">Moderator and notetaker notes</li>
+            <li class="inner-list-item">Raw data provided by the WCWH team (Eg. REM_sleep_time, Non-REM_sleep_time, light_sleep_time, deep_sleep_time, vigorous_physical_activity_time, etc.)</li>
+        </ul>
+        <h2>Task Scenarios</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Look for specific health data</li>
+            <li class="inner-list-item">Submit a survey</li>
+            <li class="inner-list-item">Report Air Quality data</li>
+            <li class="inner-list-item">Report a lost device</li>
+            <li class="inner-list-item">Connect to somebody from the team</li>
+        </ul>
+
+        
+        <h1>User Representatives</h1>
+        <p>Since we did not have IRB clearances and were faced with language barriers to talking to the end users directly, we worked closely with ‘User Representatives’, who would communicate with the end users on our behalf. The WCWH team members we worked with for this project were:</p>
+        <div class="group row">
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                <img class="user-rep" src="wcwhpiece/ben.svg" loading="lazy">
+                <h2 style="color: #333333; font-weight: bold;">Benjamin Baird</h2>
+                <p style="color :#bf5700">Research scientist, at The University of Texas at Austin</p>
+                <p style="font-size: 1rem">Expert in cognitive psychology, neuroscience, data science, and statistical analysis. His research spans several interrelated areas in human cognition.
+                    ​He is passionate about pioneering with data (big data, experimental & observational data). He strongly advocates for animal welfare, and international, environmental, and sustainability issues.</p>
+    
+            </div>
+
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                <img class="user-rep" src="wcwhpiece/shirene.svg">
+                <h2 style="color: #333333; font-weight: bold;">Shirene Garcia</h2>
+                <p style="color :#bf5700">Senior Outreach Program Coordinator, School of Social Work.</p>
+                <p style="font-size: 1rem">She uses her strong background in social work to lead the outreach side of the WCWH project. She works closely with Ben for data collection and analysis. She also uses her interpersonal skills to great effect when it comes to actually engaging with the people participating in the cohort study in person.</p>
+    
+            </div>
+
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                <img class="user-rep" src="wcwhpiece/sarah.svg">
+                <h2 style="color: #333333; font-weight: bold;">Sarah Smith</h2>
+                <p style="color :#bf5700">Research Study Coordinator, Office of the Vice President for Research, Scholarship, and Creative Endeavors</p>
+                <p style="font-size: 1rem">Sarah is responsible for managing the software and data side of this project. She works closely with the technology and development team. She was instrumental in informing us which features are feasible and which are not. In the future, she would assist us in developer handoff and bringing the designs to life.</p>
+    
+            </div>
+
+        </div>
+
+        <h1>Affinity Mapping</h1>
+        <p>We used affinity mapping to condense common ideas and lines of thought based on feedback from users following our user research. We also gained a better understanding of the user's needs and our approach as a result of the process. Finally, we devised a more organized data collection strategy and a more streamlined approach to the project. The ideas were divided into seven groups, as shown below.</p>
+        <a href="https://ananyagm87759.invisionapp.com/freehand/WCWH-Affinity-Mapping-FBFsQJF2X?dsid_h=668eacb8c658a5351308bd320d2c31232ec39a44b41fe28aeb6cbbbe967c8ccf&uid_h=15d5774bd11cc24b5235795baa761d3d6881a90d30aa53a0a0b653b79ebf70bd" target="_blank"><button class="btn">Link to Affinity Mapping</button></a>
+        <img class="affinity" src="wcwhpiece/affinity.svg" loading="lazy">
+
+        <h1>User Personas</h1>
+
+        <div class="group row">
+            <div class="goal-item col-lg-6 col-md-6 col-sm-12">
+                <h2 style="color: #333333; font-weight: bold;">Persona 1 : Hailey Gomez</h2>
+                <p style="font-size: 1rem">Hailey Gomez, one of our potential users, is the subject of our first User Persona. In addition to discussing her background and characteristics, we also discuss her objectives and frustrations.</p>
+                <img class="user-persona" src="wcwhpiece/persona1.svg" loading="lazy">
+            </div>
+
+            <div class="goal-item col-lg-6 col-md-6 col-sm-12">
+                <h2 style="color: #333333; font-weight: bold;">Persona 2 : James Rudd</h2>
+                <p style="font-size: 1rem">James Rudd, one of the user representatives and a member of the WCWH team, is the subject of our following persona. We also discuss James' background, challenges, and objectives.</p>
+                <img class="user-persona" src="wcwhpiece/persona2.svg" loading="lazy">
+            </div>
+
+        </div>
+
+
+        <h1>Content Inventory</h1>
+        <p>To gather all the data together in a place, we started to put data together in the content inventory which we designed in Excel. Doing so helped us get all the data present on the existing Hornsense app together in one place and we also found out what is there on the app and how it is structured. It also helped us identify the content that was not up to date.</p>
+        <a href="https://docs.google.com/spreadsheets/d/1L_hvIw_6zY06ntcBQyFVWu835k41DmOvccBfYmm8a8w/edit?usp=sharing" target="_blank"><button class="btn">Link to Content Inventory</button></a>
+        
+        <h1>Card Sorting</h1>
+        <p>Once we had analyzed our content, we moved forward to designing the Information Architecture for the app. To do this, we started with card sorting. This process helped us interact with our users and get their insights on the various topics in the app and how they would like to view them under different categories. We used the Maze software to carry out the task. We conducted closed card sorting with a total of 12 participants, with 23 cards to be categorized into 9 categories.</p>
+        <img class="card-sort" src="wcwhpiece/cardsort.svg" loading="lazy">
+
+        <h1>Agreement Matrix</h1>
+        <p>Using this technique, our team was able to observe in the visual form how frequently people concur that a particular card belongs in each category using the agreement matrix. This table shows the most popular groups of cards for each category based on where participants placed the cards most often.</p>
+        <img class="agreement" src="wcwhpiece/agreement.svg" loading="lazy">
+
+        <h1>Similarity Matrix</h1>
+        <p>This is a straightforward illustration of paired possibilities. This provided us with an understanding of which cards our participants frequently matched together in the same group. The more frequently two cards were paired together by your participants, the darker the purple color where the two cards overlap. This table shows the most closely related pairs of cards, which are grouped on the right edge of the table based on how often participants sorted any two cards into the same category.</p>
+        <img class="agreement" src="wcwhpiece/similarity.svg" loading="lazy">
+
+
+        <h1>Information Architecture (IA)</h1>
+        <p>From the aforementioned user behavior reports, we were able to map out an information architecture for our application that would best suit user needs and provide good affordances for tasks users might try and accomplish on our application. We have two IA diagrams, the first is the IA for the old application and the second is for the application we redesigned.</p>
+        <a href="https://www.figma.com/file/BJsQDu85UrAgADhqkQDmZr/Information-Architecture---WCWH-App?node-id=0%3A1&t=0GeGJm9IeB65S75l-1" target="_blank"><button class="btn">Link to Information Architecture</button></a>
+        <img class="info-arch" src="wcwhpiece/infoarch.svg" loading="lazy">
+
+
+        <h1 id="ideation">Ideation</h1>
+        <p>To tinker around with ideas we started formulating after completing our user research and information architecture design phases, we started the ideation process, starting with sketching for a digital product.</p>
+        
+        <h2>Sketching</h2>
+        <p>We started the process with pen and paper sketching, before moving to a digital design tool like Figma or Sketch.</p>
+        <img class="sketching" src="wcwhpiece/sketching.svg" loading="lazy">
+
+
+
+        <h1>Low Fidelity Wireframes</h1>
+        <p>After sketching, the next step was to build some low fidelity wireframes to start structuring the basic elements for our application.</p>
+        <img class="lowfi" src="wcwhpiece/lowfi.svg" loading="lazy">
+        
+        
+
+        <h1>Medium Fidelity Wireframes</h1>
+        <p>After building some low-fidelity wireframes to start structuring the basic elements for our application, we started adding a few UI elements to give more shape, form, and functionality to the application. This led to the following mid-fidelity wireframes.</p>
+        <img class="medfi" src="wcwhpiece/medfi.svg" loading="lazy">
+
+
+        <h1>High Fidelity Screens</h1>
+        <p>After building mid-fidelity wireframes, we started the visual design process, using a self-made style guide, and worked in the direction of building developer-handoff-ready, high-fidelity screens.</p>
+        <img class="hifi" src="wcwhpiece/hifi.svg" loading="lazy">
+
+        <h1>Style Guide</h1>
+        <p>The following style guide is what we used to carry out the visual design process on our mid-fidelity screens, in Figma.</p>
+        <img class="styleguide" src="wcwhpiece/styleguide.svg" loading="lazy">
+
+        <h1 id="Prototyping">Prototyping</h1>
+        <p>After the high-fidelity screens were ready in Figma, we thought about applying previously discussed user flows to the screens by connecting the screens together, and adding popups, overlays, modal sheets, and scrolls wherever necessary. This process would have to be repeated after carrying out user testing with this initial prototype.</p>
+
+        <h1>User Testing</h1>
+        <p>Using our initial prototype Ben and Shirene from the WCWH Team at UT Austin carried out the testing on the user’s behalf.</p>
+        <h2>Insights from User Testing 1</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Modify certain terminologies to make the app appear more personalized to its users</li>
+            <li class="inner-list-item">Rearrange the hamburger menu, move options into suitable categories based on the importance of the actions the options would enable the users to do</li>
+            <li class="inner-list-item">Make the profile "view-only" to protect user's privacy</li>
+            <li class="inner-list-item">Some graphs showed a combination of sleep and physical activity to emphasize on the effect one had on the other. However, testing showed that the graphs may be cumbersome for the users to read and comprehend.</li>
+        </ul>
+        <h2>Insights from User Testing 2</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Provide users with information/learn more options wherever relevant</li>
+            <li class="inner-list-item">Notify the users with the status and show the corresponding scale to avoid causing panic to the users</li>
+            <li class="inner-list-item">Keep the users informed of the progress or completion of a task</li>
+        </ul>
+
+        <h2>Design Response to Feedback</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Changed "Highlights" to "Your Data"</li>
+            <li class="inner-list-item">"Report a Bug" was migrated from the settings section to the main menu. Users should be able to report issues as the app is still in development and the development team may fix any flaws discovered by users</li>
+            <li class="inner-list-item">Personal information of the users are made non-editable, only address details can be modified</li>
+            <li class="inner-list-item">Remove detailed phase-wise sleep and air quality graph and replace them with simpler, easy-to-understand graphs</li>
+            <li class="inner-list-item">Add an "i" button wherever additional information is necessary to learn more about any metric</li>
+            <li class="inner-list-item">Add a tag (good, fair, bad) next to relevant information to keep users informed of their environments and avoid panic</li>
+            <li class="inner-list-item">Add a button at the bottom of the profile page upon hitting which the user is given a confirmation in case they want to update their profile.</li>
+        </ul>
+
+        <h1 id="finalprototype">Final Prototype and Walkthrough</h1>
+        <p>You will find a clickable prototype of the product below. Have fun!</p>
+        <a href="https://www.figma.com/proto/uuvQ3C8YfvmZipigpwJoyh/WCWH-IA-Project?page-id=932%3A2922&node-id=1768%3A5032&viewport=-4336%2C-979%2C0.24&scaling=scale-down&starting-point-node-id=1768%3A7494&show-proto-sidebar=1"><button class="btn">Link to Final Prototype</button></a>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); margin: 5% 0%;" width="100%" height="800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuuvQ3C8YfvmZipigpwJoyh%2FWCWH-IA-Project%3Fpage-id%3D932%253A2922%26node-id%3D1768%253A5032%26viewport%3D-4336%252C-979%252C0.24%26scaling%3Dscale-down%26starting-point-node-id%3D1768%253A7494" loading="lazy" allowfullscreen ></iframe>
+        <img class="mockups" src="wcwhpiece/mockups.svg" loading="lazy"> 
+
+        <h1>Key Features</h1>
+        <div class="group row">
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                <h2>Intuitive Dashboard</h2>
+                <p>The home screen has a very simple layout and gives users easy access to the data they need with just one click.  The architecture, which includes a dashboard, surveys, and reports, has been kept in the primary navigation. Additionally, in order to make it easier for users to update or amend their information on the application and protect their privacy, we have also integrated the user profile to the global navigation.</p>
+    
+            </div>
+
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                <h2>Comprehensibility of Data</h2>
+                <p>The graphs provide extremely understandable data, with the analyzed data being highlighted to increase visibility. When a user navigates to the dashboard, it is relatively simple for them to move between the six metrics that the app measures since they are displayed in the form of a horizontal scroll. The graphs are artistic and intuitive while adhering to the appropriate scientific norm for metric depiction.</p>
+            </div>
+
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                <h2>Hassle free survey participation and issue reporting</h2>
+                <p>Every cycle of the research project, users must complete two questionnaires. In order to encourage users to complete surveys on time, they are informed of any pending or impending surveys and their expected completion time. Any strange observations that users believe to be related to the metrics we are researching can be reported in the Report section.</p>
+    
+            </div>
+
+    </div>
+
+
+        <h1>Conclusions</h1>
+        <ul class="inner-list">
+            <li class="inner-list-item">We started out with a project proposal for the WCWH team and then proceeded to define our goals, assess our competitors and draw useful insights from the study. We next took steps to comprehend our users' problems before creating user personas to represent our user group. Following this, we created affinity maps and drew out the concept map for the already-existing app to comprehend the logic behind the flow and prepare the content inventory. As soon as we got a firm grasp on this, we started brainstorming ideas for the new information architecture and utilized card sorting to choose the app's labeling. During this time, we also created our new concept map.</li>
+            <li class="inner-list-item">Following the Ideation phase, we developed our lo-fi, and hi-fi designs before putting our interactive prototype together. During this step, we brainstormed about the various visuals we could use to reflect the health data back to the users.</li>
+            <li class="inner-list-item">We explored throughout the project to see how various information architectures would work with our design model and how the various navigational options affected the usability of the app. The entire approach has helped us understand the value of and how to build and design in a constrained environment.</li>
+        </ul>
+
+        <h1>Potential Improvements</h1>
+        <ul class="inner-list">
+            <li class="inner-list-item">Direct interactions with end users after we clear our IRB requirements and this would help us get a better understanding of our user pain points.</li>
+            <li class="inner-list-item">To get in-person user testing done and then incorporate their insights in our design.</li>
+            <li class="inner-list-item">A few changes and additions in the app we would work on in the future would incorporate the children's data and their health metrics.</li>
+            <li class="inner-list-item">To improve on the privacy controls and current data visualizations of the app.</li>
+            <li class="inner-list-item">We would eventually be working with the development team for smooth handoffs.</li>
+        </ul>
+        
+
+        <h1>Key Takeaways</h1>
+        <ul class="inner-list">
+            <li class="inner-list-item">Learned how to structure information in an app environment with several constraints</li>
+            <li class="inner-list-item">Learned Empathy Mapping and its importance</li>
+            <li class="inner-list-item">Learned how to perform user research and user testing via a mediator</li>
+            <li class="inner-list-item">Learned different types of information architecture which suit our project</li>
+            <li class="inner-list-item">Importance of Primary, Secondary, and at times Tertiary navigation</li>
+        </ul>
+
+        <h1>Acknowledgements</h1>
+        <p>We express our gratitude to the Whole Communities Whole Health team at The University of Texas at Austin for guiding us along the way and providing us with all of the necessary information as and when it was required. I would like to express my deep gratitude to Dr. Yan Zhang, my research supervisor, for their patient guidance, enthusiastic encouragement, useful critiques of this research work, advice, and assistance in keeping our progress on schedule. We also acknowledge Dr. Zhang for entrusting us with the responsibility of undertaking this project.</p>
+
+
+    
+    </div>
+   
+    
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+    
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+    
+          for(var i = 0; i < reveals.length; i++){
+    
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 50;
+    
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+    </script>
+
+    <!-- navbar disappears on scrolling -->
+    <!-- <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+    </script> -->
+    <!-- navbar disappears on scrolling -->
+
+    
+       
+    
+        
+</div>
+<div class="banner">
+    <img class="bottom-banner" src="wcwhpiece/bottombanner.svg" alt="" loading="lazy">
+</div>
+
+<nav class="bottom-nav">
+    <ul class="bottom-nav-list">
+    
+      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#home">Back to top</a></li>  
+      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#goals">Goals</a></li>
+      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#research">Research</a></li>
+      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#Prototyping">Prototyping</a></li>
+      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#finalprototype">Final Prototype</a></li>
+
+    </ul>
+</nav>
+
+</html>

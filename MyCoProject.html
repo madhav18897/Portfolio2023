@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My|Co Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Myco.css">
+    <link rel="icon" href="MVLOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.jpg"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
+    
+    <script>        
+        window.addEventListener("load", ()=>{
+            const loader=document.querySelector(".loader");
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", ()=>{
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
+</head>
+
+<section class="top-nav" id="navbar">
+        
+    <div>
+        <a class="case-nav-links" href="index.html"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>   
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        <li><a class="case-nav-links" href="index.html">Home</a></li>
+        <li><a class="case-nav-links" href="about.html">About</a></li>
+        <li><a class="case-nav-links" href="assets/Madhav Varma UXD.pdf" download></i>Resume</a></li>
+        <li><a class="case-nav-links" href="index.html#projects">Design Work</a></li>
+        <!-- <li><a class="case-nav-links" href="#workexperience">Work Experience</a></li> -->
+        <li><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
+    </ul>
+
+</section> 
+
+
+    
+
+
+<div class="body">
+
+    
+    <div class="loader">
+        <h2 style="padding: 2%; color: #fff;" class="load-message">Loading, Please Wait...</h2>
+        
+    </div>
+
+    
+
+    <div class="container-fluid" id="home">
+
+        <img class="hero" src="My|Co Assets/mushroomhero.svg" alt="" loading="lazy">
+
+        <h1>My|Co Circular Mushroom Log Harvester Physical Product Design Project</h1>
+        <h2>Master's Level Course : Idea to Product</h2>
+        <p>MY | CO is an up-and-coming venture that developed a ground-breaking "Mushroom Log Harvester" that enables farmers to harvest synthetic log-grown shiitake mushrooms 12 times quicker and cut their labor expenses for harvesting by 90%.</p>
+        <h1>Team</h1>
+        <h2>Advised By: Dr. Scott Evans, phD</h2>
+        <p>Head of Texas Inventionworks at the University of Texas at Austin</p>
+        <ul class="group">
+
+            <Li style="font-size: 1.5rem; color: #48742c ;font-weight: bold;">Madhav Varma (Me!)</Li>
+            <Li>Brianna Ramirez</Li>
+            <Li>Ananya GM</Li>
+            <Li>Jyotsna Vempati</Li>
+            <Li>Devan Dholakia</Li>
+            <Li>Mariyah Ndaiye</Li>
+            <Li>Christine Ding</Li>
+
+        </ul>
+        <h2>Tools Used</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Figma - Ideation</li>
+            <li class="inner-list-item">LineaSketch - Prototype</li>
+            <li class="inner-list-item">Sketching</li>
+            <li class="inner-list-item">InVision - Research Analysis</li>
+            <li class="inner-list-item">SolidWorks - CAD</li>
+            <li class="inner-list-item">Retina Engrave - Laser Printing</li>
+            <li class="inner-list-item">Tinker CAD - 3D Modelling</li>
+            <li class="inner-list-item">Cura 3D - 3D Printing</li>
+        </ul>
+
+        <h1>Project Context</h1>
+        <ul class="inner-list">
+            <li class="inner-list-item">This project was undertaken as a part of our ‘Idea to Product’ class, where we explored design and entrepreneurial processes associated with product development and engineering.</li>
+            <li class="inner-list-item">We chose to research issues in the mushroom farming industry and develop solutions. Our product had to have a physical component based on an idea from a well-understood problem to a functional prototype of an economically viable product.</li>
+        </ul>
+
+        
+        <h1>Project Timeline and Process</h1>
+        <img class="mycoprocess" src="My|Co Assets/mycoprocess.svg" loading="lazy">
+
+        <h1 id="problem">Problem space</h1>
+        <p>The mushroom industry is a new yet fast-growing industry in the United States. The demand for mushrooms has been steadily increasing over the years, with insufficient supply to meet said demand. The mushroom industry consists of large-scale, small-scale farms, local farms, and hobbyists, but most of the output comes from large-scale production. Small-scale farms have difficulty scaling up because of a lack of efficient processes, labor shortages, and technological constraints. Specifically, processes around harvesting are manual, labor-intensive, and wasteful. In addition, the workers lose efficiency throughout the day as their bodies get tired. In turn, the output suffers. We seek to alleviate some constraints with the help of the products we design through the course of this class.</p>
+
+        <h1>Design Response</h1>
+        <img class="designresponse" src="My|Co Assets/designresponse.svg" loading="lazy">
+        <h2>Features</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item"><b>Precision Cutting : </b>Ensure the appearance of your mushrooms are preserved with our precision cutting blade.</li>
+            <li class="inner-list-item"><b>Customizable : </b>Customize the Mushroom Log Harvester to fit the specifications of your synthetic grow logs.</li>
+            <li class="inner-list-item"><b>Integration Opportunities : </b> Work with us to explore a range of opportunities to integrate the Mushroom Log Harvester into your existing systems.</li>
+            <li class="inner-list-item"><b>Fast! : </b>existing manual harvesting process by eliminating repetitive tasks.</li>
+        </ul>
+        
+        <h2>With MY|CO Mushroom Log Harvester, farmers can harvest more shiitake mushrooms effortlessly, all while preserving the mushrooms' quality and form. Consequently, it reduces the time farmers have to spend in the extremely low temperature grow rooms. It can also be customized to be integrated into existing collecting mechanisms.</h2>
+
+        <h1 id="research">Secondary Research</h1>
+        <p>Outside of speaking with mushroom farmers, we needed to engage in some secondary research to get a holistic understanding of the mushroom labor market in the US. Some of our findings are listed below.</p>
+        <div class="group row">
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>1</h2>
+                    <p>On average, 10% - 20% of mushrooms are left unharvested across all the mushroom farms producing button and specialty mushrooms.</p>
+        
+                </div>
+
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>2</h2>
+                    <p>For specialty mushrooms, in particular, shiitake mushrooms, which primarily grow on logs, we found that most commercial scale operations start at around 500 – 1000 logs in production, which yield 20 – 50 lbs of shiitake per week on average.Shiitakes sell for 12$ to 20$ per pound in the market.</p>
+        
+                </div>
+
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>3</h2>
+                    <p>1 log produces about 4 lbs of mushrooms, which takes 6 mins to harvest by hand. It costs $8.32 in labor to manage each log, out of which 20% or $1.664 goes towards just harvesting. Shiitake harvesting is 12 times slower when compared to other specialty mushrooms.</p>
+        
+                </div>
+
+                <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                    <h2>4</h2>
+                    <p>The mushroom industry is constantly short staffed by 20-25%. They're usually paid a minimum wage (14$ - 20$ per hour) and take 3-12 weeks to be trained for the job.</p>
+        
+                </div>
+                <h2>With our mushroom cutter, each log can be harvested within 26-35 seconds, and in turn, the labor costs can be reduced to 0.1617$ from $1.664, making it a <b>90.28% </b>reduction.</h2>
+
+        </div>
+        
+        <h1>Literature Review</h1>
+        <p>We felt it was important to look into existing pieces of scholarly literature on the science of mushroom farming and harvesting before proceeding, to have a better understanding and to see if we had an opportunity to file for a potential patent down the road. We analysed articles,research papers and videos</p>
+        <img class="litrev" src="My|Co Assets/litreview.svg" loading="lazy">
+
+        <h1>Stakeholder Mapping</h1>
+        <p>We had a limited number of stakeholders in the shiitake mushroom market to take into account when we designed our prototype. Our products would be purchased by a farmer or a purchasing manager, who would not be the end consumer. The workers involved in the actual harvesting process would be the ones actually using our product. A product that benefitted all stakeholders was essential to produce.</p>
+        <img class="litrev" src="My|Co Assets/stakeholdermap.svg" loading="lazy">
+
+        <h1>Primary Research</h1>
+        <h2>Interviews</h2>
+        <div class="group row">
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+
+                <p>We took interviews of several people who have many years of experience in this industry. A few prominent names we spoke to were Niel Purdue from Kitchen Pride Mushrooms, and Christopher Wilder from JCN Farms and gathered the following insights.</p>
+    
+            </div>
+
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                <img class="interviewvid" src="My|Co Assets/interviewvid.svg" loading="lazy">
+            </div>
+
+        </div>
+
+        <h2>Insights from Interviews</h2>
+        <img class="interviewinsights" src="My|Co Assets/interviewinsights.svg" loading="lazy">
+
+        <h2>Field Visits</h2>
+        <div class="group row">
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+
+                <p>A few of our team members visited HiFi Mycology in Austin, Texas, to get hands-on experience on growing and harvesting mushrooms. We got to take a tour of the facility, understand the processes and actually fill, seal and hang grow bags for oyster mushrooms. We also saw the harvesting for a few of the bags which were ready to be harvested and packed.</p>
+    
+            </div>
+
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                <img class="fieldvisit" src="My|Co Assets/fieldvisit.svg" loading="lazy">
+            </div>
+
+        </div>
+
+        <h1>Affinity Mapping</h1>
+        <p>To organize and group all of the team’s ideas in a cohesive manner, we decided to use the affinity mapping technique to group ideas based on natural relationships. The diagram for the same is shown below:</p>
+        <img class="affinity" src="My|Co Assets/mycoaffinity.svg" loading="lazy">
+        <h2>Problem Areas from Affinity Diagram</h2>
+        <ul class="inner-list">
+            <li class="inner-list-item">Fatigue and Hand Numbness</li>
+            <li class="inner-list-item">Time consuming process (12 times slower when compared to harvesting other specialty mushrooms)</li>
+            <li class="inner-list-item">Wastage</li>
+            <li class="inner-list-item">Cold Working Conditions (pickers work in temperatures as low as 61°F for prolonged hours)</li>
+        </ul>
+
+        <h1 id="ideation">Sketches</h1>
+        <p>We learnt in class, from Lloyd Walker, a seasoned industry professional, that product sketching is one of the most important and powerful tools in our arsenal while designing a physical product. We started out with rough sketches and eventually drew out these final ideas for potential prototypes :</p>
+        <img class="lowfi" src="My|Co Assets/sketches.svg" loading="lazy">
+
+        <h1>Downselection</h1>
+        <p>We had to narrow down on the choice of prototype from our ideation process, supported by our product sketching exercise. We narrowed down the Mushroom log harvester, based on the impact it would have in improving worker productivity and fatigue levels. We will discuss the selection criteria in more detail below.</p>
+        <img class="lowfi" src="My|Co Assets/downselection.svg" loading="lazy">
+
+        <h1>Narrowed down list of designs</h1>
+        <p>On the basis of the above spreadsheet as well as the feedback from our professor Dr Evans, we shortlisted the following designs, along with the positives and negatives</p>
+        <img class="lowfi" src="My|Co Assets/shortlistdesigns.svg" loading="lazy">
+
+        <h1 id="Prototyping">Prototyping</h1>
+        <p>We had two distinct prototyping processes. One was a rapid prototyping process where we made prototypes out of cardboard, paper, strings, glue and markers. This helped us get a visual idea of what the product might look like and which parts we might need eventually.
+            The second prototyping stage was when we decided upon building the final log cutter, out of 3D printed and laser cut parts. We needed to go through a few iterations for the parts themselves to find an appropriate fit.</p>
+        <img class="lowfi" src="My|Co Assets/prototyping.svg" loading="lazy">
+
+        <h1>Setups</h1>
+        <p>For setting up the final design, we needed to laser cut the twin-wheel mechanism for rotating the circular blade, assemble the blade itself and then put the mechanism, motor and blade together. We also needed to install this on a stand to give it some elevation, to improve the ergonomics of the product.</p>
+        <img class="hifi" src="My|Co Assets/setup.svg" loading="lazy">
+
+        <h1 id="finalprototype">Final Design</h1>
+        <p>For setting up the final design, we needed to laser cut the twin-wheel mechanism for rotating the circular blade, assemble the blade itself and then put the mechanism, motor and blade together. We also needed to install this on a stand to give it some elevation, to improve the ergonomics of the product.</p>
+        <iframe width="100%" height="600px" style="margin: 2% 0%;" src="https://www.youtube-nocookie.com/embed/fxjjMFGi8ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img class="designresponse" src="My|Co Assets/finaldesign.svg" loading="lazy">
+
+
+        <h1>Results and Takeaways</h1>
+        <p>Once our prototype was assembled, we made sure the blade functioned smoothly. A few things we discovered were:</p>
+        <ul class="inner-list">
+            <li class="inner-list-item">The motor was a bit underpowered for our product. We only used a 12V motor.</li>
+            <li class="inner-list-item">The coupling between the two wooden wheels was far from perfect and the coupling could be improved, perhaps with a belt.</li>
+            <li class="inner-list-item">Mushrooms were being cut fairly well.</li>
+            <li class="inner-list-item">The cut mushrooms were being flung tangentially, and quite aggressively so, which might cause problems with collection later on.</li>
+            <li class="inner-list-item">The machine was able to cut down the harvesting time by a huge factor of 12, leading to a potential reduction in labor cost, specific to harvesting by 90.28%.</li>
+        </ul>
+
+        <h1>End User Story Board</h1>
+        <img class="hifi" src="My|Co Assets/storyboard.svg" loading="lazy">
+
+        <h1>Final Experience Flow</h1>
+        <img class="hifi" src="My|Co Assets/experienceflow.svg" loading="lazy">
+
+        <h1>Future Work</h1>
+        <p>We recognize and appreciate the fact that our prototype is far from perfect and has several things which can be worked on and improved especially on the safety and usability side. We will outline the steps we would like to take below.</p>
+        <div class="group row">
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+
+                <h2>Step 1</h2>
+                <p style="margin-bottom: 10%;">In our current model, the blade is extremely exposed and poses a very high risk of injury to anybody using it. Our first step would be to either put a guard around the blade or design A mechanism such that both hands must be placed elsewhere on the machine preferably on handles to even start the operation of the machine. The blade would stop as soon as the hands were lifted off these handles.</p>
+
+                <h2>Step 2</h2>
+                <p style="margin-bottom: 10%;">Another of our proposed steps is to place the log on a moving platform so that the user does not have to hold and push the log through the circular blade cavity. They would simply place it on the moving platform and the platform would push the log to the cavity for them.</p>
+
+                <h2>Step 3</h2>
+                <p style="margin-bottom: 10%;">Another step would be to create a collection mechanism for the mushrooms because it does not currently exist in our prototype and word ends up happening is that the mushrooms are just flung tangentially as soon as they are cut. We need something to catch, collect and sort the mushrooms.</p>
+
+                <h2>Step 4</h2>
+                <p>To build a digital presence for our company and product.</p>
+    
+            </div>
+
+            <div class="goal-item col-lg-4 col-md-6 col-sm-12">
+                <img class="fieldvisit" src="My|Co Assets/futurework.svg" loading="lazy">
+            </div>
+
+        </div>
+       
+
+        <h1>Reflections</h1>
+        <p>To reflect on this one semester long journey we would say that this has been an enjoyable yet difficult process of building a first prototype for a niche problem in a small yet growing industry.
+            We have done a good job of getting to a first prototype after many rounds of primary and secondary research and drawing insights from that research.</p>
+        <ul class="inner-list">
+            <li class="inner-list-item">Given that we had to finish the project within one semester (4 months), we had to rush our market research a bit. This led to us not finding an optimal and big enough problem to solve. Even though the problem we tried to solve is legitimate, our solution might run into problems like adoption. Having said that, the modern working world is moving towards focusing on employee/worker wellbeing and this solution might be well accepted by farming setups that can afford it.</li>
+            <li class="inner-list-item">Every company is now a technology company, or at least will be in the very near future. This means our product and company could benefit from an online presence in the form of an app or a website. This can be used not only for marketing purposes but for education as well. We also found that logistics is a major problem in this space, and we could avoid wastage by redistribution of yield across farms in a certain area. This could be another startup idea in and of itself.</li>
+        </ul>
+
+
+
+
+
+
+    
+    </div>
+    
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+    
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+    
+          for(var i = 0; i < reveals.length; i++){
+    
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 50;
+    
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+    </script>
+     <!-- navbar disappears on scrolling -->
+    <!-- <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+    </script> -->
+    <!-- navbar disappears on scrolling -->
+
+    
+       
+    
+        
+</div>
+<img class="bottom-banner" src="My|Co Assets/mycothanks.svg" alt="" loading="lazy">
+<nav class="bottom-nav">
+    <ul class="bottom-nav-list">
+    
+      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#home">Back to top</a></li>  
+      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#problem">Problem Space</a></li>
+      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#research">Research</a></li>
+      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#Prototyping">Prototyping</a></li>
+      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#finalprototype">Final Prototype</a></li>
+
+    </ul>
+</nav>
+
+</html>
