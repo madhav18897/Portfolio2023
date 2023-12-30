@@ -231,6 +231,10 @@ p{
 }
 
 
+
+
+
+
 .container{
 
     display: flex;
@@ -254,6 +258,38 @@ p{
     margin-bottom: 0;
     border-radius: 2rem;
 }
+
+.Intro{
+  font-size: 3rem;
+}
+
+/*Bigger Screen*/
+
+@media screen and (min-width: 1400px) {
+
+  #hero{
+    margin-right: 0%;
+    margin-top: 0%;
+  }
+
+  .container{
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .mvphoto{
+    display: none;
+  }
+
+  .Intro{
+    font-size: 4rem;
+  }
+}
+
+/*Bigger Screen*/
 
 
 
@@ -283,7 +319,7 @@ p{
 
     display: flex;
     padding: 1.5rem 2rem;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
 

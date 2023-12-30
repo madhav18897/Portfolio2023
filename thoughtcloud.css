@@ -1,6 +1,7 @@
 .body{
 
    margin: 0% 10% 0% 10%;
+   
     
 }
 
@@ -14,11 +15,8 @@
 
 html{
     margin: 0%;
+    
 }
-/* 
-#navbar{
-  padding: 2.75% 12%;
-} */
 
 @font-face {
   font-family: 'gilroyextrabold';
@@ -29,6 +27,7 @@ html{
 
 }
 
+
 h1{
     font-family: 'gilroyextrabold';
     color: #252525;
@@ -37,9 +36,11 @@ h1{
     font-size: 1.5rem;
 }
 
+
+
 h2{
     font-family: 'Manrope', 'serif';
-    color: #bf5700;
+    color: #2658F4;
     font-weight: 400;
     margin: 1% 0 1% 0;
     font-size: 1.25rem;
@@ -47,7 +48,6 @@ h2{
 
 p{
     font-family: 'Manrope', 'serif';
-    font-weight: bold;
     color: #4d4d4d;
     margin: 1% 0 1% 0;
 }
@@ -77,7 +77,7 @@ p{
     width: 75px;
     height: 75px;
     border: 15px solid #dddddd;
-    border-top-color: #bf5700;
+    border-top-color: #2658F4;
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
 }
@@ -110,7 +110,6 @@ to {
     }
     
 }
-
 /* Navbar------------------*/
 
 /* h2 {
@@ -280,6 +279,7 @@ html, body {
 /* End of navbar ---------------*/
 
 
+
 .banner{
     margin: 0%;
 }
@@ -296,7 +296,6 @@ li{
 
 .group{
     padding: 0%;
-    font-size: large;
     margin: 5% auto 5% auto;
 
 }
@@ -304,11 +303,20 @@ li{
 .group{
     justify-content: space-evenly;
     margin: 5% auto 5% auto;
+    
 }
 
 .goal-item{
     display: inline-block;
     margin: 5% 1% 5% 1%; 
+}
+
+.disclaimer{
+  padding: 3% 5%; 
+  border-radius: 1.5rem;
+  margin: 5% 0%;
+  background: #2658F4;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* big images */
@@ -340,6 +348,7 @@ li{
     margin: 5% 0% 5% 0%;
 }
 
+
 .btn{
   margin: 1% 0% 1% 0%;
   padding: 1%;
@@ -359,14 +368,90 @@ li{
 }
 
 
-
-
 .bottom-banner{
     width: 100%;
     margin: 2% 0% 0% 0%;
     border-radius: 0px;
     
 }
+
+
+/*scroll reveal animation*/
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.75s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*testimonials section*/
+
+#testimonials{
+
+  margin: 2% 5%;
+}
+
+.testimonial{
+  justify-content: space-around;
+  
+}
+
+
+.testimonialcard{
+  margin: 5% 0% ;
+  padding: 0%;
+  border-radius: 12px;
+  background-color: #0072b1;
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+
+}
+
+.name{
+  color: #121212;
+  font-size: 1.25rem;
+  margin: 10% 0%;
+}
+
+.workplace{
+  color: #808080;
+  margin: 10% 0%;
+}
+
+.recommendation{
+  padding: 5%;
+
+}
+
+.personsection{
+  background-color: #FFF;
+  border-radius: 12px 0px 0px 12px;
+  padding: 5%;
+}
+
+.person{
+  margin: 5% 0% ;
+  width: 100%;
+}
+
+.text{
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.125rem;
+
+}
+
+
+
+/*end of testimonials section*/
 
 /*bottom nav*/
 
@@ -409,21 +494,11 @@ li{
 
 .bottom-nav-link:hover {
   color: #bf5700;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   text-decoration: none;
 }
 
-.bottom-nav-link:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background: #fff;
-  transition: 0.5s;
-  z-index: -1;
-}
+
 
 li:hover .bottom-nav-link:before {
   width: 100%;
@@ -439,6 +514,5 @@ li:hover .bottom-nav-link:before {
 }
 
 /*end of bottom nav*/ 
-
 
 

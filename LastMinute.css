@@ -438,21 +438,11 @@ li{
 
 .bottom-nav-link:hover {
   color: #bf5700;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   text-decoration: none;
 }
 
-.bottom-nav-link:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background: #fff;
-  transition: 0.5s;
-  z-index: -1;
-}
+
 
 li:hover .bottom-nav-link:before {
   width: 100%;
