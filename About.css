@@ -254,7 +254,7 @@ p{
 
 /*Bigger Screen*/
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1500px) {
 
   #hero{
     margin-right: 0%;
