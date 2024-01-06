@@ -261,6 +261,7 @@ p{
 
 .Intro{
   font-size: 3rem;
+  
 }
 
 /*Bigger Screen*/
@@ -305,6 +306,10 @@ p{
     .hero-img{
         display: none;
     }
+
+    .educationbadge{
+      max-width: 100%;
+    }
   }
 
 .herotext{
@@ -315,18 +320,6 @@ p{
     
 }
 
-.UTbox{
-
-    display: flex;
-    padding: 1.5rem 2rem;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-
-    border-radius: 1.5rem;
-    background: #f3f3f3;
-    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); */
-}
 
 /*companies*/
 
