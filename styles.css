@@ -18,7 +18,7 @@ body{
     margin-top: 1rem;
     position: fixed;
     margin: 0% 10%;
-
+    
     
 }
 
@@ -47,6 +47,8 @@ html, body {
 
 #navbar{
     padding: 2.75% 10%; /* navbar padding top and left*/
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) ; */
+
 }
 
   
@@ -317,8 +319,10 @@ p{
     flex-direction: column;
     justify-content: space-evenly;
     gap: 1.5rem;
-    
+
 }
+
+
 
 
 /*companies*/
@@ -416,6 +420,10 @@ p{
     .hero-img{
         width: 100%;
     }
+
+    #poster{
+      display: none;
+    }
   }
 
 /*media query for experience section*/
@@ -446,7 +454,7 @@ p{
     gap: 1rem;
 }
 
-
+/*buttons*/
 .buttons{
     display: flex;
     align-items: flex-start;
@@ -466,12 +474,14 @@ p{
 
     border-radius: 300px;
     background: #121212;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .primarybtn:hover{
   color: #ffffff;
-  background-color: #343434;
+  background-color: #5e5e5e;
   text-decoration: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.125)inset;
   
 }
 
@@ -479,6 +489,7 @@ p{
   color: #ffffff;
   background-color: #232323;
   text-decoration: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25)inset;
 }
 
 .secondarybtn{
@@ -493,22 +504,25 @@ p{
 
    
     border-radius: 300px;
-    border: 1px solid #121212;
+    /* border: 1px solid #121212; */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 
 }
 
 .secondarybtn:hover{
   color: #121212;
   background-color: #ececec;
-  border: 1px solid #121212;
+  /* border: 1px solid #121212; */
   text-decoration: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.125) inset;
 }
 
 .secondarybtn:active{
   color: #121212;
   background-color: #c2c2c2;
-  border: 1px solid #121212;
+  /* border: 1px solid #121212; */
   text-decoration: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 /*media query for projects*/

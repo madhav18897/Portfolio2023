@@ -51,14 +51,21 @@
         </ul>
 
 
-    </section>      
+    </section>    
+    
+    <!-- <section id="poster">
+        <a href="#hero">
+            <img src="assets/poster.svg" alt="" style="max-width: 100vw;">
+        </a>
+        
+    </section> -->
     
     <section id="hero">
         <div class="container">
             <div class="herotext">
-                <h1 class="Intro">Hi! I'm Madhav, a<span style="color: #4252EB;"> Product Designer.</span></h1>
-                <p>Also proficient at <br><span style="color: #121212; font-weight: 800;">UX Research and Frontend Development(I coded this website).</span></p>
-                <p style="color: #121212; font-weight:900; font-style: italic;">Actively looking for full-time Product Design and UX Research roles. </p>
+                <h1 class="Intro">Hi! I'm Madhav, a<span style="color: #4252EB; text-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) inset;"> Product Designer.</span></h1>
+                <p>Also proficient at <br><span style="color: #121212; font-weight: 800;">UX Research and UX Engineering (I coded this website).</span></p>
+                <p style="color: #121212; font-weight:900; font-style: italic;">Actively looking for full-time Product Design, UX Research, and UX Engineering roles. </p>
                 <div class="UTbox">
 
                     <img class="educationbadge" src="assets/educationbadge.svg" alt="">
@@ -266,7 +273,31 @@
         </div> 
     </section>
 
+    <!-- This piece of code below hides the navbar when the poster(giant image) section is within the viewport-->
 
+    <!-- <script>
+        const navbar = document.getElementById('navbar');
+        const heroSection = document.getElementById('poster');
+    
+        // Function to handle the visibility of the navbar
+        function handleNavbarVisibility(entries) {
+          const isHeroSectionInViewport = entries[0].isIntersecting;
+    
+          // Toggle navbar visibility based on the hero section
+          navbar.style.top = isHeroSectionInViewport ? `-${navbar.offsetHeight}px` : '0';
+        }
+    
+        // Create an Intersection Observer targeting the hero section
+        const observer = new IntersectionObserver(handleNavbarVisibility, { threshold: 0.5 });
+        observer.observe(heroSection);
+    
+        // Event listener for scroll events to handle visibility for other sections
+        window.addEventListener('scroll', () => {
+          handleNavbarVisibility([{ isIntersecting: false }]); // Simulate an entry for the hero section
+        });
+    </script> -->
+
+    <!-- This piece of code above hides the navbar when the poster(giant image) section is within the viewport-->
 
 </body>
 
