@@ -271,6 +271,7 @@ p{
 .mvphoto{
     margin-bottom: 0;
     border-radius: 2rem;
+    margin-right: 12px;
 }
 
 .Intro{
@@ -311,7 +312,7 @@ p{
 
 
 
-@media screen and (max-width: 1083px) {
+@media screen and (max-width: 1200px) {
     .container{
       flex-direction: column;
       margin-top: 20%;
