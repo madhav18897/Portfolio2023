@@ -291,6 +291,11 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
+}
+
+.tileimg{
+   max-width: 100%;
 }
 
 @media (max-width: 900px) {
