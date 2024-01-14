@@ -235,7 +235,7 @@ p{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 15%;
     padding: 0px;
 
@@ -250,6 +250,7 @@ p{
 
 .mvphoto{
     margin-bottom: 0;
+    margin-right: 1rem;
 }
 
 /*Bigger Screen*/

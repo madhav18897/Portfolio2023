@@ -286,7 +286,9 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
+
 
 
 @media (max-width: 900px) {
@@ -297,10 +299,9 @@ html, body {
     gap: 1rem;
   }
 
-  .tile-img{
-    max-width: 100%;
-  }
-
+  .tileimg{
+    max-width: 80%;
+ }
 }
 
 /*left right*/
@@ -365,8 +366,8 @@ li{
   gap: 1rem;
   border-radius: 2rem;
   background: #FFF;
-  border: 0.25px #666666 solid;
   width: 20rem;
+  box-shadow: 0px 0px 10px 0px rgba(13, 13, 13, 0.25) inset;
   height: 22rem;
 
 }

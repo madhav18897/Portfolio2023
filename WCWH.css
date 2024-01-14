@@ -294,9 +294,7 @@ html, body {
   
 }
 
-.tileimg{
-   max-width: 100%;
-}
+
 
 @media (max-width: 900px) {
 
@@ -306,6 +304,9 @@ html, body {
     gap: 1rem;
   }
 
+  .tileimg{
+    max-width: 80%;
+ }
 }
 
 /*left right*/
