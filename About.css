@@ -224,7 +224,7 @@ p{
 
 #hero, #companies, #projects ,#footer, #about,#testimonials{
 
-    margin: 0% 10%;
+    margin: 0% 10% 120px 10%;
     padding: 0%;
 }
 

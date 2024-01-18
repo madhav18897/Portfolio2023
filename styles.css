@@ -228,7 +228,7 @@ p{
 
 #hero, #companies, #projects ,#footer{
 
-    margin: 0% 10%;
+    margin: 0% 10% 120px 10%;
     padding: 0%;
 }
 
@@ -236,6 +236,7 @@ p{
 
 .leftright{
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 3rem;
@@ -261,25 +262,46 @@ p{
 
 /*leftright */
 
+.UTbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 24px;
+  background: #FFF;
+  gap: 0.5rem;
+  height: 100%;
+  max-width: 700px;
+}
 
+.bevo{
+  width: 64px
+}
 
 
 .container{
 
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 4rem;
     margin-top: 15%;
     padding: 0px;
+    animation: fadeIn 3s; 
 
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
 .hero-img{
     height: 100%;
-    padding: 0%;
-    align-items: flex-start;
+    /* padding: 0%;
+    align-items: flex-start; */
 
 }
 
@@ -345,7 +367,7 @@ p{
 .herotext{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 1.5rem;
 
 }
