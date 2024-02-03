@@ -38,7 +38,7 @@
 .side-nav-list{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1rem;
     margin-bottom: 2rem;
  }
 
@@ -109,6 +109,7 @@ p{
     font-size: 16px;
     color: #808080;
     font-family: 'manrope', 'sans-serif';
+    margin-bottom: 0%;
 }
 
 .content-block{
