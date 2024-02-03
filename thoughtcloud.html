@@ -122,7 +122,7 @@
             <div class="content-block" id="timeline">
     
                 <h1 id="timeline">Timeline</h1>
-                <img class="styleguide" src="thoughtcloudassets/timeline.svg" loading="lazy">
+                <img class="styleguide magnify" src="thoughtcloudassets/timeline.svg" loading="lazy">
         
         
             </div>
@@ -213,6 +213,29 @@
 
 
 </div>
+
+<script type="text/javascript" src="https://assets.website-files.com/5e2755779d8b8ea1d6373797/5ea88e92dce9b4b66f165490_zoom.txt"></script>
+<script>
+  jQuery(function(){
+
+  if(!$.fn.imagezoomsl){
+
+      $('.msg').show();
+      return;
+    }
+    else $('.msg').hide();
+
+    // plugin initialization
+    $('.magnify').imagezoomsl({
+
+      innerzoommagnifier: true,
+      classmagnifier: "round-loope",
+      magnifiersize: [400, 400],
+      // disables the scrolling of the document with the mouse wheel when the cursor is over the image
+      disablewheel: false
+    });
+  });
+</script>
 
 
 
