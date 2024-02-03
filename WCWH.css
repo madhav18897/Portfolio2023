@@ -1,5 +1,5 @@
 .body{
-    margin: 10%;
+    margin: 0% 10%;
 }
 
 .container{
@@ -13,7 +13,7 @@
     padding: 0px;
     height: fit-content;
     position: sticky;
-    top: 100px;
+    top: 120px;
     overflow-y: auto;
 
 
@@ -82,6 +82,7 @@
     background-color:#fff;
     border-radius: 32px;
     padding: 0px 32px 0px 32px;
+    scroll-behavior: smooth;
 
 }
 
