@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LastMinute HCI Project</title>
+    <title>LastMinute Case Study</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -15,14 +15,15 @@
     </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="LastMinute.css">
-    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.jpg"/>
     <link rel="icon" href="MVLOGO.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.jpg"/>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Sacramento&display=swap"
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     
     <script>        
         window.addEventListener("load", ()=>{
@@ -35,16 +36,17 @@
     </script>
 </head>
 
-<section class="top-nav" id="navbar">       
+<section class="top-nav" id="navbar">
+        
     <div>
-        <a class="case-nav-links" href="index.html#hero"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>   
+        <a class="case-nav-links" href="index.html"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>   
     </div>
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
     <div class='menu-button'></div>
     </label>
     <ul class="menu">
-        <li><a class="case-nav-links" href="index.html">Home</a></li>
+        <li><a class="case-nav-links" href="index.html#hero">Home</a></li>
         <li><a class="case-nav-links" href="about.html">About</a></li>
         <li><a class="case-nav-links" href="https://docs.google.com/document/d/19FsNFSuKrXeuz6TPy-TKdp-y8XON6LNS/edit?usp=sharing&ouid=115135934378785602249&rtpof=true&sd=true"></i>Resume</a></li>
         <li><a class="case-nav-links" href="index.html#projects">Design Work</a></li>
@@ -52,14 +54,9 @@
         <li><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
     </ul>
 
+
 </section> 
-
-
-<div class="banner" id="home">
-    <img class="hero" src="HCIAssets/heroposter.svg" alt="" >
-
-</div>
-
+<div class="dummydiv" id="home" style="height: 120px;"></div>
 <div class="body">
 
     <div class="loader">
@@ -67,139 +64,178 @@
         
     </div>
 
-         
-    <div class="container-fluid">
-
-        <h1>LastMinute App UX Design and Research Project</h1>
-        <h2>Human-Computer Interaction Project</h2>
-        <h1>Team</h1>
-        <p><span style="font-weight: bolder; color: #c95555;">Madhav Varma (Me)</span> , Asma Sifaoui, Nimra Ishfaq, Aliana Castro, Na Kyoung Jang (scroll down all the way for the team photo! :))</p>
-        <hr/>
-
-        <div class="leftright">
-            <div class="imageside">
-                <img class="tileimg" src="HCIAssets/lastminutetile.svg" alt="">
-
+    <div class="container">
+        <div class="leftpanel">
+            <div class="side-nav-list">
+                <h1 style="color: #121212; font-weight: bolder; font-size: 1.5rem;">Index</h1>
+                <a class="side-nav-list-item" href="#context">Context</a>
+                <a class="side-nav-list-item" href="#timeline">Timeline</a>
+                <a class="side-nav-list-item" href="#userresearch">User Research</a>
+                <a class="side-nav-list-item" href="#affinitymap">Affinity Mapping</a>
+                <a class="side-nav-list-item" href="#personas">Personas</a>
+                <a class="side-nav-list-item" href="#infoarch">Infomation Architecture</a>
+                <a class="side-nav-list-item" href="#ideation">Ideation</a>
+                <a class="side-nav-list-item" href="#design">Design</a>
+                <a class="side-nav-list-item" href="#testing">Testing</a>
+                <a class="side-nav-list-item" href="#finalprototype">Final Prototype</a>
+                <a class="side-nav-list-item" href="#closingwords">Key Takeaways</a>
+                <a class="side-nav-list-item" href="#home">Back to top</a>
             </div>
-            <div class="textside">
-                <h2>My Role</h2>
-                <p style="margin-top: -12px;">Lead UX/UI Designer, Visual Designer and Interviewer</p>
-        
-                <h2 id="concept">Concept Statement</h2>
-                <p style="margin-top: -12px;">The Last Minute app allows sellers of tickets for last minute events to potential buyers.  This online marketplace allows people looking to resell tickets to sell unsold tickets to potential buyers, by providing an online ticketing service to the general public. It focuses on building a community by allowing individuals with similar interests to connect with others. These events range from movies, concerts, and performing arts as well to unticketed events like picnics and hikes.
-        
-                    The platform quickly verifies tickets to ensure genuine purchases and create user safety through encryption. It allows users to create profiles so that they can showcase their hobbies and interests as well as allows them to filter events based on distance, area, type of event, and date.
-                </p>
 
-            </div>
         </div>
 
+        <div class="rightpanel">
+            
+            <div class="leftright">
+                <div class="leftside">
+                    <img src="HCIAssets/HCIH1tile.svg" alt="">
+                </div>
+                <div class="rightside">
+                    <h1>LastMinute App UX Design and Research Project</h1>
+                    <h2>Human-Computer Interaction Project</h2>
+                    <p>Austin, TX, United States
+                        Spring 2023</p>
+                </div>
+            </div>
 
+            <div class="content-block">
+                <h1>Team</h1>
+                <p><span style="font-weight: bolder; color: #c95555;">Madhav Varma (Me)</span> , Asma Sifaoui, Nimra Ishfaq, Aliana Castro, Na Kyoung Jang (scroll down all the way for the team photo! :))</p>
+
+                <h2 style="margin-top: 2rem;">My Role</h2>
+                <p>Lead UX/UI Designer, Visual Designer and Interviewer</p>
+
+            </div>
+
+            <div class="dummydiv" id="context" style="height: 120px;"></div>
+            <div>
+                <h1 style="margin-bottom: 3rem;">Context</h1>
+                <div class="leftright">
+                    <div class="imageside">
+                        <img class="tileimg" src="HCIAssets/HCIinnertile.svg" alt="">
         
-        <h1>Timeline</h1>
-        <img class="affinity" src="HCIAssets/timeline.svg" loading="lazy">
-
-        <h1 id="research">User Research</h1>
-        <div class="leftright">
-            <div class="textside">
-                <h2>Interviews</h2>
-                <p style="margin-top: -12px;">We conducted interviews to gain insights into designing and developing the LastMinute app. The purpose of the interviews was to better understand the needs, preferences, and challenges of users who have purchased or sold tickets through similar apps or platforms.</p>
-            </div>
-            <div class="textside">  
-                <h2>Participant Criteria</h2>
-                <p style="margin-top: -12px;">Our participant criteria were broad in demographics but focused on two factors. The first is that the participant has attended an event in the past month. The second qualification was that the participant used electronic devices to find events and purchase tickets. </p>
-            </div>
-            <div class="textside">
-                <h2>Demographics</h2>
-                <p style="margin-top: -12px;"> Participant age ranged from 22 to 49 and consisted of a mix of genders and professional experience. In total, we recruited 11 participants for a one-on-one interview lasting approximately 30 minutes.</p>
-            </div>
-        </div>
-      
-        <h2>Questionnaire</h2>
-        <p>Some of the pertinent questions we asked the interviewees were:</p>
-        <ul class="inner-list">
-            <li class="inner-list-item">What type of events do you like to attend?</li>
-            <li class="inner-list-item">Tell me about the last spontaneous event you went to. </li>
-            <li class="inner-list-item">What do you consider to be “last-minute”? </li>
-            <li class="inner-list-item">How much are you willing to pay for a last-minute ticket? Why? </li>
-            <li class="inner-list-item">How many times have you met new people through last-minute plans? </li>
-            <li class="inner-list-item">How do you verify people’s identities when making event transactions online?</li>
-            <li class="inner-list-item">When was the last time you sold a ticket? </li>
-            <li class="inner-list-item">How would you change your overall experience with last-minute events? </li>
-        </ul>
-
-
-        <h1>Affinity Mapping</h1>
-        <p>We used affinity mapping to condense common ideas and lines of thought based on feedback from users following our user research. We also gained a better understanding of the user's needs and our approach as a result of the process. Finally, we devised a more organized data collection strategy and a more streamlined approach to the project. The ideas were divided into seven groups, as shown below.</p>
-        <a href= "https://miro.com/app/board/o9J_l1TWAEc=/?share_link_id=446862117405" target="_blank"><button class="btn">Link to Affinity Mapping</button></a>
-        <img class="affinity" src="HCIAssets/WAAD.png">
-
-        <h1>Emergent Themes from User Research</h1>
-        <p>On the basis of the Affinity Mapping exercise, a few themes emerged.</p>
-        <h2>Types of Events</h2>
-        <ul class="inner-list">
-            <li class="inner-list-item">Seven out of 11 participants listed concerts as an event they frequently attend. </li>
-            <li class="inner-list-item">Other types of events include comedy, sports, art/museums, and professional meetups. </li>
-        </ul>
+                    </div>
+                    <div class="textside">
+                
+                        <h2>Concept Statement</h2>
+                        <p>The Last Minute app allows sellers of tickets for last minute events to potential buyers.  This online marketplace allows people looking to resell tickets to sell unsold tickets to potential buyers, by providing an online ticketing service to the general public. It focuses on building a community by allowing individuals with similar interests to connect with others. These events range from movies, concerts, and performing arts as well to unticketed events like picnics and hikes.
+                
+                            The platform quickly verifies tickets to ensure genuine purchases and create user safety through encryption. It allows users to create profiles so that they can showcase their hobbies and interests as well as allows them to filter events based on distance, area, type of event, and date.
+                        </p>
         
-        <h2>Definition of a “Last-Minute Event” (LME)</h2>
-        <ul class="inner-list">
-            <li class="inner-list-item">What was considered to be “last minute” ranged from two weeks to attending an event that has already started. </li>
-        </ul>
+                    </div>
+                </div>
+            </div>
 
-        <h2>Finding an LME</h2>
-        <ul class="inner-list">
-            <li class="inner-list-item">There are a range of ways people find last-minute events. Participants referred to social media, Do512, Reddit, and word of mouth. </li>
-        </ul>
+            <div class="dummydiv" id="timeline" style="height: 56px;"></div>
+            <div class="content-block" id="goals">     
+                <h1>Timeline</h1>
+                <img class="affinity" src="HCIAssets/timeline.svg" loading="lazy">
 
-        <h2>Purchasing</h2>
-        <ul class="inner-list">
-            <li class="inner-list-item">Participants preferred to purchase tickets straight from the source of the event. </li>
-            <li class="inner-list-item">There is hesitation when purchasing from third-party vendors. </li>
-            <li class="inner-list-item">Third-party vendors have a reputation for increasing prices and a risk of losing money to faulty tickets. </li>
-        </ul>
 
+            </div>
+
+            <div class="dummydiv" id="userresearch" style="height: 56px;"></div>
+                <div class="content-block">
+                    <h1>User Research</h1>
+                    <div class="leftright">
+                        <div class="textside">
+                            <h2>Interviews</h2>
+                            <p style="margin-top: -12px;">We conducted interviews to gain insights into designing and developing the LastMinute app. The purpose of the interviews was to better understand the needs, preferences, and challenges of users who have purchased or sold tickets through similar apps or platforms.</p>
+                        </div>
+                        <div class="textside">  
+                            <h2>Participant Criteria</h2>
+                            <p style="margin-top: -12px;">Our participant criteria were broad in demographics but focused on two factors. The first is that the participant has attended an event in the past month. The second qualification was that the participant used electronic devices to find events and purchase tickets. </p>
+                        </div>
+                        <div class="textside">
+                            <h2>Demographics</h2>
+                            <p style="margin-top: -12px;"> Participant age ranged from 22 to 49 and consisted of a mix of genders and professional experience. In total, we recruited 11 participants for a one-on-one interview lasting approximately 30 minutes.</p>
+                        </div>
+                    </div>
+                    <h2 style="margin: 2rem 0rem;">Questionnaire</h2>
+                    <img class="affinity" src="HCIAssets/questionnaire.svg" loading="lazy">
+
+                </div>
+
+            
+            <div class="dummydiv" id="affinitymap" style="height: 120px;"></div>
+            <div>
+                <h1>Affinity Mapping</h1>
+                <p>We used affinity mapping to condense common ideas and lines of thought based on feedback from users following our user research. We also gained a better understanding of the user's needs and our approach as a result of the process. Finally, we devised a more organized data collection strategy and a more streamlined approach to the project. The ideas were divided into seven groups, as shown below.</p>
+                <a href= "https://miro.com/app/board/o9J_l1TWAEc=/?share_link_id=446862117405" target="_blank"><button class="btn">Link to Affinity Mapping</button></a>
+                <img class="affinity" src="HCIAssets/WAAD.png">
+
+                <h1>Emergent Themes from User Research</h1>
+                <p style="margin-bottom: 24px;">On the basis of the Affinity Mapping exercise, a few themes emerged.</p>
+                <h2>Types of Events</h2>
+                <ul class="inner-list">
+                    <li class="inner-list-item">Seven out of 11 participants listed concerts as an event they frequently attend. </li>
+                    <li class="inner-list-item">Other types of events include comedy, sports, art/museums, and professional meetups. </li>
+                </ul>
+                
+                <h2>Definition of a “Last-Minute Event” (LME)</h2>
+                <ul class="inner-list">
+                    <li class="inner-list-item">What was considered to be “last minute” ranged from two weeks to attending an event that has already started. </li>
+                </ul>
         
-        <h2>Method of Exchange</h2>
-        <ul class="inner-list">
-            <li class="inner-list-item">Participants receive LME tickets by a digital exchange such as text or email. </li>
-            <li class="inner-list-item">The team hypothesized in-person would be common, but only one person listed in-person exchange. </li>
-        </ul>
-
+                <h2>Finding an LME</h2>
+                <ul class="inner-list">
+                    <li class="inner-list-item">There are a range of ways people find last-minute events. Participants referred to social media, Do512, Reddit, and word of mouth. </li>
+                </ul>
         
-        <h2>Identity Verification</h2>
-        <ul class="inner-list">
-            <li class="inner-list-item">Since there is hesitation about third-party selling, we asked participants how they verified the identity of an unknown seller. </li>
-            <li class="inner-list-item">Participants trust people they already know or are part of a group they are already a member of.  </li>
-            <li class="inner-list-item">There is also a type of trust in the site they are purchasing from if it is a well-known site such as Ticketmaster. </li>
-        </ul>
+                <h2>Purchasing</h2>
+                <ul class="inner-list">
+                    <li class="inner-list-item">Participants preferred to purchase tickets straight from the source of the event. </li>
+                    <li class="inner-list-item">There is hesitation when purchasing from third-party vendors. </li>
+                    <li class="inner-list-item">Third-party vendors have a reputation for increasing prices and a risk of losing money to faulty tickets. </li>
+                </ul>
 
-        <h1>User Challenges</h1>
-        <p>There were a number of challenges when it comes to attending an LME. These challenges can be grouped into three categories: </p>
+                        
+                <h2>Method of Exchange</h2>
+                <ul class="inner-list">
+                    <li class="inner-list-item">Participants receive LME tickets by a digital exchange such as text or email. </li>
+                    <li class="inner-list-item">The team hypothesized in-person would be common, but only one person listed in-person exchange. </li>
+                </ul>
 
-        <div class="infoblock">
-            <div class="block">
-                <i class="fa-solid fa-truck-fast" ></i>
-                <h2>Logistics</h2>
-                <p>Going to an LME leaves little time to organize details with others or find people wanting to attend the same event. Transferring tickets is a challenge based on technical skill level. </p>
+                
+                <h2>Identity Verification</h2>
+                <ul class="inner-list">
+                    <li class="inner-list-item">Since there is hesitation about third-party selling, we asked participants how they verified the identity of an unknown seller. </li>
+                    <li class="inner-list-item">Participants trust people they already know or are part of a group they are already a member of.  </li>
+                    <li class="inner-list-item">There is also a type of trust in the site they are purchasing from if it is a well-known site such as Ticketmaster. </li>
+                </ul>
+
+                
+                <h1 style="margin-top: 32px;">User Challenges</h1>
+                <p>There were a number of challenges when it comes to attending an LME. These challenges can be grouped into three categories: </p>
+
+                <div class="infoblock">
+                    <div class="block">
+                        <i class="fa-solid fa-truck-fast" ></i>
+                        <h2>Logistics</h2>
+                        <p>Going to an LME leaves little time to organize details with others or find people wanting to attend the same event. Transferring tickets is a challenge based on technical skill level. </p>
+
+                    </div>
+                    <div class="block">
+                        <i class="fa-solid fa-tag"></i>
+                        <h2>Price Comparison</h2>
+                        <p>There is not one trusted site where people go to find an aggregated list of prices for events </p>
+
+                    </div>
+                    <div class="block">
+                        <i class="fa-solid fa-3"></i>
+                        <h2>Third Party Fees</h2>
+                        <p>Processing and vendor fees are an annoyance. 
+                            “They are sucking every last dollar” </p>
+
+                    </div>
+                </div>
 
             </div>
-            <div class="block">
-                <i class="fa-solid fa-tag"></i>
-                <h2>Price Comparison</h2>
-                <p>There is not one trusted site where people go to find an aggregated list of prices for events </p>
 
-            </div>
-            <div class="block">
-                <i class="fa-solid fa-3"></i>
-                <h2>Third Party Fees</h2>
-                <p>Processing and vendor fees are an annoyance. 
-                    “They are sucking every last dollar” </p>
-
-            </div>
-        </div>
-
-        <h1>User Personas</h1>
+            <div class="dummydiv" id="personas" style="height: 56px;"></div>
+            <div class="content-block">
+                <h1>User Personas</h1>
 
                 <h2 style="color: #333333; font-weight: bold;">Persona 1 : Anna Sri</h2>
                 <p style="font-size: 1rem">Anna Sri is a master’s student at the University of Texas. She just moved to the city and has already found a large group of friends. Anna is a critical thinker, which is why she is skeptical of websites using her data. She is also frustrated with websites collecting selling fees, and wishes she could cut out the middleman. Anna is tech-savvy when it comes to technology, as she finds most of her desired events on social media. </p>
@@ -208,159 +244,161 @@
                 <h2 style="color: #333333; font-weight: bold;">Persona 2 : Steve Do</h2>
                 <p style="font-size: 1rem">Steve Do is a 32-year-old marketing executive from San Francisco who is an avid music enthusiast. He is always on the lookout for the next big concert or show to attend, and he loves discovering new artists and genres. Steve's busy work schedule often leaves him with little time to plan his social life, but he always manages to find time for music. Despite his best efforts, Steve sometimes finds himself unable to attend concerts he has already bought tickets for. This situation leaves him feeling frustrated and worried about losing money on the tickets he can no longer use. He needs an app that will allow him to sell his tickets quickly, easily, and securely to avoid losing money.</p>
                 <img class="user-persona" src="HCIAssets/HCI Persona 2.svg" loading="lazy">
+            </div>
 
+            <div class="dummydiv" id="infoarch" style="height: 120px;"></div>
+            <div>
+                <h1>Information Architecture (IA)</h1>
+                <p>From the aforementioned user behavior reports, we were able to map out an information architecture for our application that would best suit user needs and provide good affordances for tasks users might try and accomplish on our application. </p>
+                <a href="https://www.figma.com/file/95WxQDO6wTavHvPqauyqwW/HCI-Project-%3A-LastMinute-booking-app?type=design&node-id=2233-2250&mode=design" target="_blank"><button class="btn">Link to Information Architecture</button></a>
+                <img class="info-arch" src="HCIAssets/info arch.svg" loading="lazy">
+            </div>
 
-        <h1>Information Architecture (IA)</h1>
-        <p>From the aforementioned user behavior reports, we were able to map out an information architecture for our application that would best suit user needs and provide good affordances for tasks users might try and accomplish on our application. </p>
-        <a href="https://www.figma.com/file/95WxQDO6wTavHvPqauyqwW/HCI-Project-%3A-LastMinute-booking-app?type=design&node-id=2233-2250&mode=design" target="_blank"><button class="btn">Link to Information Architecture</button></a>
-        <img class="info-arch" src="HCIAssets/info arch.svg" loading="lazy">
-
-
-        <h1 id="ideation">Ideation</h1>
-        <p>To tinker around with ideas we started formulating after completing our user research and information architecture design phases, we started the ideation process, starting with sketching for a digital product.</p>
-
-        <h1>Storyboards and Sketches</h1>
+            <div class="dummydiv" id="ideation" style="height: 120px;"></div>
+            <div>
+                <h1>Ideation</h1>
+                <p style="margin-bottom: 24px;">To tinker around with ideas we started formulating after completing our user research and information architecture design phases, we started the ideation process, starting with sketching for a digital product.</p>
         
-        <h2>Storyboard</h2>
-        <img class="styleguide" src="HCIAssets/storyboard.svg" loading="lazy">
+                <h1>Storyboard</h1>
+                <img class="styleguide" src="HCIAssets/storyboard.svg" loading="lazy">
+            </div>
+
+            <div class="dummydiv" id="design" style="height: 56px;"></div>
+            <div class="content-block">
+                <h1>Design</h1>
+                <h2>Sketches/Low Fidelity Screens</h2>
+                <p>We started the process with pen and paper sketching, before moving to a digital design tool like Figma or Sketch.</p>
+                <img class="sketching" src="HCIAssets/HCIsketches.svg" loading="lazy">
         
-        <h2>Sketches/Low Fidelity Screens</h2>
-        <p>We started the process with pen and paper sketching, before moving to a digital design tool like Figma or Sketch.</p>
-        <img class="sketching" src="HCIAssets/HCIsketches.svg" loading="lazy">
+                <h1>Mid Fidelity Wireframes</h1>
+                <p style="margin-bottom: 24px;">After sketching, the next step was to build some mid fidelity wireframes in Figma to start structuring the basic elements for our application.</p>
 
-        <h1>Mid Fidelity Wireframes</h1>
-        <p>After sketching, the next step was to build some mid fidelity wireframes in Figma to start structuring the basic elements for our application.</p>
-        <img class="lowfi" src="HCIAssets/Mid Fi.svg" loading="lazy">
+                <h2>Onboarding Flow</h2>
+                <img class="lowfi" src="HCIAssets/onboardingflow.svg" loading="lazy">
 
-        <h1>Style Guide</h1>
-        <p>The brand visuals for this app reflects the energy and excitement of live events, while also conveying a sense of security and trustworthiness. The use of bold colors, dynamic imagery, and clean design elements will help to convey the app's brand personality and message.</p>
-        <img class="styleguide" src="HCIAssets/colors and typography.svg" loading="lazy">
+                <h2>Buyer Flow</h2>
+                <img class="lowfi" src="HCIAssets/buyerflow.svg" loading="lazy">
 
-        <h1>Design System Components</h1>
-        <p>I designed a few reusable components as part of the mini design system for this project.</p>
-        <img class="styleguide" src="HCIAssets/designsystem.svg" loading="lazy">
+                <h2>Seller Flow</h2>
+                <img class="lowfi" src="HCIAssets/sellerflow.svg" loading="lazy">
 
-        <h1>High Fidelity Screens</h1>
-        <p>After building mid-fidelity wireframes, we started the visual design process, using a self-made style guide, and worked in the direction of building developer-handoff-ready, high-fidelity screens.</p>
-        <img class="mockups" src="HCIAssets/highfid.svg" loading="lazy">
+                <h2>Community Flow</h2>
+                <img class="lowfi" src="HCIAssets/communityflow.svg" loading="lazy">
 
-        <h1>Some before and afters...</h1>
-        <img class="affinity" src="HCIAssets/beforeafter.svg" loading="lazy">
+                <h2>Profile Flow</h2>
+                <img class="lowfi" src="HCIAssets/profileflow.svg" loading="lazy">
+        
+                <h1>Style Guide</h1>
+                <p>The brand visuals for this app reflects the energy and excitement of live events, while also conveying a sense of security and trustworthiness. The use of bold colors, dynamic imagery, and clean design elements will help to convey the app's brand personality and message.</p>
+                <img class="styleguide" src="HCIAssets/colors and typography.svg" loading="lazy">
+        
+                <h1>Design System Components</h1>
+                <p>I designed a few reusable components as part of the mini design system for this project.</p>
+                <img class="styleguide" src="HCIAssets/designsystem.svg" loading="lazy">
+        
+                <h1>High Fidelity Screens</h1>
+                <p>After building mid-fidelity wireframes, we started the visual design process, using a self-made style guide, and worked in the direction of building developer-handoff-ready, high-fidelity screens.</p>
+                <img class="mockups" src="HCIAssets/highfid.svg" loading="lazy">
+        
+                <h1>Some before and afters...</h1>
+                <img class="affinity" src="HCIAssets/beforeafter.svg" loading="lazy">
 
-        <h1 id="usertesting">User Testing</h1>
-        <p>Using our initial prototype we conducted some user testing to find things which could be improved in subsequent iterations</p>
-        <ul class="inner-list">
-            <h2>Task 1 : Create a profile</h2>
-            <li class="inner-list-item"> Participants found the screens informative, but one participant found it odd to provide ID and suggested providing more information on why it's needed.</li>
-            <h2>Task 2 : Sell a ticket</h2>
-            <li class="inner-list-item">Participants had difficulty finding the seller option and suggested having a separate homepage for sellers. They also suggested providing more information about the ticket and accentuating payment-related notifications.</li>
-            <h2>Task 3 : Find a Community</h2>
-            <li class="inner-list-item">Participants liked the feature but suggested having a separate messages navigation button.</li>
-            <h2>Overall Impression</h2>
-            <li class="inner-list-item">Participants had a pleasant experience, liked the app's design, and would be interested in using it in the future.</li>
-            <li class="inner-list-item">Participants wanted a confirmation screen before the final payment screen.</li>
-            <li class="inner-list-item">Participants thought few of the screens had elements which looked like disabled states. This would be fixed in future iterations</li>
-            <li class="inner-list-item">Participants wanted the ability to still see which events are in town without having to go through onboarding.</li>
-        </ul>
+            </div>
 
-
-        <h1 id="finalprototype">Final Prototype and Walkthrough</h1>
-        <p>You will find a clickable prototype of the product below. Have fun!</p>
-        <a href="https://www.figma.com/proto/95WxQDO6wTavHvPqauyqwW/HCI-Project-%3A-LastMinute-booking-app?page-id=827%3A3346&type=design&node-id=1188-25702&viewport=1155%2C2466%2C0.06&t=xQBft0JuwTPfU0BD-1&scaling=contain&starting-point-node-id=1188%3A26107&mode=design"><button class="btn">Link to Final Prototype</button></a>
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); margin: 5% 0%;" width="100%" height="800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F95WxQDO6wTavHvPqauyqwW%2FHCI-Project-%253A-LastMinute-booking-app%3Fpage-id%3D491%253A1151%26node-id%3D491-4881%26viewport%3D7913%252C-274%252C0.44%26scaling%3Dscale-down%26starting-point-node-id%3D491%253A4881" loading="lazy" allowfullscreen ></iframe>
-
-        <h1>Key Features</h1>
-        <img class="lowfi" src="HCIAssets/keyfeatures.svg" loading="lazy">
-
-        <div class="leftright">
-            <div class="textside">
-                
-                <h1>Key Takeaways</h1>
-                <ul class="inner-list">
-                    <li class="inner-list-item">Learned how to structure information in an app environment with several constraints.</li>
-                    <li class="inner-list-item">Learned Affinity Mapping and its importance.</li>
-                    <li class="inner-list-item">Learned how to perform user research in the form of in-person interviews. </li>
-                    <li class="inner-list-item">Importance of Primary, Secondary, and at times Tertiary navigation.</li>
-                    <li class="inner-list-item">How to apply branding and advertising principles to product design.</li>
-                    <li class="inner-list-item">learned about usability testing and how to apply it in a short timeframe.</li>
+            <div class="dummydiv" id="testing" style="height: 120px;"></div>
+            <div>
+                <h1>User Testing</h1>
+                <p style="margin-bottom: 24px;">Using our initial prototype we conducted some user testing to find things which could be improved in subsequent iterations</p>
+                    <h2 >Task 1 : Create a profile</h2>
+                    <p style="margin-bottom: 24px;"> Participants found the screens informative, but one participant found it odd to provide ID and suggested providing more information on why it's needed.</p>
+                    <h2>Task 2 : Sell a ticket</h2>
+                    <p style="margin-bottom: 24px;">Participants had difficulty finding the seller option and suggested having a separate homepage for sellers. They also suggested providing more information about the ticket and accentuating payment-related notifications.</p>
+                    <h2>Task 3 : Find a Community</h2>
+                    <p style="margin-bottom: 24px;">Participants liked the feature but suggested having a separate messages navigation button.</p>
+                    <h2>Overall Impression</h2>
+                    <p >Participants wanted a confirmation screen before the final payment screen.</p>
+                    <p>Participants thought few of the screens had elements which looked like disabled states. This would be fixed in future iterations</p>
+                    <p>Participants wanted the ability to still see which events are in town without having to go through onboarding.</p>
+                    <p>Participants had a pleasant experience, liked the app's design, and would be interested in using it in the future.</p>
                 </ul>
             </div>
-            <div class="textside">
-                <h1>Potential Improvements/Future Scope</h1>
-                <ul class="inner-list">
-                    <li class="inner-list-item">More seamless,shortened onboarding</li>
-                    <li class="inner-list-item">Fusing the buyer and seller profile</li>
-                    <li class="inner-list-item">A few changes and additions in the app we would work on in the future would onboard event organizers</li>
-                    <li class="inner-list-item">To improve on the privacy controls</li>
-                </ul>
+             
+
+            <div class="dummydiv" id="finalprototype" style="height: 120px;"></div>
+            <div>
+                <h1 id="finalprototype">Final Prototype and Walkthrough</h1>
+                <p>You will find a clickable prototype of the product below. Have fun!</p>
+                <a href="https://www.figma.com/proto/95WxQDO6wTavHvPqauyqwW/HCI-Project-%3A-LastMinute-booking-app?page-id=827%3A3346&type=design&node-id=1188-25702&viewport=1155%2C2466%2C0.06&t=xQBft0JuwTPfU0BD-1&scaling=contain&starting-point-node-id=1188%3A26107&mode=design"><button class="btn">Link to Final Prototype</button></a>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); margin: 5% 0%;" width="100%" height="800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F95WxQDO6wTavHvPqauyqwW%2FHCI-Project-%253A-LastMinute-booking-app%3Fpage-id%3D491%253A1151%26node-id%3D491-4881%26viewport%3D7913%252C-274%252C0.44%26scaling%3Dscale-down%26starting-point-node-id%3D491%253A4881" loading="lazy" allowfullscreen ></iframe>
+        
+                <h1>Key Features</h1>
+                <img class="lowfi" src="HCIAssets/keyfeatures.svg" loading="lazy">
             </div>
+
+            <div class="dummydiv" id="closingwords" style="height: 120px;"></div>
+            <div>
+                    
+                        <div class="leftright" style="margin-bottom: 32px;">
+                            <div class="textside">
+                                
+                                <h1>Key Takeaways</h1>
+                                <ul class="inner-list">
+                                    <li class="inner-list-item">Learned how to structure information in an app environment with several constraints.</li>
+                                    <li class="inner-list-item">Learned Affinity Mapping and its importance.</li>
+                                    <li class="inner-list-item">Learned how to perform user research in the form of in-person interviews. </li>
+                                    <li class="inner-list-item">Importance of Primary, Secondary, and at times Tertiary navigation.</li>
+                                    <li class="inner-list-item">How to apply branding and advertising principles to product design.</li>
+                                    <li class="inner-list-item">learned about usability testing and how to apply it in a short timeframe.</li>
+                                </ul>
+                            </div>
+                            <div class="textside">
+                                <h1>Potential Improvements/Future Scope</h1>
+                                <ul class="inner-list">
+                                    <li class="inner-list-item">More seamless,shortened onboarding</li>
+                                    <li class="inner-list-item">Fusing the buyer and seller profile</li>
+                                    <li class="inner-list-item">A few changes and additions in the app we would work on in the future would onboard event organizers</li>
+                                    <li class="inner-list-item">To improve on the privacy controls</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h1>Appendix</h1>
+                        <p>If you would like to access the detailed report for this project, the link is below.</p>
+                        <a href="https://docs.google.com/document/d/1okO-yfhCjwvbuuRZSbQbnp225JuAYKCBUqnPMRKj_6k/edit#" target="_blank"><button class="btn" style="margin-bottom: 48px;">Link to Detailed Project Report</button></a>
+
+                        <h1>Acknowledgements</h1>
+                        <p> I would like to express my deep gratitude to Professor Michael Mcquaid, my research supervisor, for his patient guidance, enthusiastic encouragement, useful critiques of this research work, advice, and assistance in keeping our progress on schedule. I would also like to thank my fellow classmates, and all the participants in our interviews and usability tests.</p>             
+
+            </div> 
+            
+            <div class="content-block">
+                <div class="banner">
+                    <img class="bottom-banner" src="HCIAssets/groupphoto2.svg" loading="lazy" style="width: 100%; height: auto;">
+                </div>
+            </div>
+
+
+            <p style="color: #121212; font-weight: bold;" id="details">If you are interested in discussing this case study further You can contact me at <br> <span style="color: #4252EB; font-weight: 800;"><a href="mailto:madhav18897@utexas.edu">madhav18897@utexas.edu</a></span></p>
+
+            <div class="socials">
+                <a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a class="social-icons" href="https://www.instagram.com/madhav18897/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
+            <p style="margin: 2rem 0rem;">@all rights reserved</p>
+            
+
+
+        
+
+        
         </div>
-
-        <h1>Appendix</h1>
-        <p>If you would like to access the detailed report for this project, the link is below.</p>
-        <a href="https://docs.google.com/document/d/1okO-yfhCjwvbuuRZSbQbnp225JuAYKCBUqnPMRKj_6k/edit#" target="_blank"><button class="btn">Link to Detailed Project Report</button></a>
-
-        <h1>Acknowledgements</h1>
-        <p> I would like to express my deep gratitude to Professor Michael Mcquaid, my research supervisor, for his patient guidance, enthusiastic encouragement, useful critiques of this research work, advice, and assistance in keeping our progress on schedule. I would also like to thank my fellow classmates, and all the participants in our interviews and usability tests.</p>
-    
-    </div>
-   
-    
-
-    <script type="text/javascript">
-        window.addEventListener('scroll', reveal);
-    
-        function reveal(){
-          var reveals = document.querySelectorAll('.reveal');
-    
-          for(var i = 0; i < reveals.length; i++){
-    
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 50;
-    
-            if(revealtop < windowheight - revealpoint){
-              reveals[i].classList.add('active');
-            }
-            else{
-              reveals[i].classList.remove('active');
-            }
-          }
-        }
-    </script>
-
-    <!-- navbar disappears on scrolling -->
-    <!-- <script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-50px";
-            }
-            prevScrollpos = currentScrollPos;
-            }
-    </script> -->
-    <!-- navbar disappears on scrolling -->
-
-    
-       
-    
         
+
+    </div>
+
+
 </div>
-<img class="bottom-banner" src="HCIAssets/groupphoto2.svg" loading="lazy" style="width: 100%; height: auto;">
 
-<nav class="bottom-nav">
-    <ul class="bottom-nav-list">
-      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#home">Back to top</a></li>
-      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#concept">Concept</a></li>
-      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#research">Research</a></li>
-      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#ideation">Ideation</a></li>
-      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#usertesting">Testing</a></li>
-      <li class="bottom-nav-item"><a class="bottom-nav-link" href="#finalprototype">Final Prototype</a></li>
-      <li class="bottom-nav-item"><a class="bottom-nav-link" href="index.html#projects">Other Projects</a></li>
 
-    </ul>
-</nav>
 
+</html>
