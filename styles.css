@@ -237,10 +237,10 @@ p{
 .leftright{
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: left;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 32px;
+  margin: 80px 0px;
   
 }
 
