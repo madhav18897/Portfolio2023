@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alamo Drafhouse VR Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="alamo.css">
+    <link rel="icon" href="MVLOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.jpg"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    
+    <script>        
+        window.addEventListener("load", ()=>{
+            const loader=document.querySelector(".loader");
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", ()=>{
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    
+
+
+<section class="top-nav" id="navbar">
+        
+    <div>
+        <a class="case-nav-links" href="index.html"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>   
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        <li><a class="case-nav-links" href="index.html#hero">Home</a></li>
+        <li><a class="case-nav-links" href="about.html">About</a></li>
+        <li><a class="case-nav-links" href="https://docs.google.com/document/d/19FsNFSuKrXeuz6TPy-TKdp-y8XON6LNS/edit?usp=sharing&ouid=115135934378785602249&rtpof=true&sd=true"></i>Resume</a></li>
+        <li><a class="case-nav-links" href="index.html#projects">Design Work</a></li>
+        <!-- <li><a class="case-nav-links" href="#workexperience">Work Experience</a></li> -->
+        <li><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
+    </ul>
+
+</section> 
+
+<div class="dummydiv" id="home" style="height: 120px;"></div>
+<div class="body">
+
+    <div class="loader">
+        <h2 style="padding: 2%; color: #fff;" class="load-message">Loading, Please Wait...</h2>
+        
+    </div>
+
+    <div class="container">
+        <div class="leftpanel">
+            <div class="side-nav-list">
+                <h1 style="color: #121212; font-weight: bolder; font-size: 1.5rem;">Index</h1>
+                <a class="side-nav-list-item" href="#context">Introduction</a>
+                <a class="side-nav-list-item" href="#discovery">Discovery Phase</a>
+                <a class="side-nav-list-item" href="#problem_statement">Problem Statement</a>
+                <a class="side-nav-list-item" href="#design_process">Design Process</a>
+                <a class="side-nav-list-item" href="#user_testing">User Testing</a>
+                <a class="side-nav-list-item" href="#home">Back to top</a>
+            </div>
+
+        </div>
+
+        <div class="rightpanel">
+            
+            <div class="leftright">
+                <div class="leftside">
+                    <img src="alamoassets/alamoicon.svg" alt="">
+                </div>
+                <div class="rightside">
+                    <h1>Alamo Drafhouse VR Experience</h1>
+                    <h2>Interaction Design Project @ UT</h2>
+                    <p>Austin, TX, United States, Spring 2024</p>
+                </div>
+            </div>
+
+
+            <div class="dummydiv" id="context" style="height: 2rem;"></div>
+
+            <div class="content-block">
+
+                <h1>Introduction</h1>
+                <h2>What we are doing here...</h2>
+                <p style="margin-top: 1rem;">Welcome to the future of cinema-going with the Alamo Drafthouse VR Experience. In our reimagined virtual reality (VR) environment, movie enthusiasts can embark on an immersive journey that transcends the traditional theater experience. Whether opting for the convenience of a 72-hour rental or the excitement of a live showing, attendees can indulge in the magic of cinema from the comfort of their own homes.<br> <br>With the ability to order from Alamo's signature menu, the culinary delights of the theater are just a click away, enhancing the viewing experience. But what truly sets our VR experience apart is the opportunity to share the excitement with friends through watch parties, fostering a sense of community and connection even across distances. 
+
+                    <br><br>Join us as we revolutionise the way audiences engage with movies, blending the best of technology, convenience, and camaraderie in the Alamo Drafthouse VR Experience.</p>
+
+                    <a href="https://www.figma.com/proto/DtARznHrMSvPg9s9kVvFpP/Interaction-Design-Group-Project?page-id=2215%3A109203&type=design&node-id=2215-123715&viewport=-264%2C836%2C0.07&t=lYC2NvtbQrcWGqIz-1&scaling=min-zoom&starting-point-node-id=2215%3A123715"><button class="btn">Visit Alamo VR</button></a>
+                    
+            </div>
+
+
+            <div class="dummydiv" id="context" style="height: 2rem;"></div>
+
+            <div class="content-block">
+
+                <h1>Meet The Team</h1>
+                <h2>Course: INF 385T – Interaction Design</h2>
+                <h2>Professor: A. Fleming Seay</h2>
+                <img class="affinity" src="alamoassets/alamoteam.svg" loading="lazy">
+                
+
+                    
+            </div>
+
+
+
+            <div class="dummydiv" id="CEO" style="height: 2rem;"></div>
+            <div class="content-block">
+                <h1>Problem Exploration</h1>
+                <p>The traditional movie theatre experience has faced significant challenges in recent times, exacerbated by factors such as changing consumer preferences, technological advancements, and unforeseen circumstances such as the COVID-19 pandemic. These challenges include:</p>
+                <h2>1. Accessibility and Convenience:</h2>
+                <p> Many moviegoers find it inconvenient to travel to theatres, especially considering factors like distance, traffic, and time constraints. Additionally, unforeseen circumstances such as the COVID-19 pandemic have highlighted the need for alternative viewing options that prioritise safety and comfort.</p>
+
+                <h2>2. Social Engagement</h2>
+                <p>Despite the inherent social aspect of movie-watching, traditional theatres often fail to facilitate meaningful social interactions, particularly for viewers separated by physical distance.</p>
+
+                <h2>3. Culinary Experience</h2>
+                <p>While theatres offer concessions, the variety and quality of food options may not always meet the expectations of discerning audiences. Additionally, the process of ordering and receiving food physically during screenings can disrupt the viewing experience.</p>
+
+                <h2>4. Flexibility of Viewing Options</h2>
+                <p>The rigid scheduling of theatrical showtimes may not align with the preferences and schedules of all moviegoers, leading to missed opportunities for engagement.
+
+                    Addressing these challenges is crucial to not only sustain the movie theater industry but also to enhance the overall movie-watching experience for audiences.</p>
+            </div>
+
+
+            <div class="dummydiv" id="CEO" style="height: 2rem;"></div>
+            <div class="content-block">
+                <h1>Project Goals and Business Opportunities:</h1>
+                <p></p>
+                <h2>1. Enhanced Accessibility:<h2>
+                <p>Our primary goal is to provide audiences with a convenient and accessible alternative to traditional theatres. By offering the Alamo Drafthouse VR Experience, viewers can enjoy movies from the comfort of their own homes, eliminating the need for travel and overcoming geographical barriers.</p>
+
+                <h2>2. Social Connection:</h2>
+                <p>Through virtual watch parties, our aim is to foster social connections and shared experiences among movie enthusiasts. By enabling friends to watch movies together in a virtual environment, we capitalize on the inherent social aspect of movie-watching, regardless of physical distance.</p>
+
+                <h2>3. Culinary Indulgence:</h2>
+                <p>Integrating Alamo's signature menu into the VR experience presents an opportunity to enhance the culinary aspect of movie-watching. By offering a diverse selection of high-quality food and beverage options, we aim to elevate the overall viewing experience and cater to the preferences of discerning audiences.</p>
+
+                <h2>4. Flexibility and Convenience:</h2>
+                <p>By providing both 72-hour rental and live showing formats, we aim to cater to the diverse preferences and schedules of moviegoers. This flexibility not only expands our potential audience but also maximizes convenience, ensuring that viewers can enjoy movies on their own terms.
+                In pursuing these goals, we not only address existing challenges within the movie theatre industry but also unlock new business opportunities by tapping into the growing demand for innovative and immersive entertainment experiences.</p>
+            </div>
+
+
+            <div class="dummydiv" id="CEO" style="height: 2rem;"></div>
+            <div class="content-block">
+                <h1>Overview</h1>
+                <h2>Why Alamo Drafthouse?</h2>
+                <p>Alamo Drafthouse offers a wide variety of delicious meals, snacks, and drinks. It leads in customer loyalty, with a score of 72% on the Composite Loyalty Index. It also stands out for its seating options and the ability to reserve seats. Infact,
+                    Alamo Drafthouse had the most concessions visits, indicating a positive customer experience.</p>
+
+                <h2>Context</h2>
+                <p>Traditional movie theaters have faced significant challenges due to the rise of streaming services and the impact of the COVID-19 pandemic. In response to these challenges, your team aims to innovate and transform the movie theater experience by leveraging Apple's Vision Pro technology. The goal is to create an immersive and digital platform that offers live virtual shows as well as on-demand viewing options.</p>
+
+                <h2>Significance</h2>
+                <p>Reviving the Industry:
+
+                    By reimagining the movie theater experience, this project has the potential to breathe new life into an industry struggling to stay relevant in the digital age. <br><br>
+                    
+                    
+                    Meeting Consumer Needs:
+                    
+                    Addressing the shift in consumer behavior towards on-demand entertainment while still providing the social aspect of a communal movie experience. <br><br>
+                    
+                    Innovating with Technology:
+                    
+                    Leveraging cutting-edge technology like Apple's Vision Pro demonstrates a commitment to innovation and staying ahead of industry trends.
+                    Creating New Revenue Streams: Introducing premium viewing options and partnering with food delivery services opens up additional revenue streams for theaters, potentially offsetting losses from traditional ticket sales.</p>
+
+            </div>
+
+
+            <div class="dummydiv" id="discovery" style="height: 2rem;"></div>
+            <div class="content-block">
+                <h1>Discovery Phase</h1>
+                <h2>Understanding User Painpoints</h2>
+                <p>To address user pain points before, during, and after their movie theater experience, our VR solution offers immersive features that enhance convenience and comfort throughout every stage of the cinematic journey.Users will delight in the immersive elements of our VR experience, which capture the essence of what they enjoy most about the theater, from the communal atmosphere to the thrill of the big screen.</p>
+                <img class="affinity" src="alamoassets/alamopainpoint.svg" loading="lazy">
+
+                <h2>User Interviews</h2>
+                <p>Through thorough user interviews, we've gained valuable insights into VR users' movie watching experiences, allowing us to tailor our VR solution to seamlessly integrate with and enhance their existing habits and preferences. By comparing VR movie watching experiences to those in physical theaters, we've identified key areas where our VR experience can offer unique advantages, such as customizable viewing environments and interactive elements.</p>
+
+                <h2>Competitive Analysis</h2>
+                <p>Our competitive analysis revealed a landscape dominated by two visionOS streaming platforms and one Meta Quest social movie watching experience, informing our strategy to differentiate our VR offering through innovative features and partnerships.</p>
+
+                <h2>Partnership Evaluation</h2>
+                <p>Through partnership evaluation, we've explored why certain prominent streaming companies have yet to embrace visionOS, uncovering potential barriers and opportunities for collaboration within the VR ecosystem.</p>
+
+                <h2>Market Research</h2>
+                <p>Market research highlights shifting trends between movie theaters and streaming services, influenced by the significant impacts of COVID-19 on consumer behavior, guiding our development of a VR experience that meets evolving entertainment preferences and expectations.</p>
+
+            </div>
+
+            <div class="dummydiv" id="problem_statement" style="height: 2rem;"></div>
+            <div class="content-block">
+                <h1>Problem Statement</h1>
+                <p>Based on the Problem exploration and discovery phase, we divided our problem statement into 4 segments to better understand and tackle the problem</p>
+
+                <h2>Who</h2>
+                <p>Loyal customers of Alamo Drafthouse and movie enthusiasts, as well as VR enthusiasts, face challenges accessing theaters and engaging in immersive movie experiences.</p>
+
+                <h2>What</h2>
+                <p>These challenges include limited accessibility, frustrations with the theater environment, high costs, transportation difficulties, and conflicts with inflexible work and personal schedules.</p>
+
+                <h2>When</h2>
+                <p>These issues are particularly prevalent when new movies release in physical theaters, exacerbating the obstacles faced by movie-goers.</p>
+
+                <h2>Why</h2>
+                <p>The shift in watching habits towards home streaming has intensified the need for alternative movie-viewing options, prompting the rise in usage of VR technology to recreate the theater experience and meet the evolving needs of customers while staying aligned with market trends.</p>
+
+                <h1>Our Solution</h1>
+                <p>Based on the insights we uncovered and the problem statement, we identified an opportunity to bring the physical theatre to the virtual world.
+
+
+                    Our vision is to craft an immersive experience that evokes the familiarity and nostalgia of traditional theatres while harnessing the advantages of modern streaming technology.</p>
+
+            </div>
+
+
+            <div class="dummydiv" id="design_process" style="height: 2rem;"></div>
+            <div class="content-block">
+                <h1>Design Process</h1>
+                <h2>Ideation</h2>
+                <p>Our initial ideation involved mapping out a user journey to seamlessly integrate the new VR feature into Alamo Drafthouse’s existing app.
+
+                    Understanding user needs at every step, we individually crafted unique versions of the journey by drawing insights from research. We then merged these to create a central flow aimed at optimizing the user experience.
+                    
+                    Additionally, we visually represented task flows of the app’s current state and new flow to mimic the app’s functionality and also pinpoint the exact user path.</p>
+
+                <h2>Crazy 8s</h2>
+                <p>We employed the dynamic Crazy 8s exercise to tackle our design challenge collaboratively.
+
+                    Each team member embarked on a rapid ideation journey, sketching eight unique concepts in just eight minutes.
+                    
+                    We tried to sketch the entire flow/parts of the flow, in as much detail a possible in order to understand the requirements for the first wireframes we would design.
+                    
+                    We then voted on the features we liked the most in each other’s sketches.</p>
+
+                <p>Based on the sketches we did as part of our crazy eight exercise we narrowed down some key features which would be important to include in the wireframes.
+
+                    After we made the wireframes, we appear critique of the wire frames amongst our own group and came up with some interesting corrections which could be made to the wire frame before concept testing.</p> 
+
+                <h1>Wireframing</h1> 
+                <p>Based on the previous exercises, we came up with some wireframes which were then used for concept testing and peer critique to improve the product moving forward.</p>    
+
+                <h2>Mobile Wireframes</h2>
+                <h2>VR Wireframes</h2>
+
+                <h1 style="margin-top: 2rem;">Concept Testing</h1>
+                <p>After peer testing and iterations on the initial wireframes based on the peer critique, our team started with the process of concept testing which helped us get a direction moving forward.</p>
+
+                <h2>Positive Feedback</h2>
+                <p>• Users thought the concept is a really good idea.
+                    • The social aspect of watching movies together was highly appreciated.
+                    • The concept was seen as very different from traditional movie watching.</p>
+
+                <h2>Confusion and Questions</h2>
+                <p>• Users were confused about the purpose of certain buttons and features.
+                    • The friend selection process was confusing.
+                    • Users were unsure about the difference between watching a movie and connecting to VR.
+                    • Some users didn't understand the purpose of the “cooldown room”.</p>
+
+                <h2>Suggestions for Improvement</h2>
+                <p>• Users suggested thinking more about concessions and making the process clearer.
+                    • Some users recommended adding a reminder notice for ordering food.
+                    • Users wanted clearer instructions on how to use VR and enhance the VR experience.
+                    • Users suggested making the VR button more noticeable.</p>
+
+                <h1 style="margin-top: 2rem;">Mid Fidelity</h1>
+                <p>Based on the previous exercises, we came up with some wireframes which were then used for concept testing and peer critique to improve the product moving forward.</p>
+
+                <h2>Mid Fi - Mobile (Live Show)</h2>
+                <h2>Mid Fi - Mobile (72 Hour Rental)</h2>
+                <h2>Mid Fi - VR</h2>
+
+            </div>
+
+
+            <div class="dummydiv" id="user_testing" style="height: 2rem;"></div>
+            <div class="content-block">
+                <h1>User Testing</h1>
+                <p>We asked users to perform a set of tasks in order to assess the usability of our prototype as a part of testing. Below is the summary of tasks that were performed by the users during this process -</p>
+
+                <h2>Lorem</h2>
+                <p>Lorem</p>
+            </div>
+
+    
+
+
+
+            <p style="color: #121212; font-weight: bold;" id="details">If you are interested in discussing this case study further You can contact me at <br> <span style="color: #4252EB; font-weight: 800;"><a href="mailto:madhav18897@utexas.edu">madhav18897@utexas.edu</a></span></p>
+
+            <div class="socials">
+                <a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a class="social-icons" href="https://www.instagram.com/madhav18897/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
+            <p style="margin: 2rem 0rem;">@all rights reserved</p>
+        
+        </div>
+        
+
+    </div>
+
+
+</div>
+
+</body>
+
+
+
+
+
+
+</html>

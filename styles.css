@@ -240,6 +240,7 @@ p{
   align-items: left;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 2rem;
   margin: 80px 0px;
   
 }
@@ -256,9 +257,13 @@ p{
   }
 
 
+
+
 }
 
 /*leftright */
+
+
 
 .UTbox{
   display: flex;
@@ -269,6 +274,7 @@ p{
   gap: 0.5rem;
   height: 100%;
   max-width: 700px;
+  margin-bottom: 2rem;
 }
 
 .bevo{
@@ -278,11 +284,10 @@ p{
 
 .container{
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     justify-content: space-between;
-    gap: 4rem;
     margin-top: 15%;
     padding: 0px;
     animation: fadeIn 3s; 
@@ -305,9 +310,10 @@ p{
 
 .mvphoto{
     margin-bottom: 0;
-    border-radius: 2rem;
     margin-right: 1rem;
+    width: 10rem;
 }
+
 
 .Intro{
   font-size: 3rem;
@@ -331,9 +337,7 @@ p{
     justify-content: space-between;
   }
 
-  .mvphoto{
-    display: none;
-  }
+
 
   .Intro{
     font-size: 4rem;
@@ -370,6 +374,13 @@ p{
 
 }
 
+.current_role{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  gap: 24px;
+  
+}
 
 
 
