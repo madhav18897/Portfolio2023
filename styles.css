@@ -492,11 +492,32 @@ p{
     gap: 6rem;
 }
 
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+
+
+
+}
+
 .projectcard{
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     gap: 3rem;
-    margin-left: -10px;
 }
 
 
