@@ -495,7 +495,7 @@ p{
 .grid-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 7rem;
+  gap: 8rem;
   align-items: start;
 }
 
