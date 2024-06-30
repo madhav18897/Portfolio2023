@@ -48,6 +48,7 @@ html, body {
 #navbar{
     padding: 2.75% 10%; /* navbar padding top and left*/
     /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) ; */
+    font-family: 'manrope', 'sans-serif';
 
 }
 
@@ -89,12 +90,14 @@ html, body {
       text-decoration: none;
       color: #121212;
       opacity: 100%;
+      
   
   }
   
   .case-nav-links:hover{
       color: #4252EB;
       text-decoration: none;
+      
   }
   
   .menu-button-container {
@@ -520,7 +523,11 @@ p{
     gap: 3rem;
 }
 
-
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 .projectcardtext{
     display: flex;
