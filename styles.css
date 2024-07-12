@@ -235,6 +235,14 @@ p{
     padding: 0%;
 }
 
+.company_logo{
+  filter: grayscale(100);
+}
+
+.company_logo:hover{
+  filter: grayscale(0);
+}
+
 /*leftright */
 
 .leftright{
@@ -251,12 +259,11 @@ p{
 @media (max-width: 800px) {
 
   .leftright{
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 4rem;
+    flex-wrap: wrap; 
+    gap:4rem;
   }
 
 
@@ -620,6 +627,11 @@ p{
 
         .project_img{
           width: 80%;
+        }
+
+        .buttons{
+          flex-direction: column;
+          gap: 0.5rem;
         }
 
     }

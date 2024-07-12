@@ -254,6 +254,10 @@ p{
     margin-right: 1rem;
 }
 
+.Intro{
+  white-space: pre-line;
+}
+
 /*Bigger Screen*/
 
 @media screen and (min-width: 1500px) {
@@ -275,13 +279,15 @@ p{
     display: none;
   }
 
-  .Intro{
-    font-size: 4rem;
-  }
-
   .youtubeembed{
     height: 400px;
   }
+
+
+  .ut_text{
+    max-width: 70%;
+  }
+
 
 
 }
@@ -450,6 +456,8 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 8rem;
 align-items: start;
+margin: 12% 0% 0% 0%;
+
 }
 
 @media (max-width: 800px) {
