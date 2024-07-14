@@ -670,7 +670,7 @@ p{
 
 .backtotop{
     display: flex;
-    padding: 2rem ;
+    /* padding: 2rem ; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
