@@ -26,6 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
 
 </head>
@@ -42,7 +43,7 @@
         </label>
         <ul class="menu">
           <!-- <li><a class="case-nav-links" href="index.html">Home</a></li> -->
-          <li><a class="case-nav-links" href="about.html">About</a></li>
+          <li><a class="case-nav-links" href="#aboutme">About</a></li>
           <li><a class="case-nav-links" href="https://docs.google.com/document/d/19FsNFSuKrXeuz6TPy-TKdp-y8XON6LNS/edit?usp=sharing&ouid=115135934378785602249&rtpof=true&sd=true" target="_blank"></i>Resume</a></li>
           <li><a class="case-nav-links" href="#projects">Design Work</a></li>
           <!-- <li><a class="case-nav-links" href="#workexperience">Work Experience</a></li> -->
@@ -57,7 +58,7 @@
 
         <div class="grid-container" style="margin-top: 12%;">
             <div class="projectcard">
-                <img src="assets/test-hero.svg" alt="" width="100%" height="100%" style="border-radius: 24px;">
+                <img class="hero-img" src="assets/test-hero.svg" alt="" width="100%" height="100%" style="border-radius: 24px; max-height: 1000px;">
             </div>
 
             <div class="projectcard">
@@ -71,21 +72,31 @@
                             <p style="color: #808080; font-weight: bolder; margin: 0;">UT Austin <span style="color: #808080;">•</span> MSIS-Human-Computer Interaction + Product Management </p>
                         </div>
                     </div>
-                    <div class="UTbox">
+                    <!-- <div class="UTbox">
                         <div>
                             <img class="bevo" src="assets/GClogo 1.png" alt="">
                         </div>
                         <div class="ut_text">
                             <p style="color: #808080; font-weight: bolder; margin: 0;"> Product Design Intern, June 2024-Present</h2>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="current_role">
-                        <p style="color: #121212; font-weight:bolder; font-style: italic;">Actively looking for full-time Product Design and Product Management roles.</p>
+                        <p style="color: #121212; font-weight:bolder; font-style: italic;">Actively Looking for Full-Time Product Design and Research Roles.</p>
                     </div>
                     <div class="buttons">
+                        <a href="#projects" style="text-decoration: none;"><h1 class="primarybtn" style="background-color: #5F50CC;">My Work<i class="fa-solid fa-arrow-right"></i></h1></a>
                         <a href="https://docs.google.com/document/d/19FsNFSuKrXeuz6TPy-TKdp-y8XON6LNS/edit?usp=sharing&ouid=115135934378785602249&rtpof=true&sd=true" style="text-decoration: none;" target="_blank"><h1 class="primarybtn">Resume<i class="fa-solid fa-arrow-right"></i></h1></a>
-        
                         <a href="https://www.linkedin.com/in/madhav-varma/" style="text-decoration: none;" target="_blank"><h1 class="secondarybtn">Linkedin<i class="fa-solid fa-arrow-right"></i></h1></a> 
+                    </div>
+                    <div class="industries" style="margin-top: 4rem;">
+                        <p style="color: #121212; font-weight:bolder; font-style: italic;">Industries I have experience across...</p>
+                        <div class="industry_label_set">
+                            <p class="industry_label">Sports Technology</p>
+                            <p class="industry_label">Consumer Electronics</p>
+                            <p class="industry_label">Enterprise SAAS</p>
+                            <p class="industry_label">Health and Nutrition</p>
+                            <p class="industry_label">Education</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,7 +110,184 @@
 
     </section>
 
-    <section id="companies">
+
+    <section id="projects">
+        <h1>My <span style="color: #5F50CC;">Product Design Work</span></h1>
+
+
+    <div class="tab-container">
+        <button class="tab-button active" onclick="openTab('industry')">Industry Projects</button>
+        <button class="tab-button" onclick="openTab('academic')">Academic Projects</button>
+        </div>
+        
+        <div id="industry" class="tab-content">
+            <div class="grid-container">
+
+                <div class="projectcard" id="GC">
+                    <img class="card-img" src="assets/GCtile.svg" alt="">
+                    <div class="projectcardtext">
+                        <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">CONTRACT (FULL TIME)</h1>
+                        <h1 style="font-size: 1.5rem;">GameChanger by Dick's Sporting Goods </h1>
+                        <p class="projectcarddetails">Design work done at GameChanger, a sports technology company.</p>
+                        
+                        <div class="buttons">
+        
+                            <a href="GC.html"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
+                            <!-- <a href="mailto:madhav18897@utexas.edu" target="_blank" style="text-decoration: none;"><h1 class="secondarybtn" >Contact for details<i class="fa-solid fa-arrow-right"></i></h1></a> -->
+        
+                            <!-- <h1 class="secondarybtn">View Prototype<i class="fa-solid fa-arrow-right"></i></h1>  -->
+                
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="projectcard" id="dellmed">
+                    <img class="card-img" src="assets/CDSS.svg" alt="">
+                    <div class="projectcardtext">
+                        <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">UX CASE STUDY </h1>
+                        <h1 style="font-size: 1.5rem;">Clinical Decision Support System (CDSS) for Nutritionists</h1>
+                        <p class="projectcarddetails">🏆 Dean's Choice Award Winning UX Research & Design Case study with UT Dell Medical School.</p>
+                        <div class="buttons">
+                            <a href="CDSS.html" style="text-decoration: none;"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
+                            <!-- <a href="https://www.figma.com/proto/uuvQ3C8YfvmZipigpwJoyh/WCWH-IA-Project?page-id=932%3A2922&node-id=1768%3A5032&viewport=-4336%2C-979%2C0.24&scaling=scale-down&starting-point-node-id=1768%3A7494&show-proto-sidebar=1" style="text-decoration: none;" target="_blank"><h1 class="secondarybtn">View Prototype<i class="fa-solid fa-arrow-right"></i></h1></a>   -->
+                        </div>
+                        
+                    </div>          
+                </div>
+
+                <div class="projectcard" id="TC">
+                    <img class="card-img" src="assets/thoughtcloudtile.svg" alt="">
+                    <div class="projectcardtext">
+                        <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">INTERNSHIP (FULL TIME)</h1>
+                        <h1 style="font-size: 1.5rem;">2023 Product Design Summer Internship: Thoughtcloud </h1>
+                        <p class="projectcarddetails">Design work done at Thoughtcloud over the summer of 2023, an pre-revenue tech start up. This is covered by an NDA so details can only be discussed in an interview setting.</p>
+                        
+                        <div class="buttons">
+        
+                            <a href="thoughtcloud.html"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
+                            <a href="mailto:madhav18897@utexas.edu" target="_blank" style="text-decoration: none;"><h1 class="secondarybtn" >Contact for details<i class="fa-solid fa-arrow-right"></i></h1></a>
+        
+                            <!-- <h1 class="secondarybtn">View Prototype<i class="fa-solid fa-arrow-right"></i></h1>  -->
+                
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <!-- <div class="projectcard" id="ides">
+                    <img class="card-img" src="assets/idesigntile.svg" alt="">
+                    <div class="projectcardtext">
+                        <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">STARTUP EXPERIENCE (FULL TIME)</h1>
+                        <h1 style="font-size: 1.5rem;">2021-2022 Product Designer Role: iDesign.Market</h1>
+                        <p class="projectcarddetails">Design work done at iDesign.Market , an post-revenue stage SAAS tech start up. This is covered by an NDA so details can only be discussed in an interview setting.</p>
+    
+                        
+                        <div class="buttons">
+        
+                            <a href="http://idesign.market/"><h1 class="primarybtn" >View Website<i class="fa-solid fa-arrow-right"></i></h1></a>
+                            <a href="mailto:madhav18897@utexas.edu" target="_blank" style="text-decoration: none;"><h1 class="secondarybtn" >Contact for details<i class="fa-solid fa-arrow-right"></i></h1></a>
+                
+                        </div>
+                        
+                    </div>
+                </div> -->
+        
+    
+            </div>
+            
+
+        </div>
+        
+        <div id="academic" class="tab-content" style="display:none;">
+            <div class="grid-container">
+
+                <div class="projectcard">
+                    <img class="card-img" src="assets/wcwhtile.svg" alt="">
+                    <div class="projectcardtext">
+                        <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">UX CASE STUDY </h1>
+                        <h1 style="font-size: 1.5rem;">UT Whole Communities Whole Health: UX Research and Design Case Study</h1>
+                        <p class="projectcarddetails">UX/UI case study with WCWH, UT Health, focusing on marginalized communities' needs.</p>
+                        <div class="buttons">
+                            <a href="WCWH.html" style="text-decoration: none;"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
+                            <a href="https://www.figma.com/proto/uuvQ3C8YfvmZipigpwJoyh/WCWH-IA-Project?page-id=932%3A2922&node-id=1768%3A5032&viewport=-4336%2C-979%2C0.24&scaling=scale-down&starting-point-node-id=1768%3A7494&show-proto-sidebar=1" style="text-decoration: none;" target="_blank"><h1 class="secondarybtn">Prototype<i class="fa-solid fa-arrow-right"></i></h1></a>  
+                        </div>
+                        
+                    </div>          
+                </div>
+        
+                <!-- <div class="projectcard">
+                    <img class="card-img" src="assets/alamotile.svg" alt=""  width="100%">
+                    <div class="projectcardtext">
+                        <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">INTERACTION DESIGN CASE STUDY</h1>
+                        <h1 style="font-size: 1.5rem;">Alamo Drafthouse Virtual Reality Experience Design</h1>
+                        <p class="projectcarddetails">Alamo Drafthouse VR Experience: where movie enthusiasts embark on an immersive journey beyond theaters. </p>
+                        <div class="buttons">
+                            <a href="alamo.html" style="text-decoration: none;"><h1 class="primarybtn" >Read Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
+        
+                            <a href="" style="text-decoration: none;" target="_blank"><h1 class="secondarybtn">View Prototype<i class="fa-solid fa-arrow-right"></i></h1></a>  
+                
+                        </div>
+                        
+                    </div>          
+                </div> -->
+        
+                <div class="projectcard">   
+                    <img class="card-img" src="assets/lastminutetile.svg" alt="">
+                    <div class="projectcardtext">
+                        <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">UX CASE STUDY </h1>
+                        <h1 style="font-size: 1.5rem;">LastMinute App : A Full-Stack UX Research and Design Project</h1>
+                        <p class="projectcarddetails">A UX/UI case study for a last minute event booking app, to connect last minute buyers and sellers.</p>
+                        <div class="buttons">
+                            <a href="LastMinute.html" style="text-decoration: none;"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
+        
+                            <a href="https://www.figma.com/proto/95WxQDO6wTavHvPqauyqwW/HCI-Project-%3A-LastMinute-booking-app?page-id=827%3A3346&type=design&node-id=1188-25702&viewport=1155%2C2466%2C0.06&t=xQBft0JuwTPfU0BD-1&scaling=contain&starting-point-node-id=1188%3A26107&mode=design" style="text-decoration: none;" target="_blank"><h1 class="secondarybtn">Prototype<i class="fa-solid fa-arrow-right"></i></h1></a> 
+                        </div>
+                        
+                    </div>
+                </div>
+        
+        
+                <div class="projectcard">
+                    <img class="card-img" src="assets/disneytile.svg" alt="">
+                    <div class="projectcardtext">
+                        <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">USABILITY CASE STUDY </h1>
+                        <h1 style="font-size: 1.5rem;">Walt Disney World: <br> Usability Testing Case Study</h1>
+                        <p class="projectcarddetails">Analysis of Disney World's website from a usability standpoint, containing a report with insights from 6 usability tests.</p>
+                        <div class="buttons">
+                            <a href="usability.html"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
+        
+                            <a href="https://www.figma.com/proto/UUoLFwTDhubOKTcIopkt1e/Presentation-%2B-Redesign?node-id=190-3888&starting-point-node-id=190%3A3888&mode=design&t=8EWFNsVCv6vNcaqW-1" target="_blank" style="text-decoration: none;"><h1 class="secondarybtn">Prototype<i class="fa-solid fa-arrow-right"></i></h1></a>
+                
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <div class="projectcard">
+                    <img class="card-img" src="assets/msuhroomtile.svg" alt="">
+                    <div class="projectcardtext">
+                        <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">PHYSICAL PRODUCT DESIGN </h1>
+                        <h1 style="font-size: 1.5rem;">MY | CO Mushroom Log Harvester : Idea to Product Case Study</h1>
+                        <p class="projectcarddetails">A solution for US specialty mushroom industry's harvesting challenges through physical product design .</p>
+                        <div class="buttons">
+                            <a href="MyCoProject.html"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
+        
+                            <a href="https://youtu.be/fxjjMFGi8ss?si=A7gzLBro3VI-RPec" target="_blank" style="text-decoration: none;"><h1 class="secondarybtn">Prototype<i class="fa-solid fa-arrow-right"></i></h1></a>
+                
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                
+    
+            </div>
+    </div>
+        
+    </section>
+
+        <section id="companies">
             <h1><span style="color: #5F50CC;">Companies</span> I've Contributed To...</h1>
             <div class="leftright">
                     
@@ -114,165 +302,48 @@
 
     </section>
 
-    <section id="projects">
-        <h1>My <span style="color: #5F50CC;">Design Work.</span></h1>
-
+    <section id="aboutme" style="margin-top: 10rem;">
         <div class="grid-container">
-
-            <!-- <div class="projectcard" id="dellmed">
-                <img class="card-img" src="assets/CDSS.svg" alt="">
-                <div class="projectcardtext">
-                    <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">UX CASE STUDY </h1>
-                    <h1 style="font-size: 1.5rem;">Clinical Decision Support System (CDSS) for Nutritionists</h1>
-                    <p class="projectcarddetails">🏆 Dean's Choice Award Winning UX Research & Design Case study with UT Dell Medical School.</p>
-                    <div class="buttons">
-                        <a href="CDSS.html" style="text-decoration: none;"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
-                        <a href="https://www.figma.com/proto/uuvQ3C8YfvmZipigpwJoyh/WCWH-IA-Project?page-id=932%3A2922&node-id=1768%3A5032&viewport=-4336%2C-979%2C0.24&scaling=scale-down&starting-point-node-id=1768%3A7494&show-proto-sidebar=1" style="text-decoration: none;" target="_blank"><h1 class="secondarybtn">View Prototype<i class="fa-solid fa-arrow-right"></i></h1></a>  
-                    </div>
-                    
-                </div>          
-            </div> -->
-
-            <div class="projectcard">
-                <img class="card-img" src="assets/wcwhtile.svg" alt="">
-                <div class="projectcardtext">
-                    <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">UX CASE STUDY </h1>
-                    <h1 style="font-size: 1.5rem;">UT Whole Communities Whole Health: UX Research and Design Case Study</h1>
-                    <p class="projectcarddetails">UX/UI case study with WCWH, UT Health, focusing on marginalized communities' needs.</p>
-                    <div class="buttons">
-                        <a href="WCWH.html" style="text-decoration: none;"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
-                        <a href="https://www.figma.com/proto/uuvQ3C8YfvmZipigpwJoyh/WCWH-IA-Project?page-id=932%3A2922&node-id=1768%3A5032&viewport=-4336%2C-979%2C0.24&scaling=scale-down&starting-point-node-id=1768%3A7494&show-proto-sidebar=1" style="text-decoration: none;" target="_blank"><h1 class="secondarybtn">Prototype<i class="fa-solid fa-arrow-right"></i></h1></a>  
-                    </div>
-                    
-                </div>          
-            </div>
-    
-            <!-- <div class="projectcard">
-                <img class="card-img" src="assets/alamotile.svg" alt=""  width="100%">
-                <div class="projectcardtext">
-                    <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">INTERACTION DESIGN CASE STUDY</h1>
-                    <h1 style="font-size: 1.5rem;">Alamo Drafthouse Virtual Reality Experience Design</h1>
-                    <p class="projectcarddetails">Alamo Drafthouse VR Experience: where movie enthusiasts embark on an immersive journey beyond theaters. </p>
-                    <div class="buttons">
-                        <a href="alamo.html" style="text-decoration: none;"><h1 class="primarybtn" >Read Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
-    
-                        <a href="" style="text-decoration: none;" target="_blank"><h1 class="secondarybtn">View Prototype<i class="fa-solid fa-arrow-right"></i></h1></a>  
-            
-                    </div>
-                    
-                </div>          
-            </div> -->
-    
-            <div class="projectcard">   
-                <img class="card-img" src="assets/lastminutetile.svg" alt="">
-                <div class="projectcardtext">
-                    <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">UX CASE STUDY </h1>
-                    <h1 style="font-size: 1.5rem;">LastMinute App : A Full-Stack UX Research and Design Project</h1>
-                    <p class="projectcarddetails">A UX/UI case study for a last minute event booking app, to connect last minute buyers and sellers.</p>
-                    <div class="buttons">
-                        <a href="LastMinute.html" style="text-decoration: none;"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
-    
-                        <a href="https://www.figma.com/proto/95WxQDO6wTavHvPqauyqwW/HCI-Project-%3A-LastMinute-booking-app?page-id=827%3A3346&type=design&node-id=1188-25702&viewport=1155%2C2466%2C0.06&t=xQBft0JuwTPfU0BD-1&scaling=contain&starting-point-node-id=1188%3A26107&mode=design" style="text-decoration: none;" target="_blank"><h1 class="secondarybtn">Prototype<i class="fa-solid fa-arrow-right"></i></h1></a> 
-                    </div>
-                    
-                </div>
-            </div>
-    
-    
-            <div class="projectcard">
-                <img class="card-img" src="assets/disneytile.svg" alt="">
-                <div class="projectcardtext">
-                    <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">USABILITY CASE STUDY </h1>
-                    <h1 style="font-size: 1.5rem;">Walt Disney World: <br> Usability Testing Case Study</h1>
-                    <p class="projectcarddetails">Analysis of Disney World's website from a usability standpoint, containing a report with insights from 6 usability tests.</p>
-                    <div class="buttons">
-                        <a href="usability.html"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
-    
-                        <a href="https://www.figma.com/proto/UUoLFwTDhubOKTcIopkt1e/Presentation-%2B-Redesign?node-id=190-3888&starting-point-node-id=190%3A3888&mode=design&t=8EWFNsVCv6vNcaqW-1" target="_blank" style="text-decoration: none;"><h1 class="secondarybtn">Prototype<i class="fa-solid fa-arrow-right"></i></h1></a>
-            
-                    </div>
-                    
-                </div>
-            </div>
-    
-            <div class="projectcard">
-                <img class="card-img" src="assets/msuhroomtile.svg" alt="">
-                <div class="projectcardtext">
-                    <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">PHYSICAL PRODUCT DESIGN </h1>
-                    <h1 style="font-size: 1.5rem;">MY | CO Mushroom Log Harvester : Idea to Product Case Study</h1>
-                    <p class="projectcarddetails">A solution for US specialty mushroom industry's harvesting challenges through physical product design .</p>
-                    <div class="buttons">
-                        <a href="MyCoProject.html"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
-    
-                        <a href="https://youtu.be/fxjjMFGi8ss?si=A7gzLBro3VI-RPec" target="_blank" style="text-decoration: none;"><h1 class="secondarybtn">Prototype<i class="fa-solid fa-arrow-right"></i></h1></a>
-            
-                    </div>
-                    
-                </div>
-            </div>
-
-
-            <div class="projectcard" id="GC">
-                <img class="card-img" src="assets/GCtile.svg" alt="">
-                <div class="projectcardtext">
-                    <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">INTERNSHIP (FULL TIME)</h1>
-                    <h1 style="font-size: 1.5rem;">2024 Product Design Summer Internship: GameChanger by Dick's Sporting Goods </h1>
-                    <p class="projectcarddetails">Design work done at GameChanger, a sports tech company. This is covered by an NDA so details can only be discussed in an interview setting.</p>
-                    
-                    <div class="buttons">
-    
-                        <a href="https://gc.com/"><h1 class="primarybtn" >View Website<i class="fa-solid fa-arrow-right"></i></h1></a>
-                        <a href="mailto:madhav18897@utexas.edu" target="_blank" style="text-decoration: none;"><h1 class="secondarybtn" >Contact for details<i class="fa-solid fa-arrow-right"></i></h1></a>
-    
-                        <!-- <h1 class="secondarybtn">View Prototype<i class="fa-solid fa-arrow-right"></i></h1>  -->
-            
-                    </div>
-                    
-                </div>
-            </div>
-    
-            <div class="projectcard" id="TC">
-                <img class="card-img" src="assets/thoughtcloudtile.svg" alt="">
-                <div class="projectcardtext">
-                    <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">INTERNSHIP (FULL TIME)</h1>
-                    <h1 style="font-size: 1.5rem;">2023 Product Design Summer Internship: Thoughtcloud </h1>
-                    <p class="projectcarddetails">Design work done at Thoughtcloud over the summer of 2023, an pre-revenue tech start up. This is covered by an NDA so details can only be discussed in an interview setting.</p>
-                    
-                    <div class="buttons">
-    
-                        <a href="thoughtcloud.html"><h1 class="primarybtn" >Case Study<i class="fa-solid fa-arrow-right"></i></h1></a>
-                        <a href="mailto:madhav18897@utexas.edu" target="_blank" style="text-decoration: none;"><h1 class="secondarybtn" >Contact for details<i class="fa-solid fa-arrow-right"></i></h1></a>
-    
-                        <!-- <h1 class="secondarybtn">View Prototype<i class="fa-solid fa-arrow-right"></i></h1>  -->
-            
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="projectcard" id="ides">
-                <img class="card-img" src="assets/idesigntile.svg" alt="">
-                <div class="projectcardtext">
-                    <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">STARTUP EXPERIENCE (FULL TIME)</h1>
-                    <h1 style="font-size: 1.5rem;">2021-2022 Product Designer Role: iDesign.Market</h1>
-                    <p class="projectcarddetails">Design work done at iDesign.Market , an post-revenue stage SAAS tech start up. This is covered by an NDA so details can only be discussed in an interview setting.</p>
-
-                    
-                    <div class="buttons">
-    
-                        <a href="http://idesign.market/"><h1 class="primarybtn" >View Website<i class="fa-solid fa-arrow-right"></i></h1></a>
-                        <a href="mailto:madhav18897@utexas.edu" target="_blank" style="text-decoration: none;"><h1 class="secondarybtn" >Contact for details<i class="fa-solid fa-arrow-right"></i></h1></a>
-    
-                        <!-- <h1 class="secondarybtn">View Prototype<i class="fa-solid fa-arrow-right"></i></h1>  -->
-            
-                    </div>
-                    
-                </div>
-            </div>
-    
-
-        </div>
+            <div>
+                <h1 style="margin-bottom: 1rem;">About <span style="color: #5F50CC;">Me</span></h1>
+                <p>Product Designer with a strong background in UX research and interaction design, specializing in crafting intuitive and engaging experiences. With experience at GameChanger, Dell Medical School, Dyson and other companies, I focus on data-driven design to enhance user engagement and solve real-world problems. I love diving into complex user needs, utilizing research, prototyping, and strategic design to create thoughtful, impactful solutions.</p>
         
+
+
+                <div class="industries" style="margin-top: 1.5rem;">
+                    <p style="color: #121212; font-weight:bolder; font-style: italic;">Industries I have experience across...</p>
+                    <div class="industry_label_set">
+                        <p class="industry_label">Sports Technology</p>
+                        <p class="industry_label">Consumer Electronics</p>
+                        <p class="industry_label">Enterprise SAAS</p>
+                        <p class="industry_label">Health and Nutrition</p>
+                        <p class="industry_label">Education</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="background-color: #f7f7f7; border-radius: 24px; padding:24px">
+                <p style="margin-bottom: 1.5 rem; color: #121212; font-weight: bolder;">Outside of design, I’m passionate about making music, staying active through sports, and exploring the outdoors. These creative and physical pursuits keep me inspired and grounded, giving me a fresh perspective that I bring back to my design work.</p>
+                <div class="grid-container" style="margin-top: 0; gap: 1.5rem; padding: 0px; background-color: #f7f7f7; border-radius: 24px;">
+                    <iframe class="youtubeembed" width="100%" height="100%" src="https://www.youtube.com/embed/gQ2JJXckYck?si=o4Xn3ehS7EcggTk-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 1.5rem;" ></iframe>
+                    <div class="projectcard">
+                        <div class="projectcardtext" style="gap: 0.5rem;">
+                            <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">YOUTUBE CHANNEL</h1>
+                            <h1 style="font-size: 1.5rem;">Capturing Melodies: Explore the Soul of Music on My Channel.</h1>
+                            <p class="projectcarddetails">Experience the beauty of music through my heartfelt guitar and vocal originals and covers. Join me on my musical journey.</p>
+                            <div class="buttons">
+                                <a href="https://www.youtube.com/user/madhavv09" style="text-decoration: none;"><h1 class="primarybtn">My YouTube channel<i class="fa-solid fa-arrow-right"></i></h1></a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+            </div>        
+
+            
+        </div>
+
+
     </section>
 
     <!-- <img src="assets/Line 81.svg" alt="" style="width: 100%;"> -->

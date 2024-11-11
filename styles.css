@@ -229,7 +229,7 @@ p{
 
 }
 
-#hero, #companies, #projects ,#footer{
+#hero, #companies, #projects ,#footer,#aboutme{
 
     margin: 0% 10% 120px 10%;
     padding: 0%;
@@ -330,12 +330,31 @@ p{
   
 }
 
+.industry_label_set{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+}
+
+.industry_label{
+  padding: 8px 24px;
+  background-color: #5F50CC;
+  color: #fff;
+  display: inline-block;
+  border-radius: 10rem;
+  gap: 1rem;
+  margin: 0;
+  font-weight: bolder;
+}
+
 /*Bigger Screen*/
 
 @media screen and (min-width: 1500px) {
 
   #hero{
-    margin-right: 0%;
+    /* margin-right: 0%; */
     margin-top: 0%;
   }
 
@@ -347,7 +366,13 @@ p{
     justify-content: space-between;
   }
 
+  .grid-container{
+    gap: 0rem;
+  }
 
+  .hero-img{
+    max-width: 700px;
+  }
 
   .Intro{
     font-size: 4rem;
@@ -495,17 +520,50 @@ p{
 
 /*Projects*/
 
+/* project toggle*/
+
+.tab-container {
+  display: flex;
+  gap: 2rem;
+
+  
+}
+
+.tab-button {
+  padding: 8px 24px;
+  cursor: pointer;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 2rem;
+  font-family: 'manrope', 'sans-serif';
+}
+
+.tab-button.active {
+  background-color: #5f50cc;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25)inset;
+  color: #fff;
+  font-family: 'manrope', 'sans-serif';
+  font-weight: bolder;
+}
+
+.tab-content {
+  margin-top: 0rem;
+}
+
+/* project toggle*/
+
+
 #projects{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 6rem;
+    gap: 3rem;
 }
 
 .grid-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8rem;
+  gap: 8rem 6rem;
   align-items: start;
 }
 
@@ -522,6 +580,21 @@ p{
 
 
 }
+
+
+@media (min-width: 1800px) { /*bigger screen*/
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+
+
+
+}
+
 
 .projectcard{
     display: flex;
