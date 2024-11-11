@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CDSS for Nutritionists</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CDSS.css">
+    <link rel="icon" href="MVLOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.jpg"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    
+    <script>        
+        window.addEventListener("load", ()=>{
+            const loader=document.querySelector(".loader");
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", ()=>{
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    
+
+
+<section class="top-nav" id="navbar">
+        
+    <div>
+        <a class="case-nav-links" href="index.html"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>   
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        <!-- <li><a class="case-nav-links" href="index.html#hero">Home</a></li> -->
+        <li><a class="case-nav-links" href="index.html#about">About</a></li>
+        <li><a class="case-nav-links" href="https://docs.google.com/document/d/19FsNFSuKrXeuz6TPy-TKdp-y8XON6LNS/edit?usp=sharing&ouid=115135934378785602249&rtpof=true&sd=true"></i>Resume</a></li>
+        <li><a class="case-nav-links" href="index.html#projects">Design Work</a></li>
+        <!-- <li><a class="case-nav-links" href="#workexperience">Work Experience</a></li> -->
+        <li style="margin: 0 0 0 1rem;"><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
+    </ul>
+
+</section> 
+
+<div class="dummydiv" id="home" style="height: 120px;"></div>
+<div class="body">
+
+    <div class="loader">
+        <h2 style="padding: 2%; color: #fff;" class="load-message">Loading, Please Wait...</h2>
+        
+    </div>
+
+    <div class="container">
+        <div class="leftpanel">
+            <div class="side-nav-list">
+                <h1 style="color: #121212; font-weight: bolder; font-size: 1.5rem;">Index</h1>
+                <a class="side-nav-list-item" href="#context">Overview</a>
+                <a class="side-nav-list-item" href="#problem_statement">Problem Statement</a>
+                <a class="side-nav-list-item" href="#opportunity">Opportunity</a>    
+                <a class="side-nav-list-item" href="#objectives">Objectives</a>            
+                <a class="side-nav-list-item" href="#research">Research</a>
+                <a class="side-nav-list-item" href="#design_process">Design Process</a>
+                <a class="side-nav-list-item" href="#user_testing">User Testing</a>
+                <a class="side-nav-list-item" href="#award">Award and Recognition</a>
+                <a class="side-nav-list-item" href="#home">Back to top</a>
+            </div>
+
+        </div>
+
+        <div class="rightpanel">
+            
+            <div class="leftright">
+                <div class="leftside">
+                    <img src="CDSSAssets/cdssh1tag.svg" alt="">
+                </div>
+                <div class="rightside">
+                    <h1>UX for Clinical Decision Support System</h1>
+                    <h2>Capstone Project with UT Dell Medical School</h2>
+                    <p>Austin, TX, United States, Spring 2024 <br>
+                        🏆 2024 Dean's Choice Award Winner (Honorable Mention)</p>
+                </div>
+            </div>
+
+
+            <div class="content-block">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); margin: 5% 0%; border-radius: 1.5rem;" width="100%" height="700px"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FS2PSiCGYpmGGcSCTBQPdmo%2FNutriRD_share%3Fpage-id%3D1%253A265%26node-id%3D347-1523%26viewport%3D303%252C-2105%252C0.06%26t%3DZEMPZmoaKUqRcPcd-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26starting-point-node-id%3D347%253A1523" loading="lazy" allowfullscreen ></iframe>
+                <h1>Team</h1>
+                <!-- <p><span style="font-weight: bolder; color: #14884a;">Madhav Varma (Me)</span> , Dagny Larson (RD), Dr. Burgermaster, Madalyn Rosenthal</p> -->
+                <img class="affinity" src="CDSSAssets/Team.svg" alt="">
+
+
+                <h2 style="margin-top: 2rem;">My Role</h2>
+                <p>UX Researcher and Designer</p>
+
+
+                <h2>Timeline</h2>
+                <p>Spring 2024 Semester: Jan 2024 to May 2024</p>
+            </div>
+
+            <div class="dummydiv" id="context" style="height: 40px;"></div>
+            <div class="content-block">
+                <h1>Overview</h1>
+                <p style="margin-bottom: 2rem;">Developed a Clinical Decision Support System to enhance personalized nutrition guidance for dietitians. This project integrates behavior change theories with UX research to support nutritionists in tailoring recommendations to individual health needs, thereby improving the accuracy and effectiveness of care.</p>
+                <div class="leftright">
+                    <div class="imageside">
+                        <img class="tileimg" src="CDSSAssets/capstoneprofilepic.svg" alt="">
+        
+                    </div>
+                    <div class="textside">
+                        <h2>Concept Statement</h2>
+                        <p>Bridge UX design and clinical research to empower dietitians with a user-centered tool that adapts to unique patient diagnoses and needs.</p>
+
+                        <h2>Research Approach</h2>
+                        <p>Conducted mixed-methods UX research, including interviews with dietitians and clinical researchers, to understand the decision-making processes in nutrition education. Insights from these studies informed the system’s design, emphasizing a personalized approach to nutrition education.</p>
+                </div>
+            </div>
+
+            <h1 style="margin-top: 2rem;">Why something like this is necessary?</h1>
+            <p>In the rapidly evolving field of nutrition, staying current with the latest research and guidelines is a challenge. Clinical Decision Support Systems (CDSS) offer essential benefits for nutritionists and their clients.</p>
+            
+            <h2>Accurate Decision-Making</h2>
+            <p>CDSS provides evidence-based recommendations, reducing human error and ensuring precise nutritional advice based on the latest research.</p>
+            
+            <h2>Efficient Data Management</h2>
+            <p>CDSS organizes and interprets patient data efficiently, saving time and allowing nutritionists to focus more on patient care.</p>
+            
+            <h2>Personalized Nutrition Plans</h2>
+            <p>CDSS tailors recommendations to individual needs, improving adherence and health outcomes through customized dietary plans.</p>
+            
+            <h2>Up-to-Date Information</h2>
+            <p>CDSS continuously updates with the latest studies and guidelines, ensuring nutritionists always have access to current data.</p>
+            
+            <h2>Improved Patient Outcomes</h2>
+            <p>By using CDSS, nutritionists can provide more effective care, leading to better health outcomes in managing diseases, supporting weight loss, or enhancing performance.</p>
+            
+            <h2>Collaborative Care</h2>
+            <p>CDSS facilitates better communication among healthcare providers, ensuring dietary recommendations are integrated with overall treatment plans.</p>
+            
+            <p>In summary, a CDSS is vital for modern nutritionists, enhancing care quality, improving patient outcomes, and advancing the nutrition field.</p>
+        
+
+            
+            <div class="dummydiv" id="problem_statement" style="height: 56px;"></div>
+            <div class="content-block" style="background-color: #252525; margin-top: 2rem;border-radius: 2rem; padding: 2rem;">
+                <h1 style="color: #fff;">Problem Statement❓</h1>
+                <h2 style="background: linear-gradient(0deg, rgba(0,159,149,1) 0%, rgba(68,253,120,1) 100%); -webkit-background-clip: text; color: transparent;"><strong>Nutritionists often struggle to provide personalized dietary guidance due to the complexity of individual health conditions and behavioral factors. Existing tools lack the sophistication to integrate these elements effectively, resulting in suboptimal outcomes.
+
+                    <br><br>Our solution: a CDSS that empowers nutritionists to deliver precise, personalized recommendations by incorporating behavior change theories and individual diagnoses.</strong></h2>
+            </div>
+
+            <h1>Stakeholders</h1>
+            <p>Clinical Researchers, Dieticians (both new and experienced), Patients</p>
+
+            <div class="dummydiv" id="opportunity" style="height: 40px;"></div>
+            <div class="content-block">
+                <h1>The Big Opportunities</h1>
+                <img class="affinity" src="CDSSAssets/Opportunities.svg" alt="">
+                <h2>Opportunity from a Research Standpoint</h2>
+                <p>Implementing a Clinical Decision Support System (CDSS) for nutritionists offers significant research opportunities. It allows for the collection and analysis of vast amounts of data on dietary habits, health outcomes, and patient compliance. This data can be used to identify trends, develop new nutritional guidelines, and enhance evidence-based practices. Furthermore, it provides a platform for conducting longitudinal studies to understand the long-term impacts of personalized nutrition plans.</p>
+
+                <h2>Opportunity from a UX Deep Dive Standpoint</h2>
+                <p>A CDSS provides a unique opportunity to delve into the user experience (UX) of nutritionists and their clients. By focusing on UX design, we can create an intuitive, user-friendly interface that simplifies data entry, improves user satisfaction, and enhances engagement. A deep dive into UX also helps in identifying pain points and areas for improvement, ensuring that the system meets the needs of its users effectively. This focus on UX can lead to higher adoption rates and better overall user experience.</p>
+
+                <h2>Opportunity from a Business Standpoint</h2>
+                <p>From a business perspective, developing and implementing a CDSS for nutritionists presents a lucrative opportunity. It opens up new revenue streams through subscription models, partnerships with healthcare providers, and data analytics services. Additionally, it can position a company as a leader in the health tech industry, attracting investment and fostering innovation. The system's ability to improve patient outcomes and streamline workflows can also lead to cost savings for healthcare providers, further driving its market adoption.</p>
+
+                <p>In conclusion, the development and implementation of a CDSS for nutritionists offer vast opportunities from research, UX, and business perspectives, making it a highly valuable endeavor.</p>
+
+            </div>
+
+            <div class="dummydiv" id="objectives" style="height: 40px;"></div>
+            <div class="content-block">
+                <h1>Objectives</h1>
+                <p>There are 4 types of objectives we planned around:</p>
+
+                <h2>User Objectives</h2>
+                <p>To understand the pain points of nutritionists with varying levels of experience, and give them an easy to adopt solution which can help them deliver nutrition education to their patients in a more efficient manner, tailored to their behavior patterns.</p>
+                
+                <h2>Business Objectives</h2>
+                <p>Since this is a non-funded research initiative, the business objective is to deliver a prototype that would attract funding/grants to this project to take it further, and eventually deploy it to the healthcare technology market. </p>
+
+                <h2>Time Bound Goals</h2>
+                <p>Since this project is part of an entire research lab at the Dell Medical School at the University of Texas at Austin, my personal time bound goal was to deliver initial UX research insights in collaboration with the clinical research team. My responsibility was also to deliver the first high fidelity prototype by May 2024. The long term goal is to have a working, developed prototype with the core functionalities by Fall of 2025  </p>
+
+                <h2>Metrics of Success</h2>
+                <p>Successful adoption by both new and experienced dieticians, high SUS (System Usability Scale Scores), and in the longer term, higher patient satisfaction. </p>
+            </div>
+
+
+            
+            <div class="dummydiv" id="research" style="height: 40px;"></div>
+            <div class="content-block">
+                <h1>Research Methods</h1>
+                <h2>Literature Review:</h2>
+                <p>Analyzing existing studies on behavior change theories and their application in nutritional counseling.</p> 
+                <h2><strong>Surveys and Interviews:</h2>
+                <p>Engaging with nutritionists to understand their pain points and requirements.</p> 
+                <h2><strong>Competitive Analysis:</h2>
+                <p>Evaluating current CDSS tools to identify gaps and opportunities for improvement.</p>
+                
+                <img class="affinity" src="CDSSAssets/Research.svg" alt="">
+                <img class="affinity" src="CDSSAssets/Research2.svg" alt="" style="margin-top: 0;">
+
+                <h1>Insights</h1>
+                <h2>User Insights:</h2>
+                <p>Through in-depth interviews and surveys with dietitians and patients, we gained valuable insights into their needs and pain points. Dietitians emphasized the need for a streamlined interface that integrates seamlessly with existing workflows and allows quick access to personalized educational materials. Patients expressed a desire for clear, easy-to-understand dietary recommendations that are tailored to their individual health goals and preferences. These insights shaped our approach, ensuring that our CDSS interface is both user-friendly and highly personalized.</p>
+                    
+                <h2>Market Insights:</h2>
+                <p>Our market research revealed a growing demand for digital tools that support personalized nutrition education. The healthcare industry is increasingly focusing on individualized treatment plans, driven by advances in data analytics and behavior change theory. Competitor analysis highlighted the gap between current offerings and the specific needs of dietitians and patients, validating the unique value proposition of our CDSS. This market trend underscores the potential impact and adoption of our solution in clinical settings.</p>
+                    
+                <h1>Testing Assumptions</h1>
+                    
+                <h2>Impact on Project:</h2>
+                <p>To validate our design assumptions, we conducted several rounds of user testing with dietitians and patients. Initial prototypes were evaluated for usability, functionality, and effectiveness in delivering personalized nutrition education. Feedback indicated a need for more intuitive navigation and enhanced integration with electronic health records. By iterating on these prototypes and incorporating user feedback, we significantly improved the user experience, ensuring our CDSS meets the practical needs of its users.</p>
+
+            </div>
+            
+            <div class="content-block">
+                <h1>Personas</h1>
+                <div class="leftright" style="margin-top: 4rem">
+                    <div class="leftside">
+                        <img class="persona-img" src="CDSSAssets/saralyn.svg" alt="" >
+                    </div>
+                    <div class="rightside">
+                        <h2>Senior Nutritionist</h2>
+                        <ul class="inner-list">
+                            <li class="inner-list-item">Age: 45</li>
+                            <li class="inner-list-item">Experience: 20 years</li>
+                            <li class="inner-list-item">Needs: A tool that provides quick, reliable recommendations based on complex patient data.</li>
+                            <li class="inner-list-item">Pain Points: Time constraints, difficulty integrating behavioral aspects into nutritional plans.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="leftright" style="margin-top: 4rem">
+                    <div class="leftside">
+                        <img class="persona-img" src="CDSSAssets/abby.svg" alt="">
+                    </div>
+                    <div class="rightside">
+                        <h2>New Graduate Nutritionist</h2>
+                        <ul class="inner-list">
+                            <li class="inner-list-item">Age: 26</li>
+                            <li class="inner-list-item">Experience: 1 year</li>
+                            <li class="inner-list-item">Needs: Guidance and support in making informed decisions for diverse patient needs.</li>
+                            <li class="inner-list-item">Pain Points: Lack of experience, uncertainty in handling complex cases.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="content-block">
+                <h1>User Journey Maps</h1>
+
+                <h2>Saralyn’s Journey</h2>
+                <ul class="inner-list">
+                    <li class="inner-list-item">Initial Consultation: Sarah enters patient data into the CDSS.</li>
+                    <li class="inner-list-item">Assessment: Sarah reviews the system’s recommendations.</li>
+                    <li class="inner-list-item">Customization: Sarah adjusts the plan based on her expertise.</li>
+                    <li class="inner-list-item">Follow-up: Sarah uses the system to monitor patient progress and make adjustments.</li>
+                </ul>
+                <h2>Abby’s Journey</h2>
+                <ul class="inner-list">
+                    <li class="inner-list-item">Initial Consultation: James relies heavily on the CDSS for recommendations.</li>
+                    <li class="inner-list-item">Assessment: James reviews the system’s suggestions and learns from the detailed explanations.</li>
+                    <li class="inner-list-item">Customization: James makes minor adjustments based on patient feedback.</li>
+                    <li class="inner-list-item">Follow-up: James uses the system to track progress and gain confidence in decision-making.</li>
+                </ul>
+
+            </div>
+
+            <div class="dummydiv" id="design_process" style="height: 40px;"></div>
+            <div class="content-block">
+                <h1>Design Process</h1>
+                <h2>We leveraged design thinking to transform qualitative research insights into an actionable digital product.</h2>
+                <img class="affinity" src="CDSSAssets/desthink.svg" alt="">
+                <h2>User Flows and Prototypes: </h2>
+                <p>Crafting user flows and prototypes allowed me to visualize ideas and refine them iteratively. It was a delicate balance between meeting user needs and ensuring our solutions were usable, effective, and suitable for the existing software ecosystem called Nutri.</p>
+                <img class="affinity" src="CDSSAssets/userflowcdss.svg" alt="">
+                <h2>Tools Utilized: </h2>
+                <p>Miro and Figma were instrumental in bringing the initial prototypes to fruition, enhancing our productivity and efficiency as we navigated through design iterations fueled by stakeholder feedback.</p>
+                <img class="affinity" src="CDSSAssets/Tools.svg" alt="" style="width: 50%;">
+            </div>
+            
+            <div class="content-block">
+                <p>We created wireframes to visualize the CDSS interface, focusing on usability and clarity. Prototypes were developed for testing with real users, ensuring that the design met their needs and expectations.</p>
+                <h2 style="color: #14884a; margin-bottom: 1.5rem;">You can explore our Figma file below</h2>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FS2PSiCGYpmGGcSCTBQPdmo%2FNutriRD_share%3Fnode-id%3D1-265%26t%3DD3oNiSs34GARshMY-1" allowfullscreen></iframe>
+            </div>
+                        
+            <div class="dummydiv" id="" style="height: 120px;"></div>
+            <div class="content-block">
+                <h1>Final Solution</h1>
+                <h2>The Prototype</h2>
+                <ul class="inner-list">
+                    <li class="inner-list-item">The final CDSS design featured a user-friendly interface with an intuitive layout and clear visual hierarchy. It provided personalized recommendations tailored to individual diagnoses and behavior change theories, supported by detailed explanations to help nutritionists understand the rationale behind recommendations.</li>
+                </ul>
+                <a href="https://www.figma.com/proto/S2PSiCGYpmGGcSCTBQPdmo/NutriRD_share?page-id=1%3A265&node-id=347-1523&viewport=303%2C-2105%2C0.06&t=0YnX8LnG1f60uhvC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=347%3A1523"><button class="btn">Link to Final Prototype</button></a>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); margin: 5% 0%; border-radius: 1.5rem;" width="100%" height="700px"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FS2PSiCGYpmGGcSCTBQPdmo%2FNutriRD_share%3Fpage-id%3D1%253A265%26node-id%3D347-1523%26viewport%3D303%252C-2105%252C0.06%26t%3DZEMPZmoaKUqRcPcd-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26starting-point-node-id%3D347%253A1523" loading="lazy" allowfullscreen ></iframe>
+            </div>
+
+            <div class="content-block">
+                <h2>Usability Testing</h2>
+                <ul class="inner-list">
+                    <li class="inner-list-item">Usability testing sessions were conducted with both senior and junior nutritionists. Feedback was gathered on the ease of use, clarity of recommendations, and overall user experience. Iterative improvements were made based on this feedback.</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h1>Challenges and Solutions</h1>
+                <h2>Bridging Expertise Gaps: </h2>
+                <p>The primary hurdle was bridging the gap between nutritionists' expertise and unfamiliarity with UX and software development practices. I addressed this by providing a comprehensive overview of the design process, emphasizing how design thinking informs user research endeavors. Highlighting the value proposition of our product and its integration within their existing educational practices helped elucidate dietitians’ role in the research phase.</p>
+                <h2>Usability Testing: </h2>
+                <p>Conducting usability testing while ensuring dietitians could efficiently navigate our software and provide constructive feedback was challenging. Balancing minimal time investment with delivering substantial value for long-term practice integration remained crucial. Ensuring dietitians derived sufficient utility from the tool for crafting tailored nutrition education materials swiftly was essential.</p>
+                <h2>Varying UX Expertise: </h2>
+                <p>Adapting communication approaches to accommodate differing levels of familiarity with UX principles within our team was necessary. Ensuring alignment and cohesive idea flow across the team's spectrum of UX comprehension was instrumental in effectively navigating this challenge.</p>
+            </div>
+            
+            
+            <div class="dummydiv" id="award" style="height: 40px;"></div>
+            <div class="content-block">
+                <h1>🏆 Dean's Choice Award Capstone Winner (Honorable Mention)</h1>
+                <h2 style="color: #14884a;">Our project won the Dean's Choice award for best capstone poster and presentation, highlighting the excellence in both the design and execution of the project.</h2>
+                <a href="https://www.ischool.utexas.edu/news/2024-capstone-award-winners"><button class="btn" style="margin-top: 2rem;">Go to Article</button></a>
+                <h2 style="margin-top: 2rem;">Poster</h2>
+                <img class="affinity" src="CDSSAssets/poster.svg" alt="">
+                <img class="affinity" src="CDSSAssets/Award.jpg" alt="">
+            </div>
+
+            <div class="content-block">
+                <h2>Future Scope</h2>
+                <p>As for the future, there are boundless opportunities to enhance the CDSS further. From integrating voice recording features for personalized instructions to implementing AI recommendations based on patient data and nutritionist input, the possibilities are both exciting and endless. Looking back, this project's completion marks not just an end, but a new beginning. I'm eagerly anticipating the future trajectory of the CDSS prototype and I'll remain closely connected with the team, providing ongoing input wherever I can to ensure its sustained success.As for the future, there are boundless opportunities to enhance the CDSS further. From integrating voice recording features for personalized instructions to implementing AI recommendations based on patient data and nutritionist input, the possibilities are both exciting and endless. Looking back, this project's completion marks not just an end, but a new beginning. I'm eagerly anticipating the future trajectory of the CDSS prototype and I'll remain closely connected with the team, providing ongoing input wherever I can to ensure its sustained success.</p>
+            </div>
+
+            <p style="color: #121212; font-weight: bold;" id="details">If you are interested in discussing this case study further You can contact me at <br> <span style="color: #4252EB; font-weight: 800;"><a href="mailto:madhav18897@utexas.edu">madhav18897@utexas.edu</a></span></p>
+
+            <div class="socials">
+                <a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a class="social-icons" href="https://www.instagram.com/madhav18897/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
+            <p style="margin: 2rem 0rem;">@all rights reserved</p>
+        
+        </div>
+        
+
+    </div>
+
+
+</div>
+
+</body>
+
+
+
+
+
+
+</html>
