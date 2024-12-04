@@ -593,10 +593,17 @@ p{
 
 @media (min-width: 1800px) { /*bigger screen*/
 
-  .grid-container,.hero-container{
+  .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
+  }
+
+  .hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+
   }
 
 
