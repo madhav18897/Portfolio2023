@@ -577,9 +577,16 @@ p{
   align-items: start;
 }
 
+.about-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem 6rem;
+  align-items: start;
+}
+
 @media (max-width: 1000px) {
 
-  .grid-container, .hero-container{
+  .grid-container, .hero-container,.about-container{
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;
@@ -604,6 +611,12 @@ p{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
 
+  }
+
+  .about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
   }
 
 
