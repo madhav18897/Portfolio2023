@@ -212,6 +212,14 @@ html, body {
 
 }
 
+@font-face {
+  font-family: 'Beautiful Freak';
+  src: url('assets/It\'s\ me\ Simon\ -\ Beautiful\ Freak\ Bold.otf') format('opentype'); /* Use 'opentype' for .otf files */
+  font-weight: normal; /* Specify font weight */
+  font-style: normal; /* Specify font style */
+}
+
+
 h1{
     font-family: 'Gilroyextrabold';
     color: #121212;
@@ -278,10 +286,10 @@ p{
 .UTbox{
   display: flex;
   flex-direction: row;
-  align-items: center;
   border-radius: 24px;
   background: #FFF;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1rem;
   height: 100%;
   max-width: 700px;
   margin-bottom: 2rem;
@@ -327,6 +335,7 @@ p{
 
 .Intro{
   font-size: 3rem;
+  font-family: 'Beautiful Freak';
   
 }
 
@@ -350,6 +359,101 @@ p{
   font-family: 'Gilroyextrabold';
   font-size: 0.75rem;
 }
+
+
+/* check out work circle */
+
+.circle-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: transparent; /* Ensure the background is transparent */
+  box-shadow: 0 0 0 10px inset, 0 0 0 12px dashed grey; /* Simulated dashed border */
+  transition: transform 0.3s ease;
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #5F50CC;
+  z-index: 10; /* Ensures the arrow stays on top */
+  transition: transform 0.3s ease;
+  animation: bobbing 1s infinite;
+}
+
+ .circle-container:hover {
+            transform: scale(1.2); /* Enlarge the circle on hover */
+        }
+
+
+
+
+.rotating-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotate 10s linear infinite; /* Rotates the text only */
+}
+
+.text-path-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: 'Beautiful Freak';
+}
+
+.text-path-svg textPath {
+  letter-spacing: 100;
+  word-spacing: 100;
+}
+
+text {
+  font-size: 0.7rem;
+  fill: black;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  text-anchor: middle;
+}
+
+/* Ensure the SVG path doesn't have a background */
+.text-path-svg path {
+  fill: transparent; /* Make sure the path itself doesn't have a fill color */
+  stroke: transparent; /* Ensure there's no stroke on the path */
+}
+
+/* Keyframes for rotation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+  /* Keyframes to make the arrow bob up and down */
+        @keyframes bobbing {
+            0% {
+                top: 45%;
+            }
+            50% {
+                top: 55%;
+            }
+            100% {
+                top: 45%;
+            }
+        }
+
+/* check out work circle */
+
+
 
 /*Bigger Screen*/
 
@@ -572,8 +676,8 @@ p{
 
 .hero-container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 8rem 6rem;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
   align-items: start;
 }
 
@@ -608,7 +712,7 @@ p{
 
   .hero-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr ;
     align-items: start;
 
   }
@@ -648,8 +752,10 @@ p{
 /*buttons*/
 .buttons{
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     gap: 1.5rem;
+    
 }
 
 .primarybtn{
