@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Beautiful Freak';
+    src: url('assets/It\'s\ me\ Simon\ -\ Beautiful\ Freak\ Bold.otf') format('opentype'); /* Use 'opentype' for .otf files */
+    font-weight: normal; /* Specify font weight */
+    font-style: normal; /* Specify font style */
+  }
+
+
+  h1{
+    font-family: 'Beautiful freak';
+  }

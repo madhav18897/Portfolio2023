@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GameChanger Design System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="GCds.css">
+    <link rel="icon" href="MVLOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.jpg"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    
+    <script>        
+        window.addEventListener("load", ()=>{
+            const loader=document.querySelector(".loader");
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", ()=>{
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
+</head>
+
+
+    
+
+
+<section class="top-nav" id="navbar">
+        
+    <div>
+        <a class="case-nav-links" href="index.html"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>   
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+        <!-- <li><a class="case-nav-links" href="index.html#hero">Home</a></li> -->
+        <li><a class="case-nav-links" href="index.html#aboutme">About</a></li>
+        <li><a class="case-nav-links" href="resume.html" target="_blank"></i>Resume</a></li>
+        <li><a class="case-nav-links" href="index.html#projects">Design Work</a></li>
+        <!-- <li><a class="case-nav-links" href="#workexperience">Work Experience</a></li> -->
+        <li style="margin: 0 0 0 1rem;"><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
+    </ul>
+
+</section> 
+
+<div class="dummydiv" id="home" style="height: 120px;"></div>
+<div class="body">
+
+    <div class="loader">
+        <h2 style="padding: 2%; color: #fff; font-family: Gilroyextrabold;" class="load-message">Thanks For Your patience! <br> Prototypes and Images Take Time to Load 😅... </h2>
+        
+    </div>
+
+    <div class="container">
+        <div class="leftpanel">
+            <div class="side-nav-list">
+                <h1 style="color: #121212; font-weight: bolder; font-size: 1.5rem;">Index</h1>
+                <a class="side-nav-list-item" href="#context">Context</a>
+                <a class="side-nav-list-item" href="#problem1">Problem Statement </a>
+                <a class="side-nav-list-item" href="#process">Process</a>  
+                <a class="side-nav-list-item" href="#home">Back to top</a>
+            </div>
+
+        </div>
+
+        <div class="rightpanel">
+            
+            <div class="leftright">
+                <div class="leftside">
+                    <img src="GCassets/GCtile.svg" alt="">
+                </div>
+                <div class="rightside">
+                    <h1>Elevating GameChanger's Web Design System</h1>
+                    <h2>May to November 2024</h2>
+                    <p>New York, United States (remote)</p>
+                </div>
+            </div>
+
+            <div class="dummydiv" id="context" style="height: 56px;"></div>
+            <div class="content-block">
+                <h2>What Does <span style="color: #00d682; font-family: Gilroyextrabold;">GameChanger</span> Do?</h2>
+                <p>GameChanger provides mobile and web platforms that offer live scoring, stats, and streaming for youth and amateur sports teams, enabling players, coaches, and families to stay connected and engaged. For this project I worked with the team focused on furthering the success of the Volleyball offering at GC.</p>
+            </div>
+
+            <div class="content-block">
+                <div class="case-study-container" style="grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <img class="affinity" src="GCdsassets/figxcode.svg" alt="">
+                    <div>
+                        <h1>How it all started</h1>
+                        <p>GameChanger had robust iOS and Android design systems, but the web design system lagged significantly behind. Developers often referenced mobile components for web adaptation, leading to design discrepancies and collaboration hurdles. This project aimed to close the gap by auditing and improving the web design system.</p>
+                    </div>
+                    <div>
+                        <h1>The Problem</h1>
+                        <h2>The outdated web design system created inefficiencies:</h2>
+                        <p>
+                            • Designers lacked updated components in Figma, causing misalignment with development.  <br>
+                            • Developers had to adapt mobile components manually, adding complexity and risk of inconsistencies.  </p>
+                    </div>
+                    <div>
+                        <h1>My Role</h1>
+                        <p>I led the audit and overhaul of the web design system, collaborating closely with a full-stack developer and my manager.  </p>
+                    </div>
+                </div>
+
+            </div>
+
+                    
+            <div class="dummydiv" id="problem1" style="height: 56px;"></div>
+            <div class="content-block" style="background-image: url(GCassets/backgroundgc.svg); padding: 1rem; border-radius: 24px;">
+                <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem;">
+                <h1 style="color: #fff;">Problem Statement 1</h1>
+                <h2 style="color: #00d682;">How might we improve the consistency and collaboration between designers and developers by creating a unified, up-to-date web design system that aligns with existing mobile design systems, ensuring a seamless, efficient, and accessible user experience across platforms?</h2>
+            </div>
+
+
+            <div class="dummydiv" id="process" style="height: 40px;"></div>
+            <div class="content-block">
+                <h1>Process</h1>
+                <div class="three-col-container">
+                    <div>
+                        <h1 class="numbering">1</h1>
+                        <h2>Audit and Prioritization</h2>
+                        <p>
+                            • Identified outdated components.  <br><br>
+                            • Prioritized components based on usage and visibility. 
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="numbering">2</h1>
+                        <h2>Reverse Engineering and Creation</h2>
+                        <p>
+                            • Compared web components to their iOS counterparts.<br><br>
+                            •  Reverse-engineered components in Figma with 1:1 functionality replication. <br><br>
+                            •  Designed missing or suboptimal components from scratch, ensuring 1:1 alignment with iOS design principles, adapting for web screens.
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="numbering">3</h1>
+                        <h2>Tools and Collaboration</h2>
+                        <p>
+                            • Figma (for design), Notion (for documentation), and browser inspect panels (for functionality review).  <br><br>
+                            •Worked with a developer to align designs, prepare detailed handoff files, and provide custom CSS notes.   
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="dummydiv" id="problem1" style="height: 56px;"></div>
+            <div class="content-block">
+                <h1>The Outcome</h1>
+                <p>• Redesigned 20+ components, improving consistency across 50+ screens and user journeys.  <br>
+                   • Enhanced designer-developer collaboration and ensured cohesive user interface (UI) and user experience (UX).  <br>
+                   • Elevated the priority of the web design system within the organization, transforming it into a reliable resource for teams.  </p>
+            </div>
+
+            <div class="dummydiv" id="problem1" style="height: 56px;"></div>
+            <div class="content-block">
+                <h1>The Design System in Figma</h1>
+                <h2 style="margin-bottom: 2rem;">Scroll to see the entire component library I worked on</h2>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 1rem;" width="100%" height="640px" loading="lazy" src="https://embed.figma.com/proto/lbNOfB0gafHczfqluE6mNZ/MV-GC-WORK?page-id=7%3A137527&node-id=1327-235650&node-type=frame&viewport=-652%2C185%2C0.05&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=73%3A123376&embed-host=share" allowfullscreen></iframe>
+            </div>
+
+            <div class="dummydiv" id="problem1" style="height: 56px;"></div>
+            <div class="content-block">
+                <h1>The Most Important Components</h1>
+                <h2>What they are, how they work, and why they are important</h2>
+                <img class="affinity" src="GCdsassets/Component Example 1.svg" alt="" loading="lazy">
+                <div class="three-col-container">
+                    <div>
+                        <h1 class="numbering">1</h1>
+                        <h2>What it is</h2>
+                        <p>
+                            • Identified outdated components.  <br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="numbering">2</h1>
+                        <h2>How it works</h2>
+                        <p>
+                            • Compared web components to their iOS counterparts.<br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="numbering">3</h1>
+                        <h2>Why it is important</h2>
+                        <p>
+                            • Figma (for design), Notion (for documentation), and browser inspect panels (for functionality review).  <br><br>  
+                        </p>
+                    </div>
+
+                </div>
+
+                <img class="affinity" src="GCdsassets/Component Example 2.svg" alt="" loading="lazy">
+                <div class="three-col-container">
+                    <div>
+                        <h1 class="numbering">1</h1>
+                        <h2>What it is</h2>
+                        <p>
+                            • Identified outdated components.  <br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="numbering">2</h1>
+                        <h2>How it works</h2>
+                        <p>
+                            • Compared web components to their iOS counterparts.<br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="numbering">3</h1>
+                        <h2>Why it is important</h2>
+                        <p>
+                            • Figma (for design), Notion (for documentation), and browser inspect panels (for functionality review).  <br><br>  
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="dummydiv" id="problem1" style="height: 56px;"></div>
+            <div class="content-block">
+                <h1>Reflections</h1>
+                <h2>What I Learned</h2>
+                <p>• Mastered auditing and revitalizing an existing design system.<br>
+                   • Gained deeper experience collaborating with developers beyond feature-specific work.   <br>
+                
+                <h2>What Can Be Improved</h2>
+                <p>Further simplify Figma component variants for efficiency.</p>   
+
+            </div>
+
+
+            <p style="color: #121212; font-weight: bold;" id="details">If you are interested in discussing this case study further You can contact me at <br> <span style="color: #4252EB; font-weight: 800;"><a href="mailto:madhav18897@utexas.edu">madhav18897@utexas.edu</a></span></p>
+
+            <div class="socials">
+                <a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a class="social-icons" href="https://www.instagram.com/madhav18897/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
+            <p style="margin: 2rem 0rem;">@all rights reserved</p>
+        
+        </div>
+        
+
+    </div>
+
+
+</body>
+
+
+
+
+
+
+</html>
