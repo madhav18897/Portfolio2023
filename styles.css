@@ -219,6 +219,15 @@ html, body {
   font-style: normal; /* Specify font style */
 }
 
+@font-face {
+  font-family: 'Rushford Clean';
+  src: url('assets/Rushfordclean-rgz89.otf') format('opentype'); /* Use 'opentype' for .otf files */
+  font-weight: bold; /* Specify font weight */
+  font-style: normal; /* Specify font style */
+}
+
+
+
 
 h1{
     font-family: 'Gilroyextrabold';
@@ -287,19 +296,23 @@ p{
 
 .UTbox{
   display: flex;
-  flex-direction: column;
-  border-radius: 24px;
-  background: #FFF;
+  flex-direction: row;
+  border-radius: 0px;
   align-items: baseline;
   gap: 1rem;
   height: 100%;
   max-width: 700px;
-  margin-bottom: 2rem;
 }
 
 
 .bevo{
-  width: 64px
+  width: 64px;
+  height: 64px;
+  padding: 8px;
+  background-color: #ff9f5045;
+  border-radius: 8px;
+  margin: 0;
+
 }
 
 
@@ -338,7 +351,9 @@ p{
 
 .Intro{
   font-size: 3rem;
-  font-family: 'Beautiful Freak';
+  font-family: 'Gilroyextrabold';
+  font-weight: 900;
+  letter-spacing: -1.5px;
   
 }
 
@@ -353,7 +368,7 @@ p{
 .industry_label{
   display: inline-block;
   padding: 8px 24px;
-  background-color: #5e50cc4f;
+  background-color: #877ae660;
   color: #5F50CC;
   display: inline-block;
   border-radius: 0.5rem;
@@ -517,6 +532,10 @@ text {
     #hero{
       margin-top: 2rem;
     }
+
+    .industries{
+      margin-top: 1rem;
+    }
   }
 
 .herotext{
@@ -644,7 +663,8 @@ text {
 .tab-container {
   display: flex;
   gap: 0rem;
-  border-bottom: 2px solid #808080;
+  border-bottom: 1.5px solid #cecece;
+  width: 100%;
   
 }
 
@@ -654,7 +674,7 @@ text {
   border: none;
   background-color: #fff;
   font-family: 'Gilroyextrabold' ;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #808080;
 }
 
@@ -662,7 +682,7 @@ text {
   background-color: #fff;
   border-bottom: 4px solid #4252EB;
   font-family: 'Gilroyextrabold' ;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #121212;
 }
 
