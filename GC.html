@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Sacramento&display=swap"
         rel="stylesheet">
 
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     
@@ -50,15 +51,20 @@
     <div class='menu-button'></div>
     </label>
     <ul class="menu">
-        <!-- <li><a class="case-nav-links" href="index.html#hero">Home</a></li> -->
-        <li><a class="case-nav-links" href="index.html#aboutme">About</a></li>
-        <li><a class="case-nav-links" href="resume.html" target="_blank"></i>Resume</a></li>
-        <li><a class="case-nav-links" href="index.html#projects">Design Work</a></li>
-        <!-- <li><a class="case-nav-links" href="#workexperience">Work Experience</a></li> -->
-        <li style="margin: 0 0 0 1rem;"><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
+      <!-- <li><a class="case-nav-links" href="index.html">Home</a></li> -->
+      <li><a class="case-nav-links" href="#aboutme">About</a></li>
+      <li><a class="case-nav-links" href="resume.html" target="_blank"></i>Resume <span style="font-family: 'beautiful freak';">↗</span></a></li>
+      <li><a class="case-nav-links" href="#projects">Design Work</a></li>
+      <li style="margin: 0 0 0 1rem;"><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
+      <li><a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-s"></i></a></li>
     </ul>
 
+
 </section> 
+
+<div class="cover">
+    <p></p>
+</div>
 
 <div class="dummydiv" id="home" style="height: 120px;"></div>
 <div class="body">
@@ -74,11 +80,11 @@
                 <h1 style="color: #121212; font-weight: bolder; font-size: 1.5rem;">Index</h1>
                 <a class="side-nav-list-item" href="#context">Context</a>
                 <a class="side-nav-list-item" href="#problem1">First Problem Statement </a>
-                <a class="side-nav-list-item" href="#usabilitytest1">Usability Test 1</a>  
+                <a class="side-nav-list-item" href="#usabilitytest1">Initial Usability Test</a>  
                 <a class="side-nav-list-item" href="#divergingexplorations">Diverging Explorations</a>
                 <a class="side-nav-list-item" href="#research">Knowledge Gaps and Research</a>
                 <a class="side-nav-list-item" href="#problem2">Second Problem Statement</a>
-                <a class="side-nav-list-item" href="#usabilitytest2">Usability Test 2</a>
+                <a class="side-nav-list-item" href="#usabilitytest2">Final Usability Test</a>
                 <a class="side-nav-list-item" href="#learnings">Learnings and Next Steps</a>
                 <a class="side-nav-list-item" href="#home">Back to top</a>
             </div>
@@ -114,7 +120,7 @@
                         <h1>The Context</h1>
                         <h2>Putting a Lens on Discoverability</h2>
                         <p>I aimed to improve the discoverability of the Film Room feature for volleyball teams by incorporating UI elements like banners and widgets.</p>
-                        <img class="affinity" src="GCassets/prototypeplay.svg" alt="" loading="lazy" width="80%">
+                        <img class="affinity prototypeplay" src="GCassets/prototypeplay.svg" alt="" loading="lazy" width="80%">
                     </div>
                     <div class="right-column"><iframe width="100%" height="1000px" src="https://embed.figma.com/proto/lbNOfB0gafHczfqluE6mNZ/MV-GC-WORK?page-id=0%3A1&node-id=115-163985&node-type=frame&viewport=-3546%2C-10673%2C0.09&scaling=min-zoom&content-scaling=responsive&starting-point-node-id=115%3A163985&embed-host=share" loading="lazy" allowfullscreen ></iframe></div>
                     <img src="GCassets/prototype.gif" alt="">
@@ -123,52 +129,63 @@
 
             <div class="dummydiv" id="context" style="height: 40px;"></div>
             <div class="content-block">
-                <h1>How it all started</h1>
-                <h2>Just another day spent exploring</h2>
-                <p style="margin-bottom: 2rem;">This project began as a UI exploration to draw attention to the newly launched Film Room feature, helping volleyball team staff analyze footage, mark key moments, and share them with players, coaches, or parents. We focused on small UI elements, like banners and tooltips, to address discoverability challenges, hypothesizing that the feature’s placement within multiple tabs and under other content made it hard to find.</p>
+                <h1>UI Exploration Focused on Discoverability</h1>
+                <p style="margin-bottom: 2rem;">It all started as a UI exploration to boost discoverability for the newly launched Film Room feature, designed for volleyball staff to analyze footage, highlight key moments, and share them. By focusing on small UI elements like banners and tooltips, we aimed to address the challenge of the feature being buried under multiple tabs and content.</p>
                 <div class="gridLR">
                     <div>
-                        <img class="affinity" src="GCassets/initialscreen2.svg" alt="" loading="lazy" style="width: 80%;">
-                        <p style="color: #121212;">This from the team’s event or game page with a particular opponent (Rangeview Rangers in this case) and this page just contains full event videos and video clips from that particular game. Again, these can be clicked on and opened within film room.</p>
+                        <p class="sticky_note">This page, linked to a team's event or game with a specific opponent (e.g., Rangeview Rangers), hosts full event videos and clips from that game. These videos can be opened directly in the Film Room.</p>
+                        <img class="affinity" src="GCassets/initialscreen2.svg" alt="" loading="lazy" style="width: 60%;" >
                     </div>
                     <div>
-                        <img class="affinity" src="GCassets/initialscreen1.svg" alt="" loading="lazy" style="width: 80%;"> 
-                        <p style="color: #121212;">This screen is from the teams homepage where each of the videos can be clicked on and opened in Film Room. </p>   
+                        <p class="sticky_note">This screen is from the teams homepage where each of the videos can be clicked on and opened in Film Room. </p>   
+                        <img class="affinity" src="GCassets/initialscreen1.svg" alt="" loading="lazy" style="width: 60%;"> 
                     </div>
                 </div> 
                 <img class="affinity" src="GCassets/FilmRoomIA.svg" alt="" loading="lazy">  
                 <h2>The Explorations</h2>
                 <p>These are some explorations I did to visualize how the banner might look.</p>
-                <img class="affinity" src="GCassets/Explorations.svg" alt="" loading="lazy">   
+                <img class="affinity" src="GCassets/Explorations.svg" alt="" loading="lazy"> 
+                <p class="sticky_note">The first banner design was chosen for its simplicity and because it was a component that could be built easily by modifying an existing design system component</p>  
             </div>  
             
         
             
             <div class="dummydiv" id="problem1" style="height: 56px;"></div>
-            <div class="content-block" style="background-image: url(GCassets/backgroundgc.svg); padding: 1rem; border-radius: 24px;">
-                <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem;">
-                <h1 style="color: #fff;">Problem Statement 1</h1>
-                <h2 style="color: #00d682;">How might we enhance the visibility of the Film Room feature so that users can easily discover it despite its placement within multiple tabs and beneath other content?</h2>
+            <div class="problem_statement">
+                <hr class="grey-rule">
+                <img src="GCassets/GClogogrey.svg" alt="" style="width: 80px;">
+                <h1 >How Might We?</h1>
+                <h2 >Enhance the visibility of the Film Room feature so that users can easily discover it despite its placement within multiple tabs and beneath other content?</h2>
+                <hr class="grey-rule">
             </div>
 
 
             <div class="dummydiv" id="usabilitytest1" style="height: 40px;"></div>
             <div class="content-block">
                 <h1>The First Usability Test: <span style="color: #00d682;">Discoverability</span></h1>
-                <p>We chose a simple, dismissable blue banner from existing design components to highlight the Film Room feature with minimal development effort. Additionally, we added a red dot to the video tab for greater visibility. To validate these choices, we conducted a usability test to address key learning goals.</p>
                 <div class="gridLR" style="grid-template-columns: 2fr 1fr; gap: 3rem;">
-                    <div>
                         <img class="affinity" src="GCassets/finalbanners.svg" alt="">
-                    </div>
-                    <div>
-                        <h2>Learning Goals</h2>
-                        <p style="color: #121212;">1. Discoverability: Understand how coaches discover the Film Room on the team’s page and whether its placement aligns with their expectations. Where do they look first? <br><br>
-                            2. Intuitiveness: Assess if the design and placement of the video tab naturally draw coaches’ attention, and whether they can easily find and use the Film Room.<br><br>
-                            3. Navigation: Track the pathways coaches take to access the Film Room and identify any usability issues, such as unclear labels or hidden options.<br><br>
-                            4. Interaction: Determine if coaches understand how to access the Film Room by interacting with the video archive tiles without additional labels.<br><br>
-                            5. Satisfaction: Measure coaches' satisfaction with the ease of discovering and using the Film Room within the app (Score out of 5). </p>   
-                    </div>
+                        <p>We chose a simple, dismissable blue banner from existing design components to highlight the Film Room feature with minimal development effort. Additionally, we added a red dot to the video tab for greater visibility. To validate these choices, we conducted a usability test to address key learning goals.</p>
                 </div> 
+                <div>
+                    <h2 style="margin-top: 2rem;">Learning Goals</h2>
+                    <div class="col-3-grid" style="margin-top: 1rem;">
+                        <p class="sticky_note">
+                            <span style="font-family: 'Gilroyextrabold';">1. Discoverability:</span> Understand how coaches discover the Film Room on the team’s page and whether its placement aligns with their expectations. Where do they look first?
+                        </p>
+                        <p class="sticky_note">
+                           <span style="font-family: 'Gilroyextrabold';"> 2. Intuitiveness: </span> Assess if the design and placement of the video tab naturally draw coaches’ attention, and whether they can easily find and use the Film Room.
+                        </p>
+                        <p class="sticky_note">
+                            <span style="font-family: 'Gilroyextrabold';"> 3. Navigation: </span> Track the pathways coaches take to access the Film Room and identify any usability issues, such as unclear labels or hidden options.
+                        </p>
+                        <p class="sticky_note">
+                            <span style="font-family: 'Gilroyextrabold';"> 4. Interaction: </span> Determine if coaches understand how to access the Film Room by interacting with the video archive tiles without additional labels.
+                        </p>
+                        <p class="sticky_note">
+                            <span style="font-family: 'Gilroyextrabold';"> 5. Satisfaction: </span> Measure coaches' satisfaction with the ease of discovering and using the Film Room within the app (Score out of 5).
+                        </p>
+                </div>
             </div>
 
             <div class="dummydiv" id="" style="height: 40px;"></div>
@@ -176,29 +193,29 @@
                 <h1>Necessity</h1>
                 <h2>What was the point of doing all this?</h2>
                 <p>To understand the necessity of this project, we reviewed GameChanger’s Q3 2024 business and user goals. As volleyball is an emerging sport, increasing visibility of our latest features is crucial to driving adoption and providing greater value to users.</p>
-                <div class="gridLR" style="grid-template-columns: 2fr 1fr;">
-                    <div style="background-image: url(GCassets/backgroundgc.svg); padding: 1rem; border-radius: 24px;">
-                            <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem;">
-                            <h1 style="color: #fff;">The Team's Business Goals for Q3</h1>
-                            <h2 style="color: #00d682;">1/4th of VB teams with video conduct a valuable film room session (defined as more than 1 moment created). <br> <br>
+                <div class="gridLR" style="grid-template-columns: 2fr 1fr; gap: 1rem;">
+                    <div style="padding: 1.5rem; border-radius: 0px; border: 1px solid #808080;">
+                            <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem; width: 80px;" >
+                            <h2 >The Team's Business Goals for Q3</h2>
+                            <p>1/4th of VB teams with video conduct a valuable film room session (defined as more than 1 moment created). <br> <br>
 
                                 1/5th of VB staff sharing moments, of all staff creating moments. <br> <br>
                                 
                                 Observability added to 100% of A-Team owned critical paths. <br><br>
                                 
-                                4x YoY user growth in 2025</h2>
+                                4x YoY user growth in 2025</p>
                     </div>
-                    <div style="background-image: url(GCassets/backgroundgc.svg); padding: 1rem; border-radius: 24px;">
+                    <div style="padding: 1.5rem; border-radius: 0px; border: 1px solid #808080;">
                         <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem;">
-                        <h1 style="color: #fff;">Team's UX Goals for Q3</h1>
-                        <h2 style="color: #00d682;">To make entry into film room as seamless and intuitive as possible.
+                        <h2>Team's UX Goals for Q3</h2>
+                        <p>To make entry into film room as seamless and intuitive as possible.
 
-                            Have multiple entry points into film room to facilitate easy access and analysis.</h2>
+                            Have multiple entry points into film room to facilitate easy access and analysis.</p>
                     </div>
                 </div> 
-                <div style="background-image: url(GCassets/backgroundgc.svg); padding: 1rem; border-radius: 24px; margin-top: 3rem;">
+                <div style="padding: 1.5rem; border-radius: 0px; margin-top: 1rem; background-color: #121212;">
                     <img src="GCassets/$$.svg" alt="" style="margin-bottom: 1rem;">
-                    <h2 style="color: #00d682;"> The bottom line is that if more users discover Film Room and find value in it, it enhances the overall value proposition of our volleyball product. This means that if marketed correctly, we will have an increase in revenue which in-turn pushes the top line of the company higher.</h2>
+                    <p style="color: #fff;"> The bottom line is that if more users discover Film Room and find value in it, it enhances the overall value proposition of our volleyball product. This means that if marketed correctly, we will have an increase in revenue which in-turn pushes the top line of the company higher.</p>
                 </div>
 
             </div>
@@ -327,10 +344,12 @@
             </div>
             
             <div class="dummydiv" id="problem2" style="height: 120px;"></div>
-            <div class="content-block" style="background-image: url(GCassets/backgroundgc.svg); padding: 1rem; border-radius: 24px;">
-                <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem;">
-                <h1 style="color: #fff;">Problem Statement 2</h1>
-                <h2 style="color: #00d682;">How might we create an easily accessible entry point to the Film Room on the home screen so that GameChanger team staff can quickly and effectively utilize it without navigating through multiple tabs?</h2>
+            <div class="problem_statement">
+                <hr class="grey-rule">
+                <img src="GCassets/GClogogrey.svg" alt="" style="width: 80px;">
+                <h1 >How Might We?</h1>
+                <h2 >Create an easily accessible entry point to the Film Room on the home screen so that GameChanger team staff can quickly and effectively utilize it without navigating through multiple tabs?</h2>
+                <hr class="grey-rule">
             </div>
                         
             <div class="dummydiv" id="usabilitytest2" style="height: 120px;"></div>
