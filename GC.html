@@ -21,10 +21,10 @@
     <link rel="shortcut icon" type="image/jpg" href="assets/favicon.jpg"/>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Sacramento&display=swap"
         rel="stylesheet">
-
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
     
     <script>        
         window.addEventListener("load", ()=>{
@@ -98,7 +98,7 @@
                     <img src="GCassets/GCtile.svg" alt="">
                 </div>
                 <div class="rightside">
-                    <h1>GameChanger Film Room Research</h1>
+                    <h1>Film Room Research and Design</h1>
                     <h2>August to November 2024</h2>
                     <p>New York, United States (remote)</p>
                 </div>
@@ -164,8 +164,11 @@
             <div class="content-block">
                 <h1>The First Usability Test: <span style="color: #00d682;">Discoverability</span></h1>
                 <div class="gridLR" style="grid-template-columns: 2fr 1fr; gap: 3rem;">
-                        <img class="affinity" src="GCassets/finalbanners.svg" alt="">
-                        <p>We chose a simple, dismissable blue banner from existing design components to highlight the Film Room feature with minimal development effort. Additionally, we added a red dot to the video tab for greater visibility. To validate these choices, we conducted a usability test to address key learning goals.</p>
+                        <img class="affinity" src="GCassets/finalbanners.svg" alt="" loading="lazy">
+                        <div>
+                            <img class="affinity" src="GCassets/banner+reddot.svg" alt="" loading="lazy">
+                            <p>We chose a simple, dismissable blue banner from existing design components to highlight the Film Room feature with minimal development effort. Additionally, we added a red dot to the video tab for greater visibility. To validate these choices, we conducted a usability test to address key learning goals.</p>
+                        </div>
                 </div> 
                 <div>
                     <h2 style="margin-top: 2rem;">Learning Goals</h2>
@@ -194,10 +197,10 @@
                 <h2>What was the point of doing all this?</h2>
                 <p>To understand the necessity of this project, we reviewed GameChanger’s Q3 2024 business and user goals. As volleyball is an emerging sport, increasing visibility of our latest features is crucial to driving adoption and providing greater value to users.</p>
                 <div class="gridLR" style="grid-template-columns: 2fr 1fr; gap: 1rem;">
-                    <div style="padding: 1.5rem; border-radius: 0px; border: 1px solid #808080;">
-                            <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem; width: 80px;" >
+                    <div class="sticky_note">
+                            <img src="GCassets/GClogogrey.svg" alt="" style="margin-bottom: 1rem; width: 80px; filter: brightness(0%);" >
                             <h2 >The Team's Business Goals for Q3</h2>
-                            <p>1/4th of VB teams with video conduct a valuable film room session (defined as more than 1 moment created). <br> <br>
+                            <p style="color: #121212;">1/4th of VB teams with video conduct a valuable film room session (defined as more than 1 moment created). <br> <br>
 
                                 1/5th of VB staff sharing moments, of all staff creating moments. <br> <br>
                                 
@@ -205,15 +208,15 @@
                                 
                                 4x YoY user growth in 2025</p>
                     </div>
-                    <div style="padding: 1.5rem; border-radius: 0px; border: 1px solid #808080;">
-                        <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem;">
+                    <div class="sticky_note">
+                        <img src="GCassets/GClogogrey.svg" alt="" style="margin-bottom: 1rem; width: 80px; filter: brightness(0%);">
                         <h2>Team's UX Goals for Q3</h2>
-                        <p>To make entry into film room as seamless and intuitive as possible.
+                        <p style="color: #121212;">To make entry into film room as seamless and intuitive as possible.
 
                             Have multiple entry points into film room to facilitate easy access and analysis.</p>
                     </div>
                 </div> 
-                <div style="padding: 1.5rem; border-radius: 0px; margin-top: 1rem; background-color: #121212;">
+                <div style="padding: 1.5rem; border-radius: 0.5rem; margin-top: 1rem; background-color: #121212;">
                     <img src="GCassets/$$.svg" alt="" style="margin-bottom: 1rem;">
                     <p style="color: #fff;"> The bottom line is that if more users discover Film Room and find value in it, it enhances the overall value proposition of our volleyball product. This means that if marketed correctly, we will have an increase in revenue which in-turn pushes the top line of the company higher.</p>
                 </div>
@@ -225,37 +228,57 @@
             
             <div class="dummydiv" id="" style="height: 40px;"></div>
             <div class="content-block">
-                <h2>Research Methodology</h2>
-                <p>To address our research questions, we’ll conduct an unmoderated usability test with volleyball coaches aged 35-50 who coach 11-16U teams, sourced from the Userbrain database. The study will include both GameChanger users and non-users, with screening to ensure relevant coaching experience.</p>
-                <div style="background-image: url(GCassets/backgroundgc.svg); padding: 1rem; border-radius: 24px; margin-top: 3rem;">
-                    <h2 style="color: #00d682;"> Our target group is 11-16U club coaches, because live streaming is essential to product-market fit in this segment, and efficient game footage analysis supports team performance improvement. Coaches favor an all-in-one solution for reviewing, giving feedback, and sharing videos. By streamlining access to these features, GameChanger can strengthen its competitive advantage</h2>
+                <h1>Research Methodology</h1>
+                               
+                <div class="label-set">
+                    <p class="label">Unmoderated usability test</p>
+                    <p class="label">11-16U volleyball coaches</p>
+                    <p class="label">Ages 35-50</p>
+                    <p class="label">Sourced from Userbrain</p>
                 </div>
+                <p>Targeting the aforementioned segment aligns with their need for an all-in-one video solution, enhancing team performance and our competitive edge.</p>
 
-                <h2 style="margin-top: 1.5rem;">Scope</h2>
-                <p>We’re focusing on improving the discoverability of Film Room within the current information architecture (IA), without making structural changes. Since the feature is already live, we’ll conduct usability testing to observe how users locate it. If findings indicate the need, we may consider IA changes or follow up with an in-app A/B test.</p>
 
-                <h2>The Test</h2>
-                <p> I set up a usability test on the user brain platform in accordance with the screening criteria we had for participants.</p>
+                <h2>Scope</h2>
+                <div class="gridLR">
+                    <p>We’re improving Film Room’s discoverability within the current IA through usability testing. Based on findings, we may explore IA changes or follow up with an in-app A/B test.</p>
+                    <div style="display: flex; flex-direction: row ; gap: 1rem;">
+                        <div class="check-cross">
+                            <h2 style="font-size: 1rem;"><span>✅  </span>Discoverability</h2>
+                        </div>
+                        <div class="check-cross">
+                            <h2 style="font-size: 1rem;"><span>❌  </span>IA changes</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="gridLR">
+                    <div>
+                        <h2>The Test</h2>
+                        <p> I set up a usability test on the user brain platform in accordance with the screening criteria we had for participants.</p>
+                    </div>
+                    <div>
+                        <h2>Objective</h2>
+                        <p>This usability test evaluated how easily youth volleyball coaches could navigate the GameChanger app to find and use the game footage analysis feature.</p>
+                    </div>
 
-                <h2>Objective</h2>
-                <p>This usability test evaluated how easily youth volleyball coaches could navigate the GameChanger app to find and use the game footage analysis feature.</p>
+                </div>
             </div>
             
             <div class="dummydiv" id="usabilitytest1" style="height: 40px;"></div><div class="dummydiv"  style="height: 40px;"></div>
             <div class="content-block">
-                <div class="gridLR" style="grid-template-columns: 2fr 1fr; gap: 2rem;">
+                <h1 style="margin-bottom: 1rem;">What We Learned</h1>
+                <p style="background-color: #bf5700; color: #fff; padding: 0.5rem 1rem; display: inline-block; border-radius: 0.5rem;">Discoverability 3.8/5</p>
+                <p><span style="color: #121212; font-weight: bold;">If we define entry into film room as a success, then 3/5 users were able to quickly and successfully find it. We should focus on directing users to the correct tab and then encourage them to click on the correct tile using UI elements.</span> <br><br>
+                    The video tab on the team home page, marked by a red dot and banner, effectively drew attention as the main entry point. Although the Beta tag was well-placed, additional information could be helpful. Users suggested making the video tab the default, but further research was needed.</p>
+                <div class="gridLR" style="grid-template-columns: 1.5fr 1fr; gap: 2rem; margin-top: 1.5rem;">
                     <div>
-                        <iframe width="100%" height="1000px" src="https://embed.figma.com/proto/lbNOfB0gafHczfqluE6mNZ/MV-GC-WORK?page-id=0%3A1&node-id=115-158833&node-type=frame&viewport=-3546%2C-10673%2C0.09&scaling=scale-down&content-scaling=responsive&starting-point-node-id=115%3A158833&embed-host=share" allowfullscreen></iframe>
+                        <iframe width="100%" height="840px" src="https://embed.figma.com/proto/lbNOfB0gafHczfqluE6mNZ/MV-GC-WORK?page-id=0%3A1&node-id=115-158833&node-type=frame&viewport=-3546%2C-10673%2C0.09&scaling=scale-down&content-scaling=responsive&starting-point-node-id=115%3A158833&embed-host=share" allowfullscreen></iframe>
                     </div>
                     <div>
-                        <h1 style="margin-bottom: 1rem;">What We Learned</h1>
-                        <p style="background-color: #bf5700; color: #fff; padding: 0.5rem 1rem; display: inline-block; border-radius: 0.5rem;">Discoverability 3.8/5</p>
-                        <p><span style="color: #121212; font-weight: bold;">If we define entry into film room as a success, then 3/5 users were able to quickly and successfully find it. We should focus on directing users to the correct tab and then encourage them to click on the correct tile using UI elements.</span> <br><br>
-                            The video tab on the team home page, marked by a red dot and banner, effectively drew attention as the main entry point. Although the Beta tag was well-placed, additional information could be helpful. Users suggested making the video tab the default, but further research was needed.</p>
-
                         <h2>Recommendations</h2>
-                        <p>• Consider alternative Beta badge placements, add a blue banner to guide users to the video tab, note existing footage (or upload instructions) on the info page, and conduct a Kubit analysis to track post-game visits, supporting a case for making the video tab default.
-                            <br><br>• Future improvements: link play-by-play events to Film Room with short clips for marking and add video status to the schedule tile.</p>    
+                        <p>• Explore alternative Beta badge placements, add a blue banner directing users to the video tab, note existing footage or upload instructions on the info page, and conduct a Kubit analysis to justify setting the video tab as default.
+                            <br><br>• Future improvements: link play-by-play events to Film Room with short clips for marking and add video status to the schedule tile.</p>  
+                        <img class="affinity" src="GCassets/recommendations1.svg" alt="" loading="lazy">      
                     </div>
                 </div>
             </div>
@@ -270,48 +293,58 @@
 
             <div class="dummydiv" id="research" style="height: 40px;"></div>
             <div class="content-block">
-                <div class="content-block" style="background-image: url(GCassets/backgroundgc.svg); padding: 1rem; border-radius: 24px;">
-                    <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem;">
-                    <h1 style="color: #fff;">The Survey</h1>
-                    <h2 style="color: #00d682;">At this point, we realize that there were some gaps in our knowledge which we needed to address before we could proceed with additional design work.</h2>
+                <div class="problem_statement" style="margin-bottom: 2rem;">
+                    <hr class="grey-rule">
+                    <img src="GCassets/GClogogrey.svg" alt="" style="width: 80px;">
+                    <h2>At this point, we realize that there were some gaps in our knowledge which we needed to address before we could proceed with additional design work.</h2>
+                    <hr class="grey-rule">
                 </div>
-                <div class="gridLR">
-                    <div>
-                        <h2>Gaps in Knowledge/Questions We Need Answers To</h2>
-                        <p>• Who captures video, and how does camera placement impact the quality of insights? <br>
-                            • Are coaches creating clips or assigning timestamps, and which moments are prioritized as coachable? <br>
-                            • How are scores and plays noted during analysis, and what tools and devices are commonly used? <br>
-                            • When do coaches typically analyze footage? <br>
-                            • How are insights shared, and what specific improvements do coaches see as a result of game analysis?</p>
-                    </div>
+
+                <h1 style="margin-bottom: 2rem;">Questions We Need Answers To</h1>
+                <div class="col-3-grid">
+                        <p class="sticky_note">Who captures video, and how does camera placement impact the quality of insights? </p>
+                        <p class="sticky_note">coaches creating clips or assigning timestamps, and which moments are prioritized as coachable? </p>
+                        <p class="sticky_note">How are scores and plays noted during analysis, and what tools and devices are commonly used? </p>
+                        <p class="sticky_note">When do coaches typically analyze footage? </p>
+                        <p class="sticky_note">How are insights shared, and what specific improvements do coaches see as a result of game analysis?</p>
+                </div> 
+
+                <div class="gridLR" style="margin-top: 2rem;">
+
                     <div>
                         <h2>Methodology</h2>
                         <p>To answer these research questions, we will send out a survey to GameChanger volleyball staff that have been active in the last 12 months. In 12 months its very likely that the coach/staff have seen periods of competitive play, off season, practice and preparation.</p>
-
-                        <h2>Survey Setup</h2>
-                        <p>• Survey Length: 36 Questions <br>
-                           • Time: Approximately 10 minutes </p>
                     </div>
 
-                </div> 
+                    <div>
+                        <h2>Survey Setup</h2>
+                        <p>• Survey Length: 36 Questions <br>
+                           • Time: Approximately 10 minutes</p>
+                    </div>
+                   
+
+                </div>
+
                 <img class="affinity" src="GCassets/surveyresults.svg" alt="" loading="lazy">
 
                 <div class="gridLR">
                     <div>
                         <h2>Next Steps</h2>
-                        <p><span style="color: #121212;">To implement insights from this survey, such as: </span><br> <br>
+                        <p class="label">To implement insights from this survey, such as: </p>
+                        <p>
                             • The home screen widget understand how it's placement, timing and copy can allow for 1 click access to Film Room. <br> 
                             • Making sure film room works seamlessly across the entire gamut of devices. <br> 
                             • Seamless sharing between coaches, staff, and players. <br>
-                            • Tagging and filtering of plays.</p>
+                            • Tagging and filtering of plays.
+                        </p>
                     </div>
                     <div>
                         <h2>Recommendations</h2>
-                        <p>• Keep Film Room accessible on the home screen for 48+ hours post-game to encourage timely reviews, and prompt coaches to upload game footage if needed. <br> 
-                           • Design Film Room layouts optimized for landscape orientation on larger screens (TVs, tablets, laptops). Film Room for Web. <br> 
-                            • Provide a quick onboarding tutorial for new Film Room users, covering tagging, filtering, and annotation tools. <br> 
-                            • Enable efficient tagging and filtering options, focusing on points won/lost, player actions, top plays, and key errors for targeted film review. <br> 
-                            • Use computer vision to automatically highlight key plays and errors, streamlining analysis for coaches.</p>
+                        <p>• Keep Film Room accessible on the home screen for 48+ hours post-game to encourage timely reviews.<br> 
+                           • Optimize Film Room layouts for landscape orientation on larger screens (TVs, tablets, laptops). <br> 
+                            • Provide a quick onboarding tutorial covering tagging, filtering, and annotation tools. <br> 
+                            • Enable efficient tagging and filtering for points won/lost, player actions, top plays, and key errors. <br> 
+                            • Leverage computer vision to auto-highlight key plays and errors for streamlined analysis.</p>
                     </div>
 
                 </div> 
@@ -322,20 +355,20 @@
                 <h1 style="margin-bottom: 1.5rem;">A Quick Recap Before We Move Forward</h1>
                 <div class="gridLR" style="grid-template-columns: 1fr 1fr 1fr;">
                     <div>
-                        <h2 style="background-image: url(GCassets/backgroundgc.svg); color: #00d682; border-radius: 1.5rem; padding: 1rem;">There is a need to improve discoverability through UI elements to guide users to Film Room. </h2>
-                        <p style="margin-top: 1.5rem;">We learned from the Film Room Discoverability Usability Test, that there is additional need to improve discoverability (scored 3.8/5), and this can be improved with UI elements to guide users to Film Room. A potential solution we are interested in exploring is a home screen widget.</p>
+                        <h2 class="sticky_note">There is a need to improve discoverability through UI elements to guide users to Film Room. </h2>
+                        <p style="margin-top: 1rem;">There is additional need to improve discoverability (scored 3.8/5), and this can be improved with UI elements to guide users to Film Room.</p>
                     </div>
 
                     <div>
-                        <h2 style="background-image: url(GCassets/backgroundgc.svg); color: #00d682; border-radius: 1.5rem; padding: 1rem;">Users are entering Film Room from the most easily viewed/obvious entry point. </h2>
-                        <p style="margin-top: 1.5rem;">The test also gave us a key insight that users are entering Film Room from the most easily viewed/obvious entry point. The home screen widget takes this a step further as it is likely to be the first thing the user sees when they open the app.</p>
+                        <h2 class="sticky_note">Users are entering Film Room from the most easily viewed/obvious entry point. </h2>
+                        <p style="margin-top: 1rem;">The home screen widget takes this a step further as it is likely to be the first thing the user sees when they open the app.</p>
                     </div>
 
                     <div>
 
 
-                    <h2 style="background-image: url(GCassets/backgroundgc.svg); color: #00d682; border-radius: 1.5rem; padding: 1rem;">Our users need to jump into Film Room soon after a game ends.</h2>
-                    <p style="margin-top: 1.5rem;">The survey told us 54.3% of coaches review footage within 1-3 days and 28.6% within 24 hours of a game, which tells us there is a need to jump into Film Room soon after a game ends.</p>
+                    <h2 class="sticky_note">Our users need to jump into Film Room soon after a game ends.</h2>
+                    <p style="margin-top: 1rem;">The survey told us 54.3% of coaches review footage within 1-3 days and 28.6% within 24 hours of a game.</p>
                     </div>
 
 
@@ -356,28 +389,33 @@
             <div class="content-block">
                 <h1>The Second Usability Test : Film Room<span style="color: #00d682;"> Home Screen Widget</span> </h1>
                 <h2>Picking up where we left off</h2>
-                <p>Having established from our survey that another quick and effective entry point into film room is required for staff members on GameChanger teams. We now needed to do an unmoderated usability test test with our home screen, widget designs.</p>
+                <p>Having established from our survey that another quick and effective entry point into film room is required for staff members on GameChanger teams. We now needed to do an unmoderated usability test test with our home screen widget designs.</p>
 
-                <div class="gridLR">
-                    <div>
-                        <img class="affinity" src="GCassets/filmroomwidgetscreen.svg" alt="" style="margin-top: 0;" loading="lazy">
-                    </div>
-                    <div>
-                        <h2>The Final Widget We Want To Test</h2>
-                        <p> After several explorations, I chose this design as it clearly conveys key details: the CTA, score, thumbnail, and marked moments count. It aligns with the existing game widget in our design system and builds on past success with home screen widgets.
-                        </p>
-                        
-                        <div style="background-image: url(GCassets/backgroundgc.svg); padding: 1rem; border-radius: 24px;">
-                            <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem;">
-                            <p style="color: #fff;">Past data shows that the game widget effectively introduces new users to scorekeeping, with nearly <span style="color: #00d682; font-size: 1.5rem; font-weight: bolder;"> 25% of users engaging with this feature for the first time. </span>
-
-                                <br><br> There is a <span style="color: #00d682; font-size: 1.5rem; font-weight: bolder;"> high return rate among new scorers, who average nearly two games each </span>, indicates strong initial engagement. 
-                                
-                                <br><br>Additionally, a <span style="color: #00d682; font-size: 1.5rem; font-weight: bolder;"> steady weekly influx of new scorers (8-20%) </span> suggests that the widget consistently attracts and retains new users, potentially building a sustainable base of regular scorekeepers over time.</h2>
+                <div class="gridLR" style="background-color: #f7f7f7; border-radius: 0.5rem; padding: 24px 24px 0 24px ;">
+                    <div style="overflow-y: hidden; position: relative; height: 500px;">
+                        <div style="position: absolute; margin: 24px auto;">
+                            <img src="GCassets/filmroomwidgetscreen.svg" alt=""loading="lazy">
                         </div>
                     </div>
+                    <div>
+                        <h2 style="margin-bottom: 1.5rem;"> After several explorations, I chose this design because it: </h2>
+                        <p class="label">Clearly Conveys Key Details</p>
+                        <p> The CTA, score, thumbnail, and marked moments count.</p>
+                        <p class="label">Design System Alignment</p>
+                        <p>Aligns with the existing game widget in our design system and builds on past success with home screen widgets. </p>
+                    </div>
+                </div>
 
-                </div> 
+                                        
+                <div style="background-image: url(GCassets/backgroundgc.svg); padding: 1.5rem; border-radius: 0 0 0.5rem 0.5rem;">
+                    <img src="GCassets/GCgreenlogo.svg" alt="" style="margin-bottom: 1rem;">
+                    <p style="color: #fff;">Past data shows that the game widget effectively introduces new users to scorekeeping, with nearly <span style="color: #00d682; font-size: 1.5rem; font-weight: bolder;"> 25% of users engaging with this feature for the first time. </span>
+
+                        <br><br> There is a <span style="color: #00d682; font-size: 1.5rem; font-weight: bolder;"> high return rate among new scorers, who average nearly two games each </span>, indicates strong initial engagement. 
+                        
+                        <br><br>Additionally, a <span style="color: #00d682; font-size: 1.5rem; font-weight: bolder;"> steady weekly influx of new scorers (8-20%) </span> suggests that the widget consistently attracts and retains new users, potentially building a sustainable base of regular scorekeepers over time.</h2>
+                </div>
+
 
                 <h1 style="margin-top: 1.5rem;">Learning Goals/Research Questions</h1>
                 <div class="gridLR">
@@ -409,13 +447,12 @@
 
             <div class="dummydiv" style="height: 40px;"></div><div class="dummydiv" style="height: 40px;"></div>
             <div class="content-block">
+                <h1 style="margin-bottom: 1rem;">What We Learned</h1>
+                <p style="background-color: #078a00; color: #fff; padding: 0.5rem 1rem; display: inline-block; border-radius: 0.5rem;">Discoverability 5/5</p>
+                <p><span style="color: #121212; font-weight: bold;">The Film Room widget is well-placed, attention-grabbing, and meets user expectations, making the test a success. The CTA copy and UI elements are effective, but other entry points need clearer highlighting for better discoverability.</span> <br><br>
+                    Users found the "Analyze in Film Room" button intuitive and well-placed, with clear language enhancing feature understanding. While they expected automated insights, they appreciated the manual playback tools. The home screen widget and video thumbnail were easy to find, though some struggled with other entry points.</p>
                 <div class="gridLR" style="grid-template-columns: 1fr 2fr;">
                     <div>
-                        <h1 style="margin-bottom: 1rem;">What We Learned</h1>
-                        <p style="background-color: #078a00; color: #fff; padding: 0.5rem 1rem; display: inline-block; border-radius: 0.5rem;">Discoverability 5/5</p>
-                        <p><span style="color: #121212; font-weight: bold;">The Film Room widget is well-placed, attention-grabbing, and meets user expectations, making the test a success. The CTA copy and UI elements are effective, but other entry points need clearer highlighting for better discoverability.</span> <br><br>
-                            Users found the "Analyze in Film Room" button intuitive and well-placed, with clear language enhancing feature understanding. While they expected automated insights, they appreciated the manual playback tools. The home screen widget and video thumbnail were easy to find, though some struggled with other entry points.</p>
-
                         <h2>Recommendations</h2>
                         <p>• Maintain the clear, action-oriented language around the CTA across all Film Room touchpoints. <br>
                             • Adjust the widget timing to 48 hours post-game, aligning with coaches' typical review period of 1-3 days. <br>
@@ -431,7 +468,7 @@
             <div class="dummydiv" id="learnings" style="height: 40px;"></div><div class="dummydiv" id="research" style="height: 40px;"></div>
             <div class="content-block">
                 <h1>Learnings</h1>
-                <div class="gridLR" style="gap: 2rem;">
+                <div class="gridLR" style="gap: 3rem;">
                     <div>
                         <h2>Product Specific Learnings</h2>
                         <p>• Video and analysis tools are essential for revenue growth in GameChanger's volleyball sector. <br>
