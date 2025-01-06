@@ -18,8 +18,7 @@ body{
     margin-top: 1rem;
     position: fixed;
     margin: 0% 10%;
-    
-    
+
 }
 
 /**/
@@ -252,7 +251,7 @@ p{
     padding: 0%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 #companies,#footer,#aboutme{
@@ -304,7 +303,7 @@ p{
 
 
 .UTbox{
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   border-radius: 0px;
   align-items: baseline;
@@ -363,6 +362,7 @@ p{
   font-family: 'Gilroyextrabold';
   font-weight: 900;
   letter-spacing: -1.5px;
+  margin: 0;
   
 }
 
@@ -570,7 +570,7 @@ text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: 0.25rem;
 
 }
 
@@ -742,6 +742,12 @@ text {
   align-items: start;
 }
 
+.hero-right-side{
+  display: flex; 
+  align-items: flex-end; 
+  justify-content: flex-end;
+}
+
 .about-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -756,6 +762,11 @@ text {
     grid-template-columns: 1fr;
     gap: 4rem;
     align-items: start;
+  }
+
+  .hero-right-side{
+    display: inline-block; 
+    
   }
 
 
