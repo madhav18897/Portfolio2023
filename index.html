@@ -43,7 +43,7 @@
         </label>
         <ul class="menu">
           <!-- <li><a class="case-nav-links" href="index.html">Home</a></li> -->
-          <li><a class="case-nav-links" href="#aboutme">About</a></li>
+          <li><a class="case-nav-links" href="#hero">About</a></li>
           <li><a class="case-nav-links" href="resume.html" target="_blank"></i>Resume <span style="font-family: 'beautiful freak';">↗</span></a></li>
           <li><a class="case-nav-links" href="#projects">Design Work</a></li>
           <li><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
@@ -51,25 +51,16 @@
         </ul>
 
 
-    </section>    
-             
-    <section id="hero" style="margin-top: 10%;">
-            <div class="hero-container">
-                <div class="herotext">
-                    <h1 class="Intro"><span style="font-size: 3.5rem;">I'm Madhav.</h1>
-                    <h1 class="Intro"  style="color: #5F50CC; margin: 0;"> I Design, Build, & Scale Products.</h1>    
-                    <p>(yes, this portfolio is designed and coded by me...)</p>                
-                </div>
-                <div class="hero-right-side">    
-                        <div class="UTbox">
-                            <img class="bevo" src="assets/bevo.svg" alt="" style="margin: auto 0;">
-                            <p style="margin-bottom: 0; color: #121212;" > Human-Computer Interaction <br>Product Management </p>
-                        </div>
-                </div>
-            </div>
-            <div class="industries">
-                <p style="color: #121212; font-weight:bolder; font-style: italic;">Industries I have experience across...</p>
-                <div class="industry_label_set">
+    </section>   
+
+        
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="grey-caps-label">ABOUT ME</h1>
+                <h1 class="big-text">Madhav Varma</h1> 
+                <p>I'm a Product Designer with experience creating, building, and scaling products in sports, consumer electronics, enterprise SaaS, and healthcare. With a strong foundation in Human-Computer Interaction, Product Management, and Engineering, I approach complex challenges with a user-centered and problem-solving mindset. <br><br> (Fun fact: I designed and coded this portfolio myself!)</p>  
+                <div class="industry_label_set" style="margin-top: 2rem;">
                     <p class="industry_label">SPORTS</p>
                     <p class="industry_label">CONSUMER ELECTRONICS</p>
                     <p class="industry_label">ENTERPRISE SAAS</p>
@@ -77,19 +68,31 @@
                     <p class="industry_label">EDUCATION</p>
                 </div>
             </div>
-        <!-- hero experiment -->
+            <div class="hero-right-side">   
+                <div class="UTbox">
+                    <div style="display: flex; flex-direction: row; gap: 1rem;">
+                        <img class="bevo" src="assets/bevo.svg" alt="" style="margin: auto 0;">
+                        <img class="bevo" src="assets/grad.svg" alt="" style="margin: auto 0; background-color: #f7f7f7;">
+                    </div>
+                    <div>
+                        <h1 class="grey-caps-label">Human-Computer Interaction</h1>
+                        <h1 class="grey-caps-label">Product Management</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
-
-
-    <div class="dummydiv" id="projects" style="height: 4rem;"></div>
-    <section id="projects" style="margin: 4rem 10%; margin-top: 0;">
+             
+             
+    <section id="projects" style="margin: 0 10%;">
         <!-- <h1>My <span style="color: #5F50CC;">Product Design Work</span></h1> -->
 
 
         <div class="tab-container">
             <button class="tab-button active" onclick="openTab('industry')">INDUSTRY PROJECTS</button>
             <button class="tab-button" onclick="openTab('academic')">ACADEMIC PROJECTS</button>
-            </div>
+        </div>
             
             <div id="industry" class="tab-content">
                 <div class="grid-container">
@@ -294,48 +297,23 @@
 
     </section>
 
-    <section id="aboutme" style="margin-top: 0rem;">
-        <div class="about-container">
+    <section id="youtube">
             <div>
-                <h1 style="margin-bottom: 1rem;">About <span style="color: #5F50CC;">Me</span></h1>
-                <p>Product Designer with a strong background in UX research and interaction design, specializing in crafting intuitive and engaging experiences. <br><br>With experience at GameChanger, Dell Medical School, Dyson and other companies, I focus on data-driven design to enhance user engagement and solve real-world problems. <br><br> I love diving into complex user needs, utilizing research, prototyping, and strategic design to create thoughtful, impactful solutions.</p>
-        
-
-
-                <div class="industries" style="margin-top: 1.5rem;">
-                    <p style="color: #121212; font-weight:bolder; font-style: italic;">Industries I have experience across...</p>
-                    <div class="industry_label_set">
-                        <p class="industry_label">SPORTS</p>
-                        <p class="industry_label">CONSUMER ELECTRONICS</p>
-                        <p class="industry_label">ENTERPRISE SAAS</p>
-                        <p class="industry_label">HEALTHCARE</p>
-                        <p class="industry_label">EDUCATION</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="background-color: #f7f7f7; border-radius: 24px; padding:24px">
-                <h1 style="margin-bottom: 2rem; font-size: 1.5rem; color: #808080;">I stay inspired through <span style="color: #121212;">music, sports</span>, and exploring the <span style="color: #121212;">outdoors.</span></h1>
-                <div class="about-container" style="margin-top: 0; gap: 1.5rem; padding: 0px; background-color: #f7f7f7; border-radius: 24px;">
-                    <iframe class="youtubeembed" width="100%" height="100%" src="https://www.youtube.com/embed/gQ2JJXckYck?si=o4Xn3ehS7EcggTk-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 1.5rem;" ></iframe>
+                <h1 class="big-text" style="margin-bottom: 2rem; color: #808080; text-transform: lowercase;"><span style="text-transform: capitalize;">I</span> stay inspired through <span style="color: #ececec;">music, sports</span>, and exploring the <span style="color: #ececec;">outdoors.</span></h1>
+                <div class="hero-container" style="gap: 3rem;">
+                    <iframe class="youtubeembed" width="100%" height="400px" src="https://www.youtube.com/embed/gQ2JJXckYck?si=o4Xn3ehS7EcggTk-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 1.5rem;" ></iframe>
                     <div class="projectcard">
                         <div class="projectcardtext" style="gap: 0.5rem;">
-                            <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">YOUTUBE CHANNEL</h1>
-                            <h1 style="font-size: 1.5rem;">Capturing Melodies: Explore the Soul of Music on My Channel.</h1>
+                            <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #808080;">YOUTUBE CHANNEL</h1>
+                            <h1 style="font-size: 1.5rem; color: #ececec;">Capturing Melodies: Explore the Soul of Music on My Channel.</h1>
                             <p class="projectcarddetails">Experience the beauty of music through my heartfelt guitar and vocal originals and covers. Join me on my musical journey.</p>
                             <div class="buttons">
-                                <a href="https://www.youtube.com/user/madhavv09" style="text-decoration: none;"><h1 class="primarybtn">My YouTube channel<i class="fa-solid fa-arrow-right"></i></h1></a>
+                                <a href="https://www.youtube.com/user/madhavv09" style="text-decoration: none;"><h1 class="ytbtn">My YouTube channel<i class="fa-solid fa-arrow-right"></i></h1></a>
                             </div>   
                         </div>
                     </div>
                 </div>
-
-            </div>        
-
-            
-        </div>
-
-
+            </div>         
     </section>
 
     <!-- <img src="assets/Line 81.svg" alt="" style="width: 100%;"> -->

@@ -237,6 +237,21 @@ h1{
 
 }
 
+.big-text{
+  font-size: 56px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.grey-caps-label{
+  font-size: 1rem; 
+  letter-spacing: 1.6px; 
+  color: #666666;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 
 p{
     font-family: 'manrope', 'sans-serif';
@@ -246,18 +261,52 @@ p{
 }
 
 #hero{
-
-    margin: 0% 10% 120px 10%;
-    padding: 0%;
+    
+    margin: 0 10% 120px 10%;
+    padding: 160px 0 0 0;
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
 
-#companies,#footer,#aboutme{
+#companies,#footer{
 
     margin: 0% 10% 120px 10%;
     padding: 0%;
+}
+
+#youtube{
+  padding: 5% 10%;
+  background-color: #121212;
+}
+
+.ytbtn{
+  display: flex;
+  padding: 1rem 2rem 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 300px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  background: #FF0000;
+}
+
+.ytbtn:hover{
+  color: #ffffff;
+  background-color: #5e5e5e;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.125)inset;
+  
+}
+
+.ytbtn:active{
+  color: #ffffff;
+  background-color: #232323;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25)inset;
 }
 
 .company_logo{
@@ -289,7 +338,18 @@ p{
     justify-content: space-between;
     flex-wrap: wrap; 
     gap:4rem;
+    
   }
+
+  .big-text{
+    font-size: 56px;
+
+  }
+
+  #hero{
+    padding: 64px 0 0 0;
+  }
+
 
 
 
@@ -304,7 +364,7 @@ p{
 
 .UTbox{
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: column;
   border-radius: 0px;
   align-items: baseline;
   gap: 1rem;
@@ -690,28 +750,42 @@ text {
 
 .tab-container {
   display: flex;
-  gap: 0rem;
-  border-bottom: 1.5px solid #cecece;
-  width: 100%;
-  
+  gap: 1.5rem;
+  padding: 0.75rem;
+  background-color: #f7f7f7;
+  border-radius: 300px;
+
 }
 
 .tab-button {
-  padding: 8px 24px;
+  padding: 16px 24px;
   cursor: pointer;
   border: none;
-  background-color: #fff;
   font-family: 'Gilroyextrabold' ;
   font-size: 1rem;
   color: #808080;
+  border-radius: 300px;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+
 }
 
+
+/* Smooth scaling effect */
 .tab-button.active {
-  background-color: #fff;
-  border-bottom: 4px solid #4252EB;
+  background-color:  #121212;
   font-family: 'Gilroyextrabold' ;
   font-size: 1rem;
-  color: #121212;
+  color: #ffffff;
+  border-radius: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.01);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tab-button:not(.active):hover {
+  transform: scale(1.05); /* Subtle hover effect */
+  transition: transform 0.3s ease;
 }
 
 .tab-content {
@@ -723,6 +797,7 @@ text {
 
 #projects{
     display: flex;
+    padding-top: 80px;
     flex-direction: column;
     align-items: flex-start;
     gap: 3rem;
