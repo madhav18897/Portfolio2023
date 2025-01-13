@@ -183,10 +183,14 @@ html, body {
       padding: 0.5em 0;
       width: 100%;
       color: white;
-      background: rgba(255, 255, 255, 0.8); /*Background of hamburger menu items*/
+      background: rgba(255, 255, 255, 1.0); /*Background of hamburger menu items*/
     }
     .menu > li:not(:last-child) {
       border-bottom: 1px solid #444;
+    }
+
+    .menu > li:last-child {
+      border-bottom: 4px solid #444;
     }
   }
   
