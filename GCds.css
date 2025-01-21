@@ -91,6 +91,7 @@ html{
   gap: 32px;
 }
 
+
 .side-nav-list{
     display: flex;
     flex-direction: column;

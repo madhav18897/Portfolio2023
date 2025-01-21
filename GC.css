@@ -531,11 +531,14 @@ p{
 
  .cover{
   height: 400px; 
-  margin: 64px 0 0 0; 
+  margin: 64px 0 3rem 0; 
+  background-repeat: none; 
+  background-size: contain;
   background-color: #f7f7f7; 
   background-image: url(GCassets/cover.jpg); 
-  background-repeat: none; 
-  background-size: contain ;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
  }
 
 
