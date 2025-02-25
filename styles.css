@@ -817,7 +817,7 @@ text {
 .hero-container{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 2em;
+  gap: 3rem;
   align-items: start;
 }
 
