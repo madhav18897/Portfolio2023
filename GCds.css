@@ -165,27 +165,19 @@ html{
 
 }
 
-h1{
-    font-size: 32px;
-    font-family: 'Gilroyextrabold';
-}
 
-.numbering{
-  color: #00d682; 
-  display: inline-block; 
-  border-radius: 64px; 
-  margin-bottom: 1.5rem;
+h1{
+  font-size: 24px;
+  font-family: 'Gilroyextrabold';
 }
 
 h2{
-    font-size: 24px;
-    font-family: 'manrope', 'sans-serif';
-    word-spacing: 0px;
-    margin-bottom: 1rem;
+  font-size: 20px;
+  font-family: 'manrope', 'sans-serif';
 }
 
 p{
-    font-size: 18px;
+    font-size: 16px;
     color: #808080;
     font-family: 'manrope', 'sans-serif';
     margin-bottom: 1.5rem;

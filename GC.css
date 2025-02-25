@@ -187,17 +187,17 @@ html{
 }
 
 h1{
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'Gilroyextrabold';
 }
 
 h2{
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'manrope', 'sans-serif';
 }
 
 p{
-    font-size: 18px;
+    font-size: 16px;
     color: #808080;
     font-family: 'manrope', 'sans-serif';
 }
