@@ -65,3 +65,15 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 
 /*reveal animation*/
+
+
+/*navbar scroll*/
+
+window.onscroll = function() {
+  let navbar = document.getElementById('navbar');
+  if (window.scrollY > 10) {  // Trigger shadow after scrolling 10px
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+};

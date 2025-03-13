@@ -192,10 +192,24 @@ p{
  
 
  
+
  #navbar{
-   padding: 2.75% 10%; /* navbar padding top and left*/
-   font-family: 'manrope', 'sans-serif';
- }
+  padding: 2.75% 10%; /* navbar padding top and left*/
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) ; */
+  font-family: 'manrope', 'sans-serif';
+
+}
+
+#navbar.scrolled {
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+
+#navbar{
+  padding: 40px 10%;
+}
+} 
  
  
  .top-nav {
