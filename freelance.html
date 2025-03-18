@@ -32,7 +32,7 @@
 </head>
 <body>
     <my-navbar></my-navbar>
-    <section id="profile" style="padding: 10%;">
+    <section id="profile">
         <div class="grid-container">
             <div>
                 <iframe width="100%" height="560px" style="border-radius: 32px; border: 12px solid #000000;" 
@@ -81,7 +81,7 @@
     <section id="recent-work" style="padding:10%;">
         <div style="justify-content:center">
             <h1>Recent Work</h1>
-            <h2 style="padding-bottom: 2rem;">Digital Transformation of <a href="https://collegeconnectedusa.com/"> collegeconnectedusa.com</a></h2>
+            <p style="padding-bottom: 2rem;">Digital Transformation of <a href="https://collegeconnectedusa.com/"> collegeconnectedusa.com</a></p>
         </div>
         <div>
             <video width="100%" autoplay muted loop controls style="border: none; border-radius: 24px;" loading="lazy">
@@ -118,5 +118,20 @@
     </section>
     <my-footer></my-footer>
 </body>
+
+<style>
+
+    #profile{
+        padding: 10%;
+    }
+   
+    @media (max-width: 900px) {
+ 
+        #profile{
+          padding-top: 30%;
+        }
+      
+      }
+</style>
 
 </html>
