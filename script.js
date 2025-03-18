@@ -120,7 +120,7 @@ class MyFooter extends HTMLElement {
                 <p style="margin-top: 2rem;">© Designed and developed by Madhav Varma in Austin,TX, United States; all rights reserved.</p>
             </div>
             
-            <a href="#hero" style="text-decoration: none;">
+            <a href="#section-1" style="text-decoration: none;">
             <div class="backtotop">
                 <!-- <img src="assets/backtotop.svg" alt="">
                 <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #121212;">BACK TO TOP</h1> -->
