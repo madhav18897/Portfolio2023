@@ -66,6 +66,79 @@ window.addEventListener('scroll', revealOnScroll);
 
 /*reveal animation*/
 
+/*navbar component*/
+
+class MyNavbar extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+          <section class="top-nav" id="navbar">
+        
+            <div>
+                <!-- <a class="case-nav-links" href="#hero"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>    -->
+                <a class="case-nav-links" href="#hero"><img src="assets/2025logo.svg" style="padding: 0 ; margin: 0;"></a> 
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+              <!-- <li><a class="case-nav-links" href="index.html">Home</a></li> -->
+              <li><a class="case-nav-links" href="index.html#hero">About</a></li>
+              <li><a class="case-nav-links" href="resume.html" target="_blank"></i>Resume <span style="font-family: 'beautiful freak';">↗</span></a></li>
+              <li><a class="case-nav-links" href="index.html#projects">Design Work</a></li>
+              <li><a class="case-nav-links" href="freelance.html">Freelance Work</a></li>
+              <li><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
+              <li style="margin: 0rem;"><a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+            </ul>
+
+
+          </section>  
+    `;
+  }
+}
+customElements.define('my-navbar', MyNavbar);
+
+/*navbar component*/
+
+
+/*footer component*/
+
+
+class MyFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+        <section id="footer" style="margin-top: 120px;">
+        <div class="footer">
+            <div class="footertext">
+                <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">FOOTER. BECAUSE EVERY WEBSITE NEEDS ONE... RIGHT? </h1>
+                <h1 style="font-size: 1.5rem;">If you like my work and are interested in <br>hiring me or working with me...</h1>
+                <p>You can contact me at <span style="color: #5F50CC; font-weight: 800;"><a href="mailto:madhav18897@utexas.edu">madhav18897@utexas.edu</a></span></p>
+                <div class="socials">
+                    <a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a class="social-icons" href="https://www.instagram.com/madhav18897/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </div>
+                <p style="margin-top: 2rem;">© Designed and developed by Madhav Varma in Austin,TX, United States; all rights reserved.</p>
+            </div>
+            
+            <a href="#hero" style="text-decoration: none;">
+            <div class="backtotop">
+                <!-- <img src="assets/backtotop.svg" alt="">
+                <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #121212;">BACK TO TOP</h1> -->
+                <h1 class="secondarybtn"><i class="fa-solid fa-arrow-up"></i>Back to Top</h1> 
+            </div>
+            </a>
+
+        </div> 
+        </section>
+    `;
+  }
+}
+customElements.define('my-footer', MyFooter);
+
+/*footer component*/
+
+
+
 
 /*navbar scroll*/
 
