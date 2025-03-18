@@ -75,7 +75,7 @@ class MyNavbar extends HTMLElement {
         
             <div>
                 <!-- <a class="case-nav-links" href="#hero"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>    -->
-                <a class="case-nav-links" href="#hero"><img src="assets/2025logo.svg" style="padding: 0 ; margin: 0;"></a> 
+                <a class="case-nav-links" href="index.html"><img src="assets/2025logo.svg" style="padding: 0 ; margin: 0;"></a> 
             </div>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
