@@ -71,28 +71,25 @@ window.addEventListener('scroll', revealOnScroll);
 class MyNavbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-          <section class="top-nav" id="navbar">
-        
-            <div>
-                <!-- <a class="case-nav-links" href="#hero"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>    -->
-                <a class="case-nav-links" href="index.html"><img src="assets/2025logo.svg" style="padding: 0 ; margin: 0;"></a> 
-            </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-            </label>
-            <ul class="menu">
-              <!-- <li><a class="case-nav-links" href="index.html">Home</a></li> -->
-              <li><a class="case-nav-links" href="index.html#hero">About</a></li>
-              <li><a class="case-nav-links" href="resume.html" target="_blank"></i>Resume <span style="font-family: 'beautiful freak';">↗</span></a></li>
-              <li><a class="case-nav-links" href="index.html#projects">Design Work</a></li>
-              <li><a class="case-nav-links" href="freelance.html">Freelance Work</a></li>
-              <li><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
-              <li style="margin: 0rem;"><a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
-            </ul>
-
-
-          </section>  
+      <section class="top-nav" id="navbar"> 
+          <div>
+              <!-- <a class="case-nav-links" href="#hero"><h1 style="font-size: large; color: #121212;" >Madhav Varma</h1></a>    -->
+              <a class="case-nav-links" href="index.html"><img src="assets/2025logo.svg" style="padding: 0 ; margin: 0;"></a> 
+          </div>
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+          </label>
+          <ul class="menu">
+          <!-- <li><a class="case-nav-links" href="index.html">Home</a></li> -->
+          <li><a class="case-nav-links" href="#hero">About</a></li>
+          <li><a class="case-nav-links" href="resume.html" target="_blank"></i>Resume <span style="font-family: 'beautiful freak';">↗</span></a></li>
+          <li><a class="case-nav-links" href="#projects">Design Work</a></li>
+          <li><a class="case-nav-links" href="freelance.html">Freelance Work</a></li>
+          <li><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
+          <li style="margin: 0rem;"><a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-l"></i></a></li>
+          </ul>
+      </section>  
     `;
   }
 }
