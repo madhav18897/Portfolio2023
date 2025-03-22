@@ -147,3 +147,39 @@ window.onscroll = function() {
     navbar.classList.remove('scrolled');
   }
 };
+
+/*sidebar-active*/
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("div[id]"); // Select all divs with an id
+  const menuLinks = document.querySelectorAll(".side-nav-list-item");
+
+  let currentActive = menuLinks[0]; // Start by highlighting the first item
+
+  const observer = new IntersectionObserver(
+      (entries) => {
+          let visibleSections = entries
+              .filter(entry => entry.isIntersecting)
+              .sort((a, b) => a.target.getBoundingClientRect().top - b.target.getBoundingClientRect().top);
+
+          if (visibleSections.length > 0) {
+              const firstVisible = visibleSections[0].target.id;
+              const activeLink = document.querySelector(`a[href="#${firstVisible}"]`);
+
+              if (activeLink && currentActive !== activeLink) {
+                  currentActive.classList.remove("active");
+                  activeLink.classList.add("active");
+                  currentActive = activeLink;
+              }
+          }
+      },
+      { threshold: 0.2 } // Adjust this threshold as needed
+  );
+
+  sections.forEach((section) => {
+      observer.observe(section);
+  });
+});
+
+
+
+/*sidebar-active*/

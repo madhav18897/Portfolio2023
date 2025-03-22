@@ -14,7 +14,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/2025logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +24,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
 
@@ -43,15 +42,14 @@
         </label>
         <ul class="menu">
           <!-- <li><a class="case-nav-links" href="index.html">Home</a></li> -->
-          <li><a class="case-nav-links" href="index.html#hero">About</a></li>
-          <li><a class="case-nav-links" href="resume.html" target="_blank"></i>Resume <span style="font-family: 'beautiful freak';">↗</span></a></li>
-          <li><a class="case-nav-links" href="#projects">Design Work</a></li>
-          <li><a class="case-nav-links" href="freelance.html">Freelance Work</a></li>
+          <li><a class="case-nav-links" href="index.html#about">About</a></li>
+          <li><a class="case-nav-links" href="https://drive.google.com/file/d/1w-J6ykbAJ1cNtGrv02TxSAX7FrycYolq/view?usp=sharing" target="_blank"></i>Resume <span style="font-family: 'beautiful freak';">↗</span></a></li>
+          <li><a class="case-nav-links" href="index.html#projects">Design Work</a></li>
+          <li><a class="case-nav-links" href="freelance.html">Freelance</a></li>
           <li><a class="case-nav-links" href="mailto:madhav18897@utexas.edu">Contact</a></li>
-          <li style="margin: 0rem; text-align: center;"><a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+          <li style="margin: 0rem;"><a class="social-icons" href="https://www.linkedin.com/in/madhav-varma/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
         </ul>
-    
-    
+
     </section>   
     
 
@@ -125,21 +123,22 @@
                         <img src="assets/Santi.jpeg" alt="" style="height: 64px; width: 64px; border-radius: 300px">
                     </div>
                     <div style="display: flex; flex-direction: column; gap:0px">
-                        <h2>Santi Obando</h2>
+                        <h2 style="margin: 0; padding :0">Santi Obando</h2>
                         <p style="color: #5F50CC;">Founder and CEO of College Connected</p>
                     </div>
 
                 </div>
                 <h1 style="color: #5F50CC; font-size:48px; margin:0">"</h1>
-                <p><span style="font-size: large;">I can’t recommend Madhav Varma enough! He completely revamped our website, 
+                <p style="font-weight: 600; color:#121212;">I can’t recommend Madhav Varma enough! He completely revamped our website, 
                     <a href="https://collegeconnectedusa.com/"> collegeconnectedusa.com</a>, and the result was beyond anything I expected. It looks professional, runs smoothly, and even has features I didn’t realize we needed—but now can’t imagine the site without.
-                    Madhav is not just great at what he does; he cares! He was proactive, easy to work with, and always a step ahead in making sure everything was top-notch. If you need someone who will not only build a great website but also make the whole process seamless, Madhav is your guy.</span></p>
+                    Madhav is not just great at what he does; he cares! He was proactive, easy to work with, and always a step ahead in making sure everything was top-notch. If you need someone who will not only build a great website but also make the whole process seamless, Madhav is your guy.</p>
 
                 <p>(Sourced from <a href="https://www.linkedin.com/in/madhav-varma/">LinkedIn Testimonials)</a></p>    
             </div>
         </div>
     </section>
-    <section id="footer" style="margin-top: 120px;">
+
+    <section id="footer">
         <div class="footer">
             <div class="footertext">
                 <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #666666;">FOOTER. BECAUSE EVERY WEBSITE NEEDS ONE... RIGHT? </h1>
@@ -152,7 +151,7 @@
                 <p style="margin-top: 2rem;">© Designed and developed by Madhav Varma in Austin,TX, United States; all rights reserved.</p>
             </div>
             
-            <a href="#section-1" style="text-decoration: none;">
+            <a href="#hero" style="text-decoration: none;">
             <div class="backtotop">
                 <!-- <img src="assets/backtotop.svg" alt="">
                 <h1 style="font-size: 1rem; letter-spacing: 1.6px; color: #121212;">BACK TO TOP</h1> -->
@@ -167,11 +166,15 @@
 <style>
 
     #section-1{
-        padding: 10%;
+        padding: 5rem 10%;
     }
 
     .primarybtn,.secondaybtn{
         display: inline-flex;
+    }
+
+    #navbar{
+        font-family: "Inter Tight", sans-serif;
     }
   
    
@@ -188,10 +191,12 @@
 
         a{
             width: 100%;
+          
         }
 
         .case-nav-links{
             text-align: center;
+
         }
       
       }
