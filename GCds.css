@@ -366,9 +366,11 @@ h2{
  }
  
  .case-nav-links:hover{
-   color: #4252EB;
-   text-decoration: none;
- }
+  color: #4252EB;
+  text-decoration: none;
+  font-weight: 800;
+  
+}
  
  .menu-button-container {
    display: none;
@@ -570,17 +572,21 @@ h2{
  
  @media (max-width: 900px) {
  
-   .btn{
-     padding: 5%;
-     margin: 5% 0% 5% 0%; ;
-   }
+  .btn{
+    padding: 5%;
+    margin: 5% 0% 5% 0%; ;
+  }
 
-   .persona-img{
-      max-width: 50%;
-   }
-   
- 
- }
+  .persona-img{
+     max-width: 50%;
+  }
+
+  .cover{
+   display: none;
+  }
+  
+
+}
  
  
  .bottom-banner{

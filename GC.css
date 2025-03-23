@@ -408,9 +408,11 @@ h2{
  }
  
  .case-nav-links:hover{
-   color: #4252EB;
-   text-decoration: none;
- }
+  color: #4252EB;
+  text-decoration: none;
+  font-weight: 800;
+  
+}
  
  .menu-button-container {
    display: none;
