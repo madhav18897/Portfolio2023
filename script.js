@@ -183,3 +183,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /*sidebar-active*/
+
+/*scroll reveal */
+document.addEventListener("DOMContentLoaded", function() {
+  ScrollReveal().reveal('.reveal', {
+    duration: 1000,
+    distance: '50px',
+    easing: 'ease-in-out',
+    delay: 200
+  });
+});
+
+
+ScrollReveal().reveal('.fade-in', { opacity: 0, duration: 1000 });
+ScrollReveal().reveal('.slide-left', { origin: 'left', distance: '50px', duration: 1000 });
+ScrollReveal().reveal('.zoom-in', { scale: 0.85, duration: 1000 });
+
+/*scroll reveal */
