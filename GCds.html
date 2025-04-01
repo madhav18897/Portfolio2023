@@ -23,6 +23,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Sacramento&display=swap"
         rel="stylesheet">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://kit.fontawesome.com/97869109ad.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     
@@ -225,7 +227,9 @@
 
                 <hr class="grey-rule">
                 <h1 class="numbering">1. <span style="color: #121212;"> Fan Pricing Table</span></h1>
-                <img class="affinity" src="GCdsassets/Component Example 1.svg" alt="" loading="lazy" style="margin-top: 0;">
+                <img class="affinity" src="GCdsassets/Component Example 1.svg" alt="" loading="lazy">
+
+                  
                 <div class="three-col-container">
                     <div>
                         <h1 class="numbering">1</h1>
@@ -259,12 +263,15 @@
                     </div>
 
                 </div>
-                <h2>Live Implementation</h2>
+                    
+                <h2 style="padding-top: 2rem ;">Live Implementation</h2>
                 <img class="affinity" src="GCdsassets/PT_implement.png" alt="" loading="lazy">
 
                 <hr class="grey-rule">
                 <h1 class="numbering">2. <span style="color: #121212;">Schedule Tables</span></h1>
-                <img class="affinity" src="GCdsassets/Component Example 2.svg" alt="" loading="lazy" style="margin-top: 0;">
+                 <!-- Put this div wherever you want the widget to be embedded -->
+                <div id="gc-schedule-widget-16i1"></div>
+                <img class="affinity" src="GCdsassets/Component Example 2.svg" alt="" loading="lazy">
                 <div class="three-col-container">
                     <div>
                         <h1 class="numbering">1</h1>
@@ -311,8 +318,18 @@
             <div class="dummydiv" id="implementation" style="height: 56px;"></div>
             <div class="content-block">
                 <h1>Implementation</h1>
-                <h2>A sneek peek into my designs being brought to life</h2>
-                <p>I even helped write the CSS for these!</p>
+
+                <h2>My attempt to build it in code...</h2>
+                <p>I decided to take matters into my own hands and try to help the engineers by coding my design</p>
+                <p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="result" data-slug-hash="KwKrJxw" data-pen-title="Random" data-user="Madhav-Varma-the-decoder" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid; margin: 1em 0; padding: 1em; border-radius: 1.5rem;">
+                    <span>See the Pen <a href="https://codepen.io/Madhav-Varma-the-decoder/pen/KwKrJxw">
+                    Random</a> by Madhav Varma (<a href="https://codepen.io/Madhav-Varma-the-decoder">@Madhav-Varma-the-decoder</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://public.codepenassets.com/embed/index.js"></script>
+
+                <h2 style="padding-top: 3rem;">Engineering Implementation</h2>
+                <p>A sneek peek into my designs being brought to life by the devs.</p>
                 <img class="affinity" src="GCdsassets/implementation.svg" alt="">
     
             </div>
@@ -363,6 +380,17 @@
         
 
     </div>
+    
+
+    <!-- Put this before the closing </body> tag -->
+    <script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
+    <script>
+    window.GC.team.schedule.init({
+        target: "#gc-schedule-widget-16i1",
+        widgetId: "9176f67d-bd3a-4b45-8c7a-82efd8486a3b",
+        maxVerticalGamesVisible: 4,
+    })
+    </script>
 
 
 </body>

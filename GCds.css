@@ -763,6 +763,55 @@ box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25)inset;
   border-top: 2px solid grey;
 }
 
+/*code snippet*/
+.codebody {
+  font-family: Arial, sans-serif;
+  display: flex;
+  width: 100%;
+}
+
+.code-container {
+  position: relative;
+  width: 600px;
+  background: #282c34;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.code-header {
+  background: #1e2229;
+  color: #fff;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.copy-btn {
+  background: #61dafb;
+  border: none;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.copy-btn:hover {
+  background: #4fa3d1;
+}
+
+pre {
+  margin: 0;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+code {
+  font-size: 14px;
+}
 
 
 
