@@ -426,6 +426,8 @@ p{
     padding: 64px 0 0 0;
   }
 
+  
+
 
 
 
@@ -891,7 +893,7 @@ text {
 .hero-container{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 3rem;
+  gap: auto;
   align-items: start;
 }
 
@@ -918,7 +920,7 @@ text {
   }
 
   .hero-right-side{
-    display: inline-block; 
+    display: none; 
     
   }
 
