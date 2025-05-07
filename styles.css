@@ -67,7 +67,7 @@ html, body {
 
 
 #navbar.scrolled {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 @media (max-width: 1200px) {
@@ -303,9 +303,8 @@ h1{
 }
 
 .big-text{
-  font-size: 56px;
+  font-size: 48px;
   margin-bottom: 1rem;
-  text-transform: uppercase;
   margin: 0;
 }
 
@@ -334,7 +333,7 @@ p{
 
 #hero{
     
-    margin: 0 10% 2.5rem 10%;
+    margin: 0 10% 0 10%;
     padding: 12% 0 0 0;
     display: flex;
     flex-direction: column;
@@ -342,7 +341,7 @@ p{
 }
 
 #companies{
-  padding: 32px 10%;
+  padding: 24px 10%;
 }
 
 #footer{
@@ -399,10 +398,10 @@ p{
   display: flex;
   flex-direction: row;
   align-items: left;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   gap: 2rem;
-  margin: 80px 0px;
+  margin: 40px 0px;
   
 }
 
@@ -414,11 +413,13 @@ p{
     justify-content: space-between;
     flex-wrap: wrap; 
     gap:4rem;
+    display: none;
     
   }
 
   .big-text{
     font-size: 56px;
+
 
   }
 
@@ -882,17 +883,16 @@ text {
 
 .grid-container{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8rem 6rem;
+  grid-template-columns: 1fr;
+  gap: 4rem;
   align-items: start;
-  padding: 5rem 0;
 }
 
 
 
 .hero-container{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: auto;
   align-items: start;
 }
@@ -933,7 +933,7 @@ text {
 
   .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: start;
   }
 
@@ -956,32 +956,60 @@ text {
 }
 
 
-.projectcard{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 2rem;
+.projectcard {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0rem;
+    border-radius: 2rem;
+    background-color: #f7f7f7;
+    overflow: hidden;
 }
 
+/* Ensures the image fills its grid cell without overflowing */
 .card-img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
 }
 
-.projectcardtext{
+/* Text styles */
+.projectcardtext {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75em;
+    padding: 3rem;
 }
+
+/* Typography */
+.projectcarddetails {
+    font-size: 1.5rem;
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 1200px) {
+    .projectcard {
+        grid-template-columns: 1fr;
+    }
+
+    .card-img {
+        height: auto; /* let image adjust height on smaller screens */
+    }
+
+    .projectcardtext {
+        padding: 2rem;
+    }
+}
+
 
 /*buttons*/
 .buttons{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
     
 }
 
@@ -1098,7 +1126,7 @@ text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.75rem;
+        gap: 0;
 }
 
 

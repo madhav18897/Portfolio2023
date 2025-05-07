@@ -42,21 +42,6 @@ html{
 
 }
 
-
-.three-col-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  gap: 3rem;
-  margin-top: 1.5rem;
-}
-
-.two-col-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr ; 
-  gap: 3rem;
-  margin-top: 1.5rem;
-}
-
 /* .left-column {
   
 } */
@@ -91,7 +76,6 @@ html{
   gap: 32px;
 }
 
-
 .side-nav-list{
     display: flex;
     flex-direction: column;
@@ -106,22 +90,48 @@ html{
  }
 
  .side-nav-list-item:hover{
+    color: #121212;
+    text-decoration: none;
+    font-weight: 700;
+    
+ }
+
+ .side-nav-list-item.active {
+  font-weight: 900;
   color: #121212;
   text-decoration: none;
-  font-weight: 700;
-  
-}
-
-.side-nav-list-item.active {
-font-weight: 900;
-color: #121212;
-text-decoration: none;
 }
 
  .gridLR{
   display: grid; 
   grid-template-columns: 1fr 1fr; 
   gap: 3rem;
+ }
+
+ .col-3-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 1.5rem;
+ }
+ 
+
+ .label{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Gilroyextrabold';
+    color: #121212;
+    background-color: #ffd02f ;
+    border-radius: 0.5rem;
+ }
+
+ .label-set{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
  }
 
 @media screen and (max-width:1000px) {
@@ -144,13 +154,24 @@ text-decoration: none;
       flex-direction: column;
     }
 
-    .case-study-container, .three-col-container, .two-col-container{
+    .case-study-container{
       grid-template-columns: 1fr;
     }
 
     .gridLR{
       grid-template-columns: 1fr;
+      gap: 1rem;
     }
+
+    .col-3-grid{
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 1rem;
+     }
+
+     .prototypeplay{
+        display: none;
+     }
     
 }
 
@@ -170,7 +191,6 @@ text-decoration: none;
     font-style: normal;
 
 }
-
 
 /*ALL TYPOGRAPHY*/
 
@@ -223,6 +243,35 @@ h2{
 }
 
 /*ALL TYPOGRAPHY*/
+
+
+.problem_statement{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.grey-rule {
+  border: none;
+  border-top: 2px solid grey;
+}
+
+.visual-display{
+  background-color: #f7f7f7;
+  margin: 24px 0;
+  border-radius: 24px;
+  width: 100%;
+  height: 400px; /*for now*/
+}
+
+.sticky_note{
+  color: #121212;
+  background-color: #cbedff;
+  border: 2px solid #121212;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0;
+}x
 
 .content-block{
     margin: 4rem 0%;
@@ -302,6 +351,7 @@ h2{
  } */
  
 
+ 
 
 
  #navbar{
@@ -312,7 +362,7 @@ h2{
 }
 
 #navbar.scrolled {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 @media (max-width: 1200px) {
@@ -504,19 +554,10 @@ h2{
  
  /* big images */
  
- .competitive, .secondaryR, .demographics,  .content-inv,.card-sort, .agreement, .similarity,.info-arch, .sketching{
+ .competitive, .secondaryR, .demographics, .affinity, .content-inv,.card-sort, .agreement, .similarity,.info-arch, .sketching{
      width: 100%;
      margin: 5% 0% 5% 1%;
  }
-
- .affinity{
-  width: 100%;
-  margin: 1.5rem 0%;
-  border: 1px solid #808080;
-  border-radius: 1rem;
- }
-
-
  
  .lowfi,.medfi,.hifi,.styleguide,.mockups{
  
@@ -558,35 +599,37 @@ h2{
  }
 
  .cover{
-  height: 480px; 
+  height: 500px; 
   margin: 80px 0 3rem 0; 
-  background-repeat: none; 
-  background-size: contain;
+  background-repeat: no-repeat; 
+  background-size: cover;
   background-color: #f7f7f7; 
-  background-image: url(assets/GCDStile\ 1.svg); 
+  background-image: url(assets/idesigntile.svg); 
   display: flex; 
   justify-content: center; 
   align-items: center;
  }
+
+
  
  
  @media (max-width: 900px) {
  
-  .btn{
-    padding: 5%;
-    margin: 5% 0% 5% 0%; ;
-  }
+   .btn{
+     padding: 5%;
+     margin: 5% 0% 5% 0%; ;
+   }
 
-  .persona-img{
-     max-width: 50%;
-  }
+   .persona-img{
+      max-width: 50%;
+   }
 
-  .cover{
-   display: none;
-  }
-  
-
-}
+   .cover{
+    display: none;
+   }
+   
+ 
+ }
  
  
  .bottom-banner{
@@ -697,121 +740,32 @@ h2{
 
 /*case study specific code*/
 
+.check-cross{
+  display: flex; 
+  flex-direction: row; 
+  gap: 1rem;
+  border-radius: 8px;
 
+}
 
-/*buttons*/
-.buttons{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1.5rem;
+/*reveal*/
+
+.reveal {
+  opacity: 0.1;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  margin: 40px 0;
+  background: #fff;
+  border-radius: 8px;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
   
 }
 
-.primarybtn{
+/*reveal*/
 
-  display: flex;
-  width: 100%;
-  padding: 1rem 2rem 1rem 2rem;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-size: 1rem; 
-  color: #fff;
-  text-decoration: none;
-
-  border-radius: 16px;
-  background: #121212;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-}
-
-.primarybtn:hover{
-color: #ffffff;
-background-color: #5e5e5e;
-text-decoration: none;
-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.125)inset;
-
-}
-
-.primarybtn:active{
-color: #ffffff;
-background-color: #232323;
-text-decoration: none;
-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25)inset;
-}
-
-.button-link{
-  text-decoration: none;
-  color: #FFF;
-}
-
-.button-link:hover{
-  text-decoration: none;
-  color: #FFF;
-}
-
-/*buttons*/
-
-.problem_statement{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.grey-rule {
-  border: none;
-  border-top: 2px solid grey;
-}
-
-/*code snippet*/
-.codebody {
-  font-family: Arial, sans-serif;
-  display: flex;
-  width: 100%;
-}
-
-.code-container {
-  position: relative;
-  width: 600px;
-  background: #282c34;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.code-header {
-  background: #1e2229;
-  color: #fff;
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-}
-
-.copy-btn {
-  background: #61dafb;
-  border: none;
-  color: #000;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.copy-btn:hover {
-  background: #4fa3d1;
-}
-
-pre {
-  margin: 0;
-  padding: 15px;
-  overflow-x: auto;
-}
-
-code {
-  font-size: 14px;
-}
 
 
 

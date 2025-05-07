@@ -593,10 +593,10 @@ h2{
  .cover{
   height: 500px; 
   margin: 80px 0 3rem 0; 
-  background-repeat: none; 
-  background-size: contain;
+  background-repeat: no-repeat; 
+  background-size: cover;
   background-color: #f7f7f7; 
-  background-image: url(GCassets/cover.jpg); 
+  background-image: url(assets/GCtile.svg); 
   display: flex; 
   justify-content: center; 
   align-items: center;
