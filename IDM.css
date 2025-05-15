@@ -106,6 +106,7 @@ html{
   display: grid; 
   grid-template-columns: 1fr 1fr; 
   gap: 3rem;
+  margin: 32px 0;
  }
 
  .col-3-grid{
