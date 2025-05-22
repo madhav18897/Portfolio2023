@@ -26,9 +26,37 @@ html{
     
 }
 
+.video-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto;
+  width: 100%;
+  background-color: #006555; 
+  border-radius: 24px;
+  padding: 32px;
+  color: #fff;
+}
+
+.impact-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start; /* Change from center to flex-start */
+  width: 100%;
+  background-color: #f9f9f9; 
+  border-radius: 24px;
+  padding: 32px;
+}
+
 @media screen and (min-width:1920px) {
   .container{
     margin-top: 2rem;
+  }
+
+  .body{
+    margin: 0;
   }
 
 }
@@ -200,6 +228,7 @@ h1{
   font-size: 2rem;
   margin-top: 1%;
   opacity: 100%;
+  letter-spacing: -2%;
 
 }
 
@@ -595,8 +624,8 @@ h2{
   margin: 80px 0 3rem 0; 
   background-repeat: no-repeat; 
   background-size: cover;
-  background-color: #f7f7f7; 
-  background-image: url(assets/GCtile.svg); 
+  background-color: #006555; 
+  background-image: url(assets/GCtile.svg);
   display: flex; 
   justify-content: center; 
   align-items: center;
@@ -759,7 +788,110 @@ h2{
 /*reveal*/
 
 
+/* Carousel track */
+/* Carousel styles that will keep it within parent container */
+.carousel-container {
+    width: 100%; /* Take full width of parent */
+    position: relative;
+    overflow: hidden; /* Important - prevents content from spilling out */
+    border-radius: 12px;
+    margin: 30px 0; /* Add some vertical margin */
+    border-radius: 32px;
+    
+}
 
+/* Carousel track */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 600px; /* Adjust height as needed */
+    width: 100%; /* Important - defines the track width */
+}
 
+.carousel-slide {
+    min-width: 100%; /* Each slide takes full width of track */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #006555;
+    align-items: center;
+    flex-shrink: 0; /* Prevents slides from shrinking */
+    padding: 24px;
+   
+}
 
+.carousel-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Maintains aspect ratio */
+}
 
+/* Navigation arrows */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #121212;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.carousel-arrow:hover {
+    background-color: #fff;
+}
+
+.carousel-arrow-prev {
+    left: 16px;
+}
+
+.carousel-arrow-next {
+    right: 16px;
+}
+
+/* Dot indicators */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 8px; /* Add bottom margin */
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 32px;
+    border-radius: 50%;
+    background-color: #b8b8b8;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-dot.active {
+    background-color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-track {
+        height: 300px;
+    }
+    
+    .carousel-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+}
