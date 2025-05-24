@@ -274,12 +274,6 @@ h2{
 /*ALL TYPOGRAPHY*/
 
 
-.problem_statement{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .grey-rule {
   border: none;
   border-top: 2px solid grey;
