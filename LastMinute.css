@@ -498,155 +498,104 @@ li{
 /* big images */
 
 .competitive, .secondaryR, .demographics, .affinity, .content-inv,.card-sort, .agreement, .similarity,.info-arch, .sketching{
-   width: 100%;
-   margin: 5% 1% 5% 1%;
+  display: none;
 }
 
 .lowfi,.medfi,.hifi,.styleguide,.mockups{
-
-   width: 100%;
-   margin: 5% 1% 5% 1%;
-
+  display: none;
 }
 
 .inner-list-item{
-   font-size: 1rem;
-   color: #757575;
-   margin: 0.5rem 0rem;
+  display: none;
 }
 
+.user-rep{
+  display: none;
+}
 
 .user-persona{
-   width: 100%;
-   margin: 5% 0% 5% 0%;
+  display: none;
 }
-
 
 .btn{
- margin: 1.5rem 0% 1.5rem 0%;
- padding: 1%;
- color: #fff;
- font-size: 1rem;
- background-color: #252525;
- border-radius: 8px;
+  display: none;
 }
 
-@media (max-width: 900px) {
-
- .btn{
-   padding: 5%;
-   margin: 5% 0% 5% 0%; ;
- }
-
+.persona-img{
+  display: none;
 }
-
 
 .bottom-banner{
-   width: 100%;
-   margin: 2% 0% 0% 0%;
-   border-radius: 32px;
-   
+  display: none;
 }
 
-
-/*scroll reveal animation*/
 .reveal{
- position: relative;
- transform: translateY(150px);
- opacity: 0;
- transition: all 0.75s ease;
+  display: none;
 }
 
 .reveal.active{
- transform: translateY(0px);
- opacity: 1;
+  display: none;
 }
 
-/*testimonials section*/
-
 #testimonials{
-
- margin: 2% 5%;
+  display: none;
 }
 
 .testimonial{
- justify-content: space-around;
- 
+  display: none;
 }
 
-
 .testimonialcard{
- margin: 5% 0% ;
- padding: 0%;
- border-radius: 12px;
- background-color: #0072b1;
- height: fit-content;
- width: fit-content;
- box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
- display: flex;
- flex-direction: row;
-
+  display: none;
 }
 
 .name{
- color: #121212;
- font-size: 1.25rem;
- margin: 10% 0%;
+  display: none;
 }
 
 .workplace{
- color: #808080;
- margin: 10% 0%;
+  display: none;
 }
 
 .recommendation{
- padding: 5%;
-
+  display: none;
 }
 
 .personsection{
- background-color: #FFF;
- border-radius: 12px 0px 0px 12px;
- padding: 5%;
+  display: none;
 }
 
 .person{
- margin: 5% 0% ;
- width: 100%;
+  display: none;
 }
 
 .text{
- color: #fff;
- font-weight: bold;
- font-size: 1.125rem;
-
+  display: none;
 }
 
-
-
-
-/*end of testimonials section*/
-
 .socials{
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-gap: 2rem;
-margin: 2rem 0rem;
-
+  display: none;
 }
 
 .social-icons{
-color: #121212;
+  display: none;
 }
 
 .social-icons:hover{
-transform: rotate(20deg);
-transition: transform 0.1s ease-in-out;
-
+  display: none;
 }
 
-/*case study specific code*/
+.check-cross{
+  display: none;
+}
+
+.reveal {
+  display: none;
+}
+
+.reveal.show {
+  display: none;
+}
 
 
 
