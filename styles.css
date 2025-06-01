@@ -962,6 +962,7 @@ text {
     border-radius: 2rem;
     background-color: #f7f7f7;
     overflow: hidden;
+    max-height: fit-content;
 }
 
 /* Ensures the image fills its grid cell without overflowing */

@@ -250,7 +250,7 @@ h2{
 .problem_statement{
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .grey-rule {
@@ -267,12 +267,14 @@ h2{
 
 .sticky_note{
   color: #121212;
-  background-color: #cbedff;
-  border: 2px solid #121212;
+  background-color: #f9f9f9; 
   border-radius: 0.5rem;
   padding: 1rem;
   margin: 0;
-}x
+  border-radius: 24px;
+  padding: 32px;
+}
+  
 
 .content-block{
     margin: 4rem 0%;
