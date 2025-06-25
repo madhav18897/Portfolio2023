@@ -1,5 +1,3 @@
-
-
 .body{
   margin: 0px 10%;
   padding: 0px;
@@ -15,6 +13,38 @@ html{
   margin: 0;
   padding: 0;
 }
+
+/* floating button */
+.floating-back-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 1000;
+    background: #292929;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 300px;
+    text-decoration: none;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.floating-back-btn:hover {
+    background: #363636;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.125) inset;
+}
+
+/* floating button */
+
 
 .container{
     display: grid;
@@ -123,6 +153,17 @@ text-decoration: none;
   grid-template-columns: 1fr 1fr; 
   gap: 3rem;
  }
+
+.impact-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start; /* Change from center to flex-start */
+  width: 100%;
+  background-color: #f9f9f9; 
+  border-radius: 24px;
+  padding: 32px;
+}
 
 @media screen and (max-width:1000px) {
 
@@ -562,7 +603,7 @@ h2{
 
  .cover{
   height: 480px; 
-  margin: 80px 0 3rem 0; 
+  margin: 80px 0 1rem 0; 
   background-repeat: none; 
   background-size: contain;
   background-color: #f7f7f7; 
@@ -816,7 +857,6 @@ code {
   font-size: 14px;
 }
 
-
-
-
-
+.numbering{
+  padding: 0.5rem ;
+}
