@@ -513,14 +513,16 @@ p{
   flex-direction: row;
   gap: 1rem;
   flex-wrap: wrap;
+  
 
 }
 
 .industry_label{
   display: inline-block;
   padding: 8px 24px;
-  background-color: #877ae660;
-  color: #5F50CC;
+  background: linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #5B21B6 100%);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
   display: inline-block;
   border-radius: 0.5rem;
   gap: 1rem;
@@ -983,7 +985,6 @@ text {
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 0;
 }
 
 /* Text styles */
@@ -997,7 +998,7 @@ text {
 
 /* Typography */
 .projectcarddetails {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 /* Responsive behavior */
@@ -1151,11 +1152,11 @@ text {
 }
 
 .footertext h1{
-    color: #ffffff;
+    color: #808080;
 }
 
 .footertext p{
-    color: #cdcdcd
+    color: #f7f7f7
 }
 
 .backtotop{
@@ -1176,7 +1177,7 @@ text {
 }
 
 .social-icons{
-    color: #ffffff;
+    color: #808080;
 }
 
 .social-icons:hover{
@@ -1302,4 +1303,269 @@ text {
 
 /*footer*/
 
+/*freelance*/
+/* Freelance Page Hero Section */
+.freelance-hero-section {
+    display: flex;
+    align-items: center;
+    padding: 12% 10%;
+    background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
+}
 
+.freelance-hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.freelance-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.freelance-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(95, 80, 204, 0.1);
+    color: #5F50CC;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: fit-content;
+}
+
+.freelance-hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 0.9;
+    font-family: 'gilroyextrabold';
+    margin: 0;
+}
+
+.freelance-hero-subtitle {
+    font-size: 1.5rem;
+    color: #5F50CC;
+    font-weight: 600;
+    margin: 0;
+}
+
+.freelance-hero-description {
+    font-size: 1.125rem;
+    color: #666666;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.freelance-hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.freelance-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: #5F50CC;
+    color: white;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.freelance-primary-btn:hover {
+    background: #4a3f99;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.freelance-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: #121212;
+    text-decoration: none;
+    border: 2px solid #121212;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.freelance-secondary-btn:hover {
+    background: #121212;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Video container */
+.freelance-video-container {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.freelance-video-container:hover {
+    transform: translateY(-5px);
+}
+
+.freelance-video-container iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 2rem;
+}
+
+/* Skills section */
+.freelance-skills-section {
+    padding: 4rem 10%;
+    background: white;
+}
+
+.freelance-skills-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.freelance-skills-header {
+    position: sticky;
+    top: 2rem;
+}
+
+.freelance-skills-title {
+    font-size: 0.875rem;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.freelance-skills-subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 1rem;
+    font-family: 'gilroyextrabold';
+}
+
+.freelance-skills-description {
+    color: #666666;
+    line-height: 1.6;
+}
+
+.freelance-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.freelance-skill-category {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.freelance-skill-category:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.freelance-skill-category h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #121212;
+    margin-bottom: 1rem;
+}
+
+.freelance-skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.freelance-skill-tag {
+    padding: 0.5rem 1rem;
+    background: rgba(95, 80, 204, 0.1);
+    color: #5F50CC;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Responsive design for freelance page */
+@media (max-width: 1024px) {
+    .freelance-hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .freelance-video-container {
+        order: -1;
+    }
+
+    .freelance-video-container iframe {
+        height: 300px;
+    }
+
+    .freelance-skills-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .freelance-skills-header {
+        position: static;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .freelance-hero-section {
+        padding: 2rem 5%;
+        min-height: auto;
+        padding-top: 6rem;
+    }
+
+    .freelance-hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .freelance-primary-btn,
+    .freelance-secondary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .freelance-skills-section {
+        padding: 2rem 5%;
+    }
+
+    .freelance-skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
